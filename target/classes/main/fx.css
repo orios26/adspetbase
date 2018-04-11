@@ -11,6 +11,10 @@
     -fx-shadow-highlight-color: #CCFF99;
 }
 
+.time-picker{
+    -fx-background-color: #e9ede8;
+}
+
 .backgroundpane{
     -fx-background-color: linear-gradient(#575b56 0%, #687266 25%, #cae2c5 75%, #e9ede8 100%);
     -fx-pref-width: 720px;
@@ -93,10 +97,4 @@
 .menu-item{}
 .menu-item:focused{
     -fx-background-color: 	#658768;
-}
-
-.progress-bar{}
-.progress-indicator
-{
-    -fx-progress-color: orange;
 }

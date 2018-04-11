@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="custompanes" stylesheets="@../fx.css" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.ManageEmployeeController">
+   <children>
+      <Pane layoutX="15.0" layoutY="14.0" prefHeight="200.0" prefWidth="200.0" styleClass="backgroundpane">
+         <children>
+            <Label layoutX="14.0" layoutY="9.0" prefHeight="17.0" prefWidth="344.0" styleClass="customheads" text="Edit Employee" />
+         </children>
+      </Pane>
+      <TextField fx:id="editFirst" layoutX="15.0" layoutY="83.0" promptText="Employee First" />
+      <TextField fx:id="editLast" layoutX="186.0" layoutY="83.0" promptText="Employee Last" />
+      <DatePicker fx:id="editStart" layoutX="15.0" layoutY="124.0" prefHeight="25.0" prefWidth="149.0" promptText="Employee Start" />
+      <DatePicker fx:id="editEnd" layoutX="186.0" layoutY="124.0" prefHeight="25.0" prefWidth="149.0" promptText="Employee End" />
+      <ComboBox fx:id="editStatus" layoutX="350.0" layoutY="83.0" prefWidth="150.0" promptText="Employee Status" />
+      <TextField fx:id="editPhone" layoutX="351.0" layoutY="124.0" promptText="Employee Phone" />
+      <Button fx:id="editSave" layoutX="15.0" layoutY="213.0" mnemonicParsing="false" onAction="#editSaveCommand" prefHeight="25.0" prefWidth="110.0" text="Save" />
+   </children>
+</AnchorPane>

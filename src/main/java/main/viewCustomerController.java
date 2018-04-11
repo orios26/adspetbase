@@ -80,13 +80,14 @@ public class viewCustomerController {
         }
         rs.close();
         psmt.close();
+        connection.close();
         tblcustomer.setItems(customers);
     }
 
     public void deleteButtonPressed(ActionEvent event) throws SQLException{
         int id = tblcustomer.getSelectionModel().getSelectedIndex()+1;
         Connection connection = DbHelper.getInstance().getConnection();
-        String sql = "UPDATE CUSTOMER SET CUS_STATUS_ID = 2 WHERE CUSTOMER_ID="+id;
+        String sql = "UPDATE CUSTOMER SET CUS_STATUS_ID = 2 WHERE CUSTOMER_ID= "+id;
         PreparedStatement psmt = connection.prepareStatement(sql);
         psmt.execute();
         psmt.close();

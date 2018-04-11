@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="custompanes" stylesheets="@../fx.css" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Pane layoutX="30.0" layoutY="14.0" prefHeight="56.0" prefWidth="209.0" styleClass="backgroundpane">
+         <children>
+            <Label layoutX="14.0" layoutY="9.0" prefHeight="32.0" prefWidth="277.0" styleClass="customheads" text="Kennel Reports" />
+         </children>
+      </Pane>
+      <TableView layoutX="30.0" layoutY="82.0" prefHeight="316.0" prefWidth="277.0">
+        <columns>
+          <TableColumn text="Kennel ID" />
+          <TableColumn minWidth="3.0" prefWidth="83.0" text="Kennel Status" />
+            <TableColumn prefWidth="110.0" text="Kennel Size" />
+        </columns>
+      </TableView>
+      <TableView layoutX="428.0" layoutY="82.0" prefHeight="316.0" prefWidth="277.0">
+        <columns>
+          <TableColumn prefWidth="93.0" text="Kennel ID" />
+          <TableColumn prefWidth="95.0" text="Kennel Status" />
+            <TableColumn prefWidth="82.0" text="Kennel Size" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

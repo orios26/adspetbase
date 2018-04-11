@@ -10,7 +10,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="425.0" prefWidth="700.0" styleClass="custompanes" stylesheets="@../../../../../target/classes/main/fx.css" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.ExampleController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="425.0" prefWidth="700.0" styleClass="custompanes" stylesheets="@../../../../../target/classes/main/fx.css" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.ManageEmployeeController">
    <children>
       <TableView fx:id="tblEmployees" layoutX="15.0" layoutY="71.0" prefHeight="345.0" prefWidth="446.0" stylesheets="@../../../../../target/classes/main/fx.css">
         <columns>
@@ -23,17 +23,19 @@
             <TableColumn fx:id="phone" prefWidth="99.0" text="Phone" />
         </columns>
       </TableView>
-      <TextField layoutX="469.0" layoutY="90.0" prefHeight="25.0" prefWidth="123.0" promptText="Employee First" styleClass="text-field" stylesheets="@../../../../../target/classes/main/fx.css" />
-      <TextField layoutX="596.0" layoutY="90.0" prefHeight="25.0" prefWidth="123.0" promptText="Employee Last" styleClass="text-field" stylesheets="@../../../../../target/classes/main/fx.css" />
-      <DatePicker layoutX="469.0" layoutY="128.0" prefHeight="25.0" prefWidth="123.0" promptText="Start Date" styleClass="text-field" stylesheets="@../../../../../target/classes/main/fx.css" />
-      <TextField layoutX="469.0" layoutY="172.0" prefHeight="25.0" prefWidth="123.0" promptText="Phone" styleClass="text-field" stylesheets="@../../../../../target/classes/main/fx.css" />
-      <ComboBox layoutX="596.0" layoutY="128.0" prefHeight="25.0" prefWidth="123.0" promptText="Status" />
-      <Button layoutX="469.0" layoutY="243.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="123.0" stylesheets="@../../../../../target/classes/main/fx.css" text="Add" />
-      <Button layoutX="596.0" layoutY="243.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="123.0" stylesheets="@../../../../../target/classes/main/fx.css" text="Clear" />
+      <TextField fx:id="employeeFirst" layoutX="467.0" layoutY="71.0" prefHeight="25.0" prefWidth="123.0" promptText="Employee First" styleClass="text-field" stylesheets="@../../../../../target/classes/main/fx.css" />
+      <TextField fx:id="employeeLast" layoutX="594.0" layoutY="71.0" prefHeight="25.0" prefWidth="123.0" promptText="Employee Last" styleClass="text-field" stylesheets="@../../../../../target/classes/main/fx.css" />
+      <TextField fx:id="phoneText" layoutX="467.0" layoutY="153.0" prefHeight="25.0" prefWidth="123.0" promptText="Phone" styleClass="text-field" stylesheets="@../../../../../target/classes/main/fx.css" />
+      <ComboBox fx:id="statusCombo" layoutX="594.0" layoutY="109.0" prefHeight="25.0" prefWidth="123.0" promptText="Status" />
+      <Button fx:id="addButton" layoutX="469.0" layoutY="233.0" mnemonicParsing="false" onAction="#savePressed" prefHeight="25.0" prefWidth="123.0" stylesheets="@../../../../../target/classes/main/fx.css" text="Add/Save" />
+      <Button fx:id="deleteButton" layoutX="602.0" layoutY="233.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="123.0" stylesheets="@../../../../../target/classes/main/fx.css" text="Delete" />
       <Pane layoutX="15.0" layoutY="14.0" prefHeight="54.0" prefWidth="676.0" styleClass="backgroundpane">
          <children>
             <Label layoutX="25.0" layoutY="11.0" prefHeight="17.0" prefWidth="257.0" styleClass="customheads" text="Manage Employees" />
          </children>
       </Pane>
+      <Button fx:id="editButton" layoutX="469.0" layoutY="268.0" mnemonicParsing="false" onAction="#editButtonPressed" prefHeight="25.0" prefWidth="123.0" text="Edit" />
+      <Button fx:id="clearButton" layoutX="602.0" layoutY="268.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="123.0" text="Clear" />
+      <DatePicker fx:id="startDateSelect" layoutX="467.0" layoutY="109.0" prefHeight="25.0" prefWidth="123.0" promptText="Start Date" />
    </children>
 </AnchorPane>

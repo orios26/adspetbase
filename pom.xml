@@ -27,12 +27,17 @@
         <dependency>
             <groupId>org.jfxtras</groupId>
             <artifactId>jfxtras-controls</artifactId>
-            <version>RELEASE</version>
+            <version>8.0-r5</version>
         </dependency>
         <dependency>
             <groupId>com.github.sarxos</groupId>
             <artifactId>webcam-capture</artifactId>
             <version>0.3.12</version>
+        </dependency>
+        <dependency>
+            <groupId>com.jfoenix</groupId>
+            <artifactId>jfoenix</artifactId>
+            <version>8.0.2</version>
         </dependency>
 
         <dependency>

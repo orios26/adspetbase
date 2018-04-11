@@ -3,7 +3,12 @@ package main;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.scene.control.*;
+import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.BorderPane;
+
+import java.io.IOException;
 import java.sql.*;
 import java.time.LocalDate;
 import java.time.Period;
@@ -142,26 +147,39 @@ public class addPetController  {
         LocalDate today = LocalDate.now();
         String age = Period.between(birthDate, today).toString();
         Connection connection4 = DbHelper.getInstance().getConnection();
-        String sql = "INSERT INTO PET(PET_NAME,PET_DOB,PET_AGE,PET_GENDER,FIXED,PET_TYPE_ID,PET_MICROCHIP_NUM,PET_WEIGHT_GRP_ID,PET_START_DATE,PET_STATUS_ID) VALUES (?,?,?,?,?,?,?,?,?,?)";
-        PreparedStatement p = connection4.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS);
+        String sql = "INSERT INTO PET(PET_NAME,PET_DOB,PET_GENDER,FIXED,PET_TYPE_ID,PET_MICROCHIP_NUM,PET_WEIGHT_GRP_ID,PET_START_DATE,PET_STATUS_ID) VALUES (?,?,?,?,?,?,?,?,?)";
+        PreparedStatement p = connection4.prepareStatement(sql, PreparedStatement.RETURN_GENERATED_KEYS);
         p.setString(1, petName.getText());
         p.setDate(2, Date.valueOf(birthDate));
-        p.setString(3, age);
-        p.setString(4, petGender.getValue());
-        p.setString(5, petFixed.getValue());
-        p.setInt(6, petType.getSelectionModel().getSelectedIndex());
-        p.setString(7, petMicroChip.getText());
-        p.setInt(8, petWeight.getSelectionModel().getSelectedIndex());
-        p.setDate(9, Date.valueOf(today));
-        p.setInt(10, 1);
+        //p.setString(3, age);
+        p.setString(3, petGender.getValue());
+        p.setString(4, petFixed.getValue());
+        p.setInt(5, petType.getSelectionModel().getSelectedIndex()+1);
+        p.setString(6, petMicroChip.getText());
+        p.setInt(7, petWeight.getSelectionModel().getSelectedIndex()+1);
+        p.setDate(8, Date.valueOf(today));
+        p.setInt(9, 1);
         p.execute();
-        p.close();
-        connection4.close();
+
         Alert alert = new Alert(Alert.AlertType.INFORMATION);
         alert.setTitle("PetBase Update");
         alert.setHeaderText("PET ADDED");
         alert.setContentText(petName.getText() + " has been added to PetBase");
         alert.showAndWait();
+        ResultSet resultSet = p.getGeneratedKeys();
+        if(resultSet.next()){
+            int keyid = resultSet.getInt(1);
+            System.out.println(keyid);
+        }
+        p.close();
+        connection4.close();
+        try {
+            AnchorPane pane = FXMLLoader.load(getClass().getResource("fxmlAssets/addPetScreen.fxml"));
+            BorderPane borderPane = Main.getRoot();
+            borderPane.setCenter(pane);
+        }catch (IOException e){
+            e.printStackTrace();
+        }
     }
 
 }

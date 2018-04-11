@@ -9,6 +9,7 @@ import javafx.scene.control.cell.PropertyValueFactory;
 import org.apache.commons.dbutils.QueryRunner;
 
 import java.sql.*;
+import java.time.LocalDateTime;
 
 
 public class ViewGroomingAppointments {
@@ -65,8 +66,8 @@ public class ViewGroomingAppointments {
             v.setPetName(rs.getString("PET_NAME"));
             v.setPetGender(rs.getString("PET_GENDER"));
             v.setPetBreed(rs.getString("BREED_NAME"));
-           // v.setVisitCheckIn(rs.getDate("VISIT_CHECK_IN"));
-           // v.setVisitCheckOut(rs.getTimestamp("VISIT_CHECK_OUT"));
+            //v.setVisitCheckIn(rs.getDate("VISIT_CHECK_IN"));
+           //v.setVisitCheckOut(rs.getTimestamp("VISIT_CHECK_OUT"));
             v.setEmployeeFirstName(rs.getString("EMPLOYEE_FIRSTNAME"));
             v.setEmployeeLastName(rs.getString("EMPLOYEE_LASTNAME"));
             v.setServiceStatus(rs.getString("SERVICE_STATUS"));
