@@ -1,0 +1,102 @@
+.root{
+    -fx-background-color: linear-gradient(#9ae07b 0%, darkseagreen 25%, #76cc7e 75%, #35bf42 100%);
+    -fx-shadow-highlight-color: #CCFF99;
+}
+.text-field{
+    -fx-accent: #9ae07b;
+    -fx-shadow-highlight-color: #CCFF99;
+}
+.text-field:selected{
+    -fx-accent: #9ae07b;
+    -fx-shadow-highlight-color: #CCFF99;
+}
+
+.backgroundpane{
+    -fx-background-color: linear-gradient(#575b56 0%, #687266 25%, #cae2c5 75%, #e9ede8 100%);
+    -fx-pref-width: 720px;
+    -fx-pref-height: 50px;
+    -fx-border-insets: 2,2,2,2;
+}
+
+.table-view{
+    -fx-opacity: 0.7;
+    -fx-background-color: #070707;
+    -fx-border-color: azure;
+    -fx-border-insets: 2,2,2,2;
+}
+
+.columnheads{
+    -fx-font-size: 18px;
+}
+
+.customheads{
+    -fx-font-size: 22px;
+    -fx-text-fill: black;
+    -fx-stroke: black;
+    -fx-stroke-width: 2;
+}
+
+.custompanes{
+    -fx-background-color: #070707;
+    -fx-opacity: 0.8;
+    -fx-border-color: #8c8c8c;
+    -fx-border-width: 3;
+    -fx-border-radius: 0;
+    -fx-border-insets: 0;
+    -fx-border-style: solid centered;
+    -fx-pref-width: 750px;
+    -fx-pref-height: 425px;
+}
+
+.table-view{
+    -fx-opacity: 0.7;
+    -fx-background-color: #070707;
+    -fx-border-color: #777777;
+    -fx-border-width: 5;
+    -fx-border-insets: 0;
+    -fx-border-radius: 0;
+    -fx-border-style: solid centered;
+}
+
+.columnheads{
+    -fx-font-size: 18px;
+}
+
+.button{
+    -fx-background-color: #aeb5ab;
+    -fx-border-radius: 0;
+}
+.button:pressed{
+    -fx-background-color: #9ae07b;
+    -fx-border-radius: 0;
+}
+.menu{
+    -fx-font-size: 18px;
+    -fx-background-color: #658768;
+}
+.menu:focused{
+    -fx-background-color: 	blue;
+}
+.menu:hover{
+    -fx-background-color: #a8b7aa;
+}
+.menu-bar{
+    -fx-background-color: #658768;
+}
+.menu-bar:focused{
+    -fx-background-color: 	#658768;
+}
+.menu-button{}
+.menu-button:focused{
+    -fx-background-color: 	#658768;
+}
+.menu-item{}
+.menu-item:focused{
+    -fx-background-color: 	#658768;
+}
+
+.progress-bar{}
+.progress-indicator
+{
+    -fx-progress-color: orange;
+}

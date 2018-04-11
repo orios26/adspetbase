@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="431.0" prefWidth="629.0" styleClass="custompanes" stylesheets="@../../../../../target/classes/main/fx.css" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.NewClientScreenController">
+   <children>
+      <Pane layoutX="13.0" layoutY="14.0" prefHeight="54.0" prefWidth="222.0" styleClass="backgroundpane">
+         <children>
+            <Label layoutX="26.0" layoutY="12.0" prefHeight="32.0" prefWidth="228.0" styleClass="customheads" text="New Pet Information">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <TextField layoutX="25.0" layoutY="78.0" prefHeight="25.0" prefWidth="379.0" promptText="Pet Name" />
+      <ComboBox layoutX="566.0" layoutY="78.0" prefHeight="25.0" prefWidth="118.0" promptText="Breed 1" />
+      <ComboBox layoutX="434.0" layoutY="78.0" prefHeight="25.0" prefWidth="118.0" promptText="Breed 2" />
+      <ComboBox layoutX="434.0" layoutY="112.0" prefHeight="25.0" prefWidth="118.0" promptText="Color 1" />
+      <ComboBox layoutX="566.0" layoutY="112.0" prefHeight="25.0" prefWidth="118.0" promptText="Color 2" />
+      <TextField layoutX="25.0" layoutY="112.0" prefHeight="25.0" prefWidth="118.0" promptText="Weight (00.00lbs)" />
+      <DatePicker layoutX="151.0" layoutY="112.0" prefHeight="25.0" prefWidth="118.0" promptText="Date of Birth" />
+      <TextArea layoutX="25.0" layoutY="179.0" prefHeight="94.0" prefWidth="659.0" promptText="Pet Feeding Instrucions" />
+      <TextArea layoutX="25.0" layoutY="283.0" prefHeight="94.0" prefWidth="659.0" promptText="Other Information" />
+      <TextField layoutX="279.0" layoutY="112.0" prefHeight="25.0" prefWidth="127.0" promptText="MicroChip" />
+      <ComboBox layoutX="25.0" layoutY="144.0" prefHeight="25.0" prefWidth="118.0" promptText="Sex" />
+      <ComboBox layoutX="434.0" layoutY="144.0" prefHeight="25.0" prefWidth="118.0" promptText="Behavior" />
+      <ComboBox layoutX="566.0" layoutY="144.0" prefHeight="25.0" prefWidth="118.0" promptText="Behavior" />
+      <Button fx:id="petInfo" layoutX="25.0" layoutY="386.0" mnemonicParsing="false" onAction="#petNext" prefHeight="25.0" prefWidth="156.0" text="Next" />
+      <Button fx:id="cancelButton" layoutX="194.0" layoutY="386.0" mnemonicParsing="false" onAction="#closeButtonAction" prefHeight="25.0" prefWidth="156.0" text="Cancel" />
+      <ComboBox layoutX="151.0" layoutY="144.0" prefHeight="25.0" prefWidth="118.0" promptText="Pet Type" />
+      <ComboBox layoutX="279.0" layoutY="144.0" prefHeight="25.0" prefWidth="127.0" promptText="Fixed" />
+   </children>
+</AnchorPane>

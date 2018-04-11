@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+
+<MenuBar fx:id="NavigationMenu" stylesheets="@../../../../../target/classes/main/fx.css" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.MyMenuController">
+    <menus>
+        <Menu fx:id="home" mnemonicParsing="false" onAction="#switchHome" text="Home">
+         <items>
+            <MenuItem fx:id="homemenuitem" mnemonicParsing="false" onAction="#switchHome" text="Home Screen" />
+            <MenuItem fx:id="newClientInformation" mnemonicParsing="false" onAction="#newCustomerInformationStart" text="New Customer Information" />
+            <Menu mnemonicParsing="false" text="Reports">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Vaccine Renewals" />
+                  <MenuItem mnemonicParsing="false" text="Doggy Daycare Days" />
+                  <MenuItem mnemonicParsing="false" text="Shelter Pets" />
+              </items>
+            </Menu>
+         </items></Menu>
+        <Menu fx:id="Customer" mnemonicParsing="false" styleClass="menu-button" text="Customer">
+            <items>
+                <MenuItem id="addCustomer" fx:id="addCustomer" mnemonicParsing="false" onAction="#switchaddCustomer" text="Add Customer" />
+                <MenuItem fx:id="viewCustomer" mnemonicParsing="false" onAction="#switchviewCustomer" text="View Customers " />
+            </items>
+        </Menu>
+        <Menu fx:id="Pet" mnemonicParsing="false" text="Pet">
+            <items>
+                <MenuItem id="addPet" fx:id="addPet" mnemonicParsing="false" onAction="#switchaddPet" text="Add Pet" />
+                <MenuItem id="viewPets" fx:id="viewPet" mnemonicParsing="false" onAction="#switchviewPet" text="View Pets " />
+            </items>
+        </Menu>
+        <Menu fx:id="Boarding" mnemonicParsing="false" text="Boarding">
+            <items>
+                <MenuItem id="createBoarding" fx:id="createBoarding" mnemonicParsing="false" onAction="#switchcreateBoarding" text="Create Appt" />
+                <MenuItem id="viewBoarding" fx:id="viewBoarding" mnemonicParsing="false" onAction="#switchviewBoarding" text="View Appts" />
+            </items>
+        </Menu>
+        <Menu fx:id="Grooming" mnemonicParsing="false" text="Grooming">
+            <items>
+                <MenuItem id="createGrooming" fx:id="createGrooming" mnemonicParsing="false" onAction="#switchcreateGrooming" text="Create Appt" />
+                <MenuItem id="viewGrooming" fx:id="viewGrooming" mnemonicParsing="false" onAction="#switchviewGrooming" text="View Appts" />
+            </items>
+        </Menu>
+        <Menu fx:id="Daycare" mnemonicParsing="false" text="Daycare">
+            <items>
+                <MenuItem id="daycareCheckIn" fx:id="checkInDaycare" mnemonicParsing="false" onAction="#switchcheckinDaycare" text="Check In" />
+                <MenuItem id="daycareCheckOut" fx:id="checkOutDaycare" mnemonicParsing="false" onAction="#switchcheckoutDaycare" text="Check Out" />
+                <MenuItem id="daycareViewRooms" fx:id="viewDaycareRoom" mnemonicParsing="false" onAction="#switchviewDaycareroom" text="View Rooms" />
+            </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Services">
+            <items>
+                <MenuItem mnemonicParsing="false" text="Create Service Order" />
+                <MenuItem mnemonicParsing="false" text="View Active Orders" />
+                <MenuItem mnemonicParsing="false" text="View Completed Orders" />
+            </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Manage">
+            <items>
+                <MenuItem fx:id="manageKennels" mnemonicParsing="false" onAction="#switchManageKennels" text="Kennels" />
+            <MenuItem fx:id="manageDaycareRooms" mnemonicParsing="false" onAction="#switchManageDaycareRooms" text="Daycare Rooms" />
+            <MenuItem fx:id="manageEmployees" mnemonicParsing="false" onAction="#switchManageEmployees" text="Employees" />
+            </items>
+        </Menu>
+    </menus>
+</MenuBar>

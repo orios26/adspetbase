@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="custompanes" stylesheets="@../../../../../target/classes/main/fx.css" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TableView layoutX="119.0" layoutY="80.0" prefHeight="323.0" prefWidth="462.0">
+        <columns>
+          <TableColumn prefWidth="86.0" text="Owner First" />
+          <TableColumn prefWidth="82.0" text="Owner Last" />
+            <TableColumn prefWidth="83.0" text="Employee" />
+            <TableColumn prefWidth="95.0" text="Start Date" />
+            <TableColumn prefWidth="111.0" text="End Date" />
+        </columns>
+      </TableView>
+      <Pane layoutX="13.0" layoutY="14.0" prefHeight="98.0" prefWidth="203.0" styleClass="backgroundpane">
+         <children>
+            <Label layoutX="14.0" layoutY="9.0" styleClass="customheads" text="View Active Sales Orders" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

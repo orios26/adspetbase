@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="381.0" prefWidth="439.0" style="-fx-background-color: lightgrey;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label id="Header" layoutX="14.0" layoutY="14.0" prefHeight="17.0" prefWidth="163.0" text="Add Medication Information " />
+      <TextField layoutX="14.0" layoutY="49.0" prefHeight="25.0" prefWidth="111.0" promptText="Medication Name" />
+      <TextField layoutX="137.0" layoutY="49.0" prefHeight="25.0" prefWidth="123.0" promptText="Dosage" />
+      <TextField layoutX="272.0" layoutY="49.0" promptText="Frequency" />
+      <TextArea layoutX="15.0" layoutY="177.0" prefHeight="148.0" prefWidth="408.0" promptText="Medication Special Instructions " />
+      <TextField layoutX="14.0" layoutY="90.0" prefHeight="25.0" prefWidth="111.0" promptText="Medication Name" />
+      <TextField layoutX="137.0" layoutY="90.0" prefHeight="25.0" prefWidth="123.0" promptText="Dosage " />
+      <TextField layoutX="272.0" layoutY="90.0" promptText="Frequency" />
+      <TextField layoutX="14.0" layoutY="138.0" prefHeight="25.0" prefWidth="111.0" promptText="Medication Name " />
+      <TextField layoutX="137.0" layoutY="138.0" prefHeight="25.0" prefWidth="123.0" promptText="Dosage" />
+      <TextField layoutX="272.0" layoutY="138.0" promptText="Frequency" />
+      <Button layoutX="14.0" layoutY="340.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="149.0" text="Save" />
+      <Button layoutX="272.0" layoutY="340.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="149.0" text="Cancel" />
+   </children>
+</AnchorPane>
