@@ -18,15 +18,17 @@
             <TableColumn fx:id="daycareRoomSize" prefWidth="99.0" text="Size" />
         </columns>
       </TableView>
-      <TextField layoutX="375.0" layoutY="73.0" promptText="Room Name" styleClass="text-field" />
-      <TextField layoutX="375.0" layoutY="112.0" promptText="Room Size" styleClass="text-field" />
-      <DatePicker layoutX="375.0" layoutY="150.0" prefHeight="25.0" prefWidth="149.0" promptText="Date Added" styleClass="text-field" />
-      <Button layoutX="375.0" layoutY="219.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="101.0" text="Add" />
+      <TextField fx:id="roomName" layoutX="375.0" layoutY="73.0" promptText="Room Name" styleClass="text-field" />
+      <TextField fx:id="roomSize" layoutX="375.0" layoutY="112.0" promptText="Room Size" styleClass="text-field" />
+      <DatePicker fx:id="dateCreate" layoutX="375.0" layoutY="150.0" prefHeight="25.0" prefWidth="149.0" promptText="Date Added" styleClass="text-field" />
+      <Button fx:id="save" layoutX="375.0" layoutY="219.0" mnemonicParsing="false" onAction="#saveButtonPressed" prefHeight="25.0" prefWidth="101.0" text="Add/Save" />
       <Button layoutX="375.0" layoutY="252.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="101.0" text="Clear" />
       <Pane layoutX="11.0" layoutY="14.0" prefHeight="50.0" prefWidth="721.0" styleClass="backgroundpane">
          <children>
             <Label layoutX="14.0" layoutY="10.0" prefHeight="32.0" prefWidth="301.0" styleClass="customheads" text="Manage Daycare Rooms" />
          </children>
       </Pane>
+      <Button fx:id="edit" layoutX="375.0" layoutY="288.0" mnemonicParsing="false" onAction="#editButtonPressed" prefHeight="25.0" prefWidth="101.0" text="Edit" />
+      <Button layoutX="375.0" layoutY="329.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="101.0" text="Delete" />
    </children>
 </AnchorPane>

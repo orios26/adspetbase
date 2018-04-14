@@ -90,6 +90,9 @@ public class addCustomerController {
         }
         rs2.close();
         psmt2.close();
+
+        state.setValue("Texas");
+        country.setValue("United States");
     }
 
 

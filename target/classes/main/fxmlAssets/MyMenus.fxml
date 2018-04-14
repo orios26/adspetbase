@@ -22,6 +22,7 @@
             <items>
                 <MenuItem id="addCustomer" fx:id="addCustomer" mnemonicParsing="false" onAction="#switchaddCustomer" text="Add Customer" />
                 <MenuItem fx:id="viewCustomer" mnemonicParsing="false" onAction="#switchviewCustomer" text="View Customers " />
+            <MenuItem fx:id="editCustomer" mnemonicParsing="false" onAction="#switcheditCustomer" text="Edit Customer" />
             </items>
         </Menu>
         <Menu fx:id="Pet" mnemonicParsing="false" text="Pet">
@@ -51,7 +52,7 @@
         </Menu>
         <Menu mnemonicParsing="false" text="Services">
             <items>
-                <MenuItem mnemonicParsing="false" text="Create Service Order" />
+                <MenuItem mnemonicParsing="false" onAction="#switchCreateServiceOrder" text="Create Service Order" />
                 <MenuItem mnemonicParsing="false" text="View Active Orders" />
                 <MenuItem mnemonicParsing="false" text="View Completed Orders" />
             </items>

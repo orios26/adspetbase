@@ -17,6 +17,12 @@ public class Main  extends Application{
 
     public static BorderPane root = new BorderPane();
     public static BorderPane getRoot(){return root;}
+    public static int cid,pid,oid,olid;
+    public static int getCid(){return cid;}
+    public static int getPid(){return pid;}
+    public static int getOid(){return oid;}
+    public static int getOlid(){return olid;}
+
 
     @Override
     public void start(Stage primaryStage) throws Exception{

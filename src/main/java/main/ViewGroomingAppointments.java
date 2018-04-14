@@ -25,9 +25,9 @@ public class ViewGroomingAppointments {
     @FXML
     TableColumn<Visit, String>petBreed;
     @FXML
-    TableColumn<Visit, Date>checkIn;
+    TableColumn<Visit, Timestamp>checkIn;
     @FXML
-    TableColumn<Visit, Date>checkOut;
+    TableColumn<Visit, Timestamp>checkOut;
     @FXML
     TableColumn<Visit, String>visitEmployeeFirst;
     @FXML
@@ -40,8 +40,8 @@ public class ViewGroomingAppointments {
         petName.setCellValueFactory(new PropertyValueFactory<Visit, String>("petName"));
         petGender.setCellValueFactory(new PropertyValueFactory<Visit, String>("petGender"));
         petBreed.setCellValueFactory(new PropertyValueFactory<Visit, String>("petBreed"));
-        checkIn.setCellValueFactory(new PropertyValueFactory<Visit, Date>("checkIn"));
-        checkOut.setCellValueFactory(new PropertyValueFactory<Visit,Date>("checkOut"));
+        checkIn.setCellValueFactory(new PropertyValueFactory<Visit, Timestamp>("visitCheckIn"));
+        checkOut.setCellValueFactory(new PropertyValueFactory<Visit,Timestamp>("visitCheckOut"));
         visitEmployeeFirst.setCellValueFactory(new PropertyValueFactory<Visit, String>("employeeFirstName"));
         visitEmployeeLast.setCellValueFactory(new PropertyValueFactory<Visit, String>("employeeLastName"));
         status.setCellValueFactory(new PropertyValueFactory<Visit, String>("serviceStatus"));
@@ -66,8 +66,8 @@ public class ViewGroomingAppointments {
             v.setPetName(rs.getString("PET_NAME"));
             v.setPetGender(rs.getString("PET_GENDER"));
             v.setPetBreed(rs.getString("BREED_NAME"));
-            //v.setVisitCheckIn(rs.getDate("VISIT_CHECK_IN"));
-           //v.setVisitCheckOut(rs.getTimestamp("VISIT_CHECK_OUT"));
+            v.setVisitCheckIn(rs.getTimestamp("VISIT_CHECK_IN"));
+            v.setVisitCheckOut(rs.getTimestamp("VISIT_CHECK_OUT"));
             v.setEmployeeFirstName(rs.getString("EMPLOYEE_FIRSTNAME"));
             v.setEmployeeLastName(rs.getString("EMPLOYEE_LASTNAME"));
             v.setServiceStatus(rs.getString("SERVICE_STATUS"));

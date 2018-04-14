@@ -14,8 +14,25 @@ import java.time.format.DateTimeFormatter;
 public class Visit {
     private int visitId;
     private String visitDesc;
-    private DateTimeOffset visitCheckIn;
-    private DateTimeOffset visitCheckOut;
+    private Timestamp visitCheckIn;
+
+    public Timestamp getVisitCheckIn() {
+        return visitCheckIn;
+    }
+
+    public void setVisitCheckIn(Timestamp visitCheckIn) {
+        this.visitCheckIn = visitCheckIn;
+    }
+
+    public Timestamp getVisitCheckOut() {
+        return visitCheckOut;
+    }
+
+    public void setVisitCheckOut(Timestamp visitCheckOut) {
+        this.visitCheckOut = visitCheckOut;
+    }
+
+    private Timestamp visitCheckOut;
     private String petName;
     private String petGender;
     private String petBreed;
@@ -91,22 +108,6 @@ public class Visit {
     public void setServiceStatus(String serviceStatus) {
         this.serviceStatus = serviceStatus;
     }
-    public DateTimeOffset getVisitCheckIn() {
-        return visitCheckIn;
-    }
-
-    public void setVisitCheckIn(DateTimeOffset visitCheckIn) {
-        this.visitCheckIn = visitCheckIn;
-    }
-
-    public DateTimeOffset getVisitCheckOut() {
-        return visitCheckOut;
-    }
-
-    public void setVisitCheckOut(DateTimeOffset visitCheckOut) {
-        this.visitCheckOut = visitCheckOut;
-    }
-
 
 
 

@@ -10,11 +10,11 @@
 <?import javafx.scene.text.Font?>
 <?import jfxtras.scene.control.LocalDateTimeTextField?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="custompanes" stylesheets="@../../../../../target/classes/main/fx.css" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="custompanes" stylesheets="@../../../../../target/classes/main/fx.css" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.createGroomingApptController">
    <children>
-      <ComboBox layoutX="25.0" layoutY="155.0" prefHeight="25.0" prefWidth="157.0" promptText="Groomer Select" />
-      <TextArea layoutX="25.0" layoutY="200.0" prefHeight="137.0" prefWidth="708.0" promptText="Special Grooming Instructions" />
-      <Button layoutX="25.0" layoutY="352.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="110.0" stylesheets="@../../../../../target/classes/main/fx.css" text="Save" />
+      <ComboBox fx:id="groomerSelect" layoutX="25.0" layoutY="155.0" prefHeight="25.0" prefWidth="157.0" promptText="Groomer Select" />
+      <TextArea fx:id="specialCareInst" layoutX="25.0" layoutY="200.0" prefHeight="137.0" prefWidth="708.0" promptText="Special Grooming Instructions" />
+      <Button layoutX="25.0" layoutY="352.0" mnemonicParsing="false" onAction="#generateGroomingAppt" prefHeight="25.0" prefWidth="110.0" stylesheets="@../../../../../target/classes/main/fx.css" text="Save" />
       <Button layoutX="165.0" layoutY="352.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="110.0" stylesheets="@../../../../../target/classes/main/fx.css" text="Cancel" />
       <Pane layoutX="15.0" layoutY="14.0" prefHeight="200.0" prefWidth="200.0" styleClass="backgroundpane">
          <children>
@@ -25,9 +25,10 @@
             </Label>
          </children>
       </Pane>
-      <LocalDateTimeTextField layoutX="320.0" layoutY="155.0" promptText="End Time" style="-fx-background-color: white;" />
-      <LocalDateTimeTextField layoutX="191.0" layoutY="155.0" promptText="Start Time" style="-fx-background-color: white;" styleClass="time-picker" />
-      <TextField layoutX="447.0" layoutY="155.0" promptText="Price Estimate" />
-      <ComboBox layoutX="25.0" layoutY="112.0" prefHeight="25.0" prefWidth="157.0" promptText="Pet Select" />
+      <LocalDateTimeTextField fx:id="endTime" layoutX="386.0" layoutY="155.0" prefHeight="25.0" prefWidth="182.0" promptText="End Time" style="-fx-background-color: white;" />
+      <LocalDateTimeTextField fx:id="startTime" layoutX="191.0" layoutY="155.0" prefHeight="25.0" prefWidth="182.0" promptText="Start Time" style="-fx-background-color: white;" styleClass="time-picker" />
+      <TextField layoutX="584.0" layoutY="155.0" promptText="Price Estimate" />
+      <ComboBox fx:id="petSelect" layoutX="25.0" layoutY="112.0" prefHeight="25.0" prefWidth="157.0" promptText="Pet Select" />
+      <ComboBox fx:id="customerSelect" layoutX="25.0" layoutY="73.0" prefHeight="25.0" prefWidth="157.0" promptText="Customer Select" />
    </children>
 </AnchorPane>

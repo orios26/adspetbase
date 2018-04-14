@@ -136,26 +136,24 @@ public class MyMenuController {
     }
 
     @FXML
+    void switcheditCustomer(ActionEvent event){
+        try{
+            AnchorPane pane = FXMLLoader.load(getClass().getResource("fxmlAssets/editCustomerInformation.fxml"));
+            BorderPane borderPane = Main.getRoot();
+            borderPane.setCenter(pane);
+        }
+        catch (IOException e){
+            e.printStackTrace();
+        }
+    }
+
+    @FXML
     void switchaddCustomer(ActionEvent event){
         try{
             AnchorPane addCustomer = FXMLLoader.load(getClass().getResource("fxmlAssets/addCustomerScreen.fxml"));
 
             BorderPane border = Main.getRoot();
             border.setCenter(addCustomer);
-        }
-        catch (IOException e){
-            e.printStackTrace();
-        }
-
-    }
-
-    @FXML
-    void switcheditCustomer(ActionEvent event){
-        try{
-            AnchorPane editCustomer = FXMLLoader.load(getClass().getResource("editCustomerScreen.fxml"));
-
-            BorderPane border = Main.getRoot();
-            border.setCenter(editCustomer);
         }
         catch (IOException e){
             e.printStackTrace();
@@ -398,6 +396,17 @@ public class MyMenuController {
         }
 
     }
+    @FXML
+    void switchCreateServiceOrder(ActionEvent event){
+        try{
+            AnchorPane pane = FXMLLoader.load(getClass().getResource("fxmlAssets/createServiceOrder.fxml"));
+            BorderPane borderPane = Main.getRoot();
+            borderPane.setCenter(pane);
+        }catch(IOException e){
+            e.printStackTrace();
+        }
+    }
+
     @FXML
     void switchManageEmployees(ActionEvent event){
         try{

@@ -64,7 +64,7 @@ public class viewCustomerController {
         ResultSet rs = psmt.executeQuery();
         ObservableList<Customer> customers = FXCollections.observableArrayList();
         while(rs.next()){
-            final Customer c = new Customer();
+            Customer c = new Customer();
             c.setCustomerId(rs.getInt("CUSTOMER_ID"));
             c.setCusFirstname(rs.getString("CUS_FIRSTNAME"));
             c.setCusLastname(rs.getString("CUS_LASTNAME"));
@@ -88,9 +88,13 @@ public class viewCustomerController {
         int id = tblcustomer.getSelectionModel().getSelectedIndex()+1;
         Connection connection = DbHelper.getInstance().getConnection();
         String sql = "UPDATE CUSTOMER SET CUS_STATUS_ID = 2 WHERE CUSTOMER_ID= "+id;
-        PreparedStatement psmt = connection.prepareStatement(sql);
-        psmt.execute();
-        psmt.close();
+        try(PreparedStatement psmt = connection.prepareStatement(sql)) {
+            psmt.execute();
+            psmt.close();
+
+
+        }
+
         initialize();
     }
 

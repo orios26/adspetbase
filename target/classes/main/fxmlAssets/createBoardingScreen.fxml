@@ -11,13 +11,13 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="custompanes" stylesheets="@../../../../../target/classes/main/fx.css" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.createBoardingApptController">
    <children>
-      <ComboBox fx:id="petInfo" layoutX="14.0" layoutY="78.0" prefHeight="25.0" prefWidth="174.0" promptText="Pet Info" />
-      <DatePicker fx:id="arrivalDate" layoutX="14.0" layoutY="117.0" promptText="Arrival Date" />
-      <DatePicker fx:id="departureDate" layoutX="210.0" layoutY="117.0" promptText="Departure Date" />
-      <ComboBox fx:id="kennelSelect" layoutX="14.0" layoutY="160.0" prefHeight="25.0" prefWidth="174.0" promptText="Kennel Select" />
-      <TextArea fx:id="specialCareInstr" layoutX="15.0" layoutY="195.0" prefHeight="150.0" prefWidth="485.0" promptText="Special Care Instruction" />
-      <Button fx:id="saveButton" layoutX="14.0" layoutY="361.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="89.0" stylesheets="@../../../../../target/classes/main/fx.css" text="Save" />
-      <Button fx:id="clearButton" layoutX="111.0" layoutY="361.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="89.0" text="Clear" />
+      <ComboBox fx:id="petInfo" layoutX="14.0" layoutY="111.0" prefHeight="25.0" prefWidth="174.0" promptText="Pet Info" />
+      <DatePicker fx:id="arrivalDate" layoutX="14.0" layoutY="148.0" promptText="Arrival Date" />
+      <DatePicker fx:id="departureDate" layoutX="210.0" layoutY="148.0" promptText="Departure Date" />
+      <ComboBox fx:id="kennelSelect" layoutX="14.0" layoutY="188.0" prefHeight="25.0" prefWidth="174.0" promptText="Kennel Select" />
+      <TextArea fx:id="specialCareInst" layoutX="14.0" layoutY="221.0" prefHeight="150.0" prefWidth="720.0" promptText="Special Care Instruction" />
+      <Button fx:id="saveButton" layoutX="15.0" layoutY="379.0" mnemonicParsing="false" onAction="#saveCommand" prefHeight="25.0" prefWidth="89.0" stylesheets="@../../../../../target/classes/main/fx.css" text="Save" />
+      <Button fx:id="clearButton" layoutX="112.0" layoutY="379.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="89.0" text="Clear" />
       <Pane layoutX="15.0" layoutY="14.0" prefHeight="200.0" prefWidth="200.0" styleClass="backgroundpane">
          <children>
             <Label layoutX="24.0" layoutY="9.0" prefHeight="32.0" prefWidth="479.0" styleClass="customheads" stylesheets="@../../../../../target/classes/main/fx.css" text="Create Boarding Appointment">
@@ -27,5 +27,7 @@
             </Label>
          </children>
       </Pane>
+      <ComboBox fx:id="customerInfo" layoutX="14.0" layoutY="76.0" prefHeight="25.0" prefWidth="174.0" promptText="Customer Info" />
+      <ComboBox fx:id="employeeSelect" layoutX="210.0" layoutY="188.0" prefHeight="25.0" prefWidth="174.0" promptText="Employee Select" />
    </children>
 </AnchorPane>
