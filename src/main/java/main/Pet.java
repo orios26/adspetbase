@@ -21,6 +21,45 @@ public class Pet {
     private byte[] petPhoto;
     private byte[] petFormPdf;
     private int petStatusId;
+    private String petBreed;
+    private String petColor;
+    private String petStatus;
+    private String ownerFirst;
+    private String ownerLast;
+
+    public String getPetBreed() {
+        return petBreed;
+    }
+
+    public void setPetBreed(String petBreed) {
+        this.petBreed = petBreed;
+    }
+
+    public String getPetColor() {
+        return petColor;
+    }
+
+    public void setPetColor(String petColor) {
+        this.petColor = petColor;
+    }
+
+    public String getPetStatus() {
+        return petStatus;
+    }
+
+    public void setPetStatus(String petStatus) {
+        this.petStatus = petStatus;
+    }
+
+    public String getPetWeight() {
+        return petWeight;
+    }
+
+    public void setPetWeight(String petWeight) {
+        this.petWeight = petWeight;
+    }
+
+    private String petWeight;
 
     @Id
     @Column(name = "PET_ID", nullable = false)
@@ -41,9 +80,6 @@ public class Pet {
     public void setPetName(String petName) {
         this.petName = petName;
     }
-
-    @Basic
-    @Column(name = "PET_DOB", nullable = false)
     public Date getPetDob() {
         return petDob;
     }
@@ -134,6 +170,22 @@ public class Pet {
 
     public void setPetStatusId(int petStatusId) {
         this.petStatusId = petStatusId;
+    }
+
+    public String getOwnerFirst() {
+        return ownerFirst;
+    }
+
+    public void setOwnerFirst(String ownerFirst) {
+        this.ownerFirst = ownerFirst;
+    }
+
+    public String getOwnerLast() {
+        return ownerLast;
+    }
+
+    public void setOwnerLast(String ownerLast) {
+        this.ownerLast = ownerLast;
     }
 
     @Override

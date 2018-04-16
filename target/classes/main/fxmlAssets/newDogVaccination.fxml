@@ -8,42 +8,46 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="371.0" prefWidth="600.0" styleClass="custompanes" stylesheets="@../fx.css" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.NewClientScreenController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="371.0" prefWidth="600.0" styleClass="custompanes" stylesheets="@../fx.css" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.newDogVaccinationController">
    <children>
-      <Pane layoutX="16.0" layoutY="113.0" prefHeight="25.0" prefWidth="133.0" style="-fx-background-color: grey;">
+      <Pane layoutX="16.0" layoutY="113.0" prefHeight="25.0" prefWidth="140.0" style="-fx-background-color: grey;">
          <children>
-            <Pane layoutX="-46.0" layoutY="-4.0" prefHeight="32.0" prefWidth="133.0" />
+            <Pane layoutX="-46.0" layoutY="-4.0" prefHeight="32.0" prefWidth="133.0">
+               <children>
+                  <Label layoutX="55.0" layoutY="4.0" prefHeight="20.0" prefWidth="70.0" text="Bordatella:">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+               </children></Pane>
          </children>
       </Pane>
-      <Pane layoutX="18.0" layoutY="168.0" prefHeight="25.0" prefWidth="133.0" style="-fx-background-color: grey;" />
-      <Pane layoutX="19.0" layoutY="221.0" prefHeight="25.0" prefWidth="133.0" style="-fx-background-color: grey;" />
-      <Label layoutX="37.0" layoutY="115.0" prefHeight="20.0" prefWidth="70.0" text="Bordatella:">
-         <font>
-            <Font size="14.0" />
-         </font>
-      </Label>
-      <Label layoutX="37.0" layoutY="170.0" prefHeight="20.0" prefWidth="122.0" text="Canine Influenza:">
-         <font>
-            <Font size="14.0" />
-         </font>
-      </Label>
+      <Pane layoutX="18.0" layoutY="168.0" prefHeight="25.0" prefWidth="140.0" style="-fx-background-color: grey;">
+         <children>
+            <Label layoutX="6.0" layoutY="3.0" prefHeight="20.0" prefWidth="122.0" text="Canine Influenza:">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children></Pane>
+      <Pane layoutX="19.0" layoutY="221.0" prefHeight="25.0" prefWidth="140.0" style="-fx-background-color: grey;" />
       <Label layoutX="36.0" layoutY="223.0" prefHeight="17.0" prefWidth="47.0" text="Rabies:">
          <font>
             <Font size="14.0" />
          </font>
       </Label>
-      <DatePicker layoutX="170.0" layoutY="70.0" prefHeight="25.0" prefWidth="169.0" promptText="Administered" />
-      <DatePicker layoutX="369.0" layoutY="71.0" prefHeight="25.0" prefWidth="169.0" promptText="Renewal" />
-      <DatePicker layoutX="170.0" layoutY="113.0" prefHeight="25.0" prefWidth="169.0" promptText="Administered" />
-      <DatePicker layoutX="369.0" layoutY="113.0" prefHeight="25.0" prefWidth="169.0" promptText="Renewal" />
-      <DatePicker layoutX="170.0" layoutY="167.0" prefHeight="25.0" prefWidth="169.0" promptText="Administered" />
-      <DatePicker layoutX="369.0" layoutY="167.0" prefHeight="25.0" prefWidth="169.0" promptText="Renewal" />
-      <DatePicker layoutX="170.0" layoutY="219.0" prefHeight="25.0" prefWidth="169.0" promptText="Administered" />
-      <DatePicker layoutX="369.0" layoutY="219.0" prefHeight="25.0" prefWidth="169.0" promptText="Renewal" />
+      <DatePicker fx:id="vStart" layoutX="170.0" layoutY="70.0" prefHeight="25.0" prefWidth="169.0" promptText="Administered" />
+      <DatePicker fx:id="vEnd" layoutX="369.0" layoutY="71.0" prefHeight="25.0" prefWidth="169.0" promptText="Renewal" />
+      <DatePicker fx:id="vStart1" layoutX="170.0" layoutY="113.0" prefHeight="25.0" prefWidth="169.0" promptText="Administered" />
+      <DatePicker fx:id="vEnd1" layoutX="369.0" layoutY="113.0" prefHeight="25.0" prefWidth="169.0" promptText="Renewal" />
+      <DatePicker fx:id="vStart2" layoutX="170.0" layoutY="167.0" prefHeight="25.0" prefWidth="169.0" promptText="Administered" />
+      <DatePicker fx:id="vEnd2" layoutX="369.0" layoutY="167.0" prefHeight="25.0" prefWidth="169.0" promptText="Renewal" />
+      <DatePicker fx:id="vStart3" layoutX="170.0" layoutY="219.0" prefHeight="25.0" prefWidth="169.0" promptText="Administered" />
+      <DatePicker fx:id="vEnd3" layoutX="369.0" layoutY="219.0" prefHeight="25.0" prefWidth="169.0" promptText="Renewal" />
       <Separator layoutY="102.0" prefHeight="0.0" prefWidth="600.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="102.0" />
       <Separator layoutY="153.0" prefHeight="3.0" prefWidth="600.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="153.0" />
       <Separator layoutY="207.0" prefHeight="3.0" prefWidth="600.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="207.0" />
-      <Button fx:id="done" layoutX="18.0" layoutY="302.0" mnemonicParsing="false" onAction="#processDone" prefHeight="25.0" prefWidth="61.0" text="Done" />
+      <Button fx:id="done" layoutX="18.0" layoutY="302.0" mnemonicParsing="false" onAction="#getVaccData" prefHeight="25.0" prefWidth="61.0" text="Done" />
       <Button fx:id="cancelButton" layoutX="107.0" layoutY="302.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="61.0" text="Cancel" />
       <Separator layoutY="266.0" prefHeight="3.0" prefWidth="600.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="266.0" />
       <AnchorPane layoutX="16.0" layoutY="14.0" prefHeight="50.0" prefWidth="718.0" styleClass="backgroundpane">
@@ -55,10 +59,9 @@
             </Label>
          </children>
       </AnchorPane>
-      <Pane layoutX="313.0" layoutY="219.0" prefHeight="25.0" prefWidth="147.0" />
-      <Pane layoutX="15.0" layoutY="71.0" prefHeight="25.0" prefWidth="133.0" style="-fx-background-color: grey;">
+      <Pane layoutX="15.0" layoutY="71.0" prefHeight="25.0" prefWidth="140.0" style="-fx-background-color: grey;">
          <children>
-            <Label layoutX="39.0" layoutY="4.0" prefHeight="17.0" prefWidth="61.0" text="DHLPPC:">
+            <Label layoutX="9.0" layoutY="3.0" prefHeight="17.0" prefWidth="61.0" text="DHLPPC:">
                <font>
                   <Font size="14.0" />
                </font>

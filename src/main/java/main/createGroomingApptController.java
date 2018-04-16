@@ -3,6 +3,7 @@ package main;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
+import javafx.scene.control.Alert;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.TextArea;
 import jfxtras.scene.control.LocalDateTimeTextField;
@@ -70,10 +71,13 @@ public class createGroomingApptController {
     }
 
     private void petFilter() throws SQLException {
-        int i = customerSelect.getSelectionModel().getSelectedIndex()+1;
+        String customerID = customerSelect.getValue();
+        String []c;
+        c = customerID.split("_");
+        CID = Integer.parseInt(c[0]);
         String sql = "SELECT PET.PET_ID, PET.PET_NAME FROM PET " +
                 "JOIN PET_OWNER ON PET.PET_ID = PET_OWNER.PET_ID " +
-                "JOIN CUSTOMER ON PET_OWNER.CUSTOMER_ID = CUSTOMER.CUSTOMER_ID WHERE CUSTOMER.CUSTOMER_ID ="+i;
+                "JOIN CUSTOMER ON PET_OWNER.CUSTOMER_ID = CUSTOMER.CUSTOMER_ID WHERE CUSTOMER.CUSTOMER_ID ="+CID;
         Connection connection = DbHelper.getInstance().getConnection();
         PreparedStatement preparedStatement = connection.prepareStatement(sql);
         ResultSet resultSet = preparedStatement.executeQuery();
@@ -86,16 +90,13 @@ public class createGroomingApptController {
 
     public void generateGroomingAppt()throws SQLException{
         //getting IDS from comboboxes
-        String customerID = customerSelect.getValue();
         String employeeID = groomerSelect.getValue();
         String petID = petSelect.getValue();
         String []c,e,p;
         //splitting id from rest of string
-        c = customerID.split("_");
         e = employeeID.split("_");
         p = petID.split("_");
         //converting strings to ints
-        CID = Integer.parseInt(c[0]);
         EID = Integer.parseInt(e[0]);
         PID = Integer.parseInt(p[0]);
         LocalDate date = LocalDate.now();
@@ -119,8 +120,8 @@ public class createGroomingApptController {
         preparedStatement.close();
 
         Connection connection1 = DbHelper.getInstance().getConnection();
-        String orderLineGenerate = "INSERT INTO ORDER_LINE (ORDER_ID, LINE_NAME, ORDER_LINE_STATUS_ID, SERVICE_ID, QUANTITY, EMPLOYEE_ID) " +
-                "VALUES (?,?,?,?,?,?)";
+        String orderLineGenerate = "INSERT INTO ORDER_LINE (ORDER_ID, LINE_NAME, ORDER_LINE_STATUS_ID, SERVICE_ID, QUANTITY, EMPLOYEE_ID, PET_ID) " +
+                "VALUES (?,?,?,?,?,?,?)";
         PreparedStatement preparedStatement1 = connection1.prepareStatement(orderLineGenerate, PreparedStatement.RETURN_GENERATED_KEYS);
         preparedStatement1.setInt(1, OID);
         preparedStatement1.setString(2,"Grooming appt for:  " + p[1]);
@@ -128,6 +129,7 @@ public class createGroomingApptController {
         preparedStatement1.setInt(4,1);
         preparedStatement1.setInt(5,1);
         preparedStatement1.setInt(6,EID);
+        preparedStatement1.setInt(7,PID);
         preparedStatement1.execute();
         ResultSet resultSet1 = preparedStatement1.getGeneratedKeys();
         while (resultSet1.next()){
@@ -156,6 +158,11 @@ public class createGroomingApptController {
         preparedStatement2.close();
         connection2.close();
         System.out.println(GID);
+
+        Alert alert = new Alert(Alert.AlertType.INFORMATION);
+        alert.setTitle("PetBase Update");
+        alert.setHeaderText("Grooming Appt for "+p[1] +" created");
+        alert.setContentText("Grooming Appt for "+p[1] +" created");
     }
 }
 

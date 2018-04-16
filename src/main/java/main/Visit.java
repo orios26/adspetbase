@@ -15,23 +15,6 @@ public class Visit {
     private int visitId;
     private String visitDesc;
     private Timestamp visitCheckIn;
-
-    public Timestamp getVisitCheckIn() {
-        return visitCheckIn;
-    }
-
-    public void setVisitCheckIn(Timestamp visitCheckIn) {
-        this.visitCheckIn = visitCheckIn;
-    }
-
-    public Timestamp getVisitCheckOut() {
-        return visitCheckOut;
-    }
-
-    public void setVisitCheckOut(Timestamp visitCheckOut) {
-        this.visitCheckOut = visitCheckOut;
-    }
-
     private Timestamp visitCheckOut;
     private String petName;
     private String petGender;
@@ -39,6 +22,9 @@ public class Visit {
     private String employeeFirstName;
     private String employeeLastName;
     private String serviceStatus;
+    private String petColor;
+    private String petWeight;
+    private String petStatus;
 
     @Id
     @Column(name = "VISIT_ID", nullable = false)
@@ -108,6 +94,48 @@ public class Visit {
     public void setServiceStatus(String serviceStatus) {
         this.serviceStatus = serviceStatus;
     }
+
+    public Timestamp getVisitCheckIn() {
+        return visitCheckIn;
+    }
+
+    public void setVisitCheckIn(Timestamp visitCheckIn) {
+        this.visitCheckIn = visitCheckIn;
+    }
+
+    public Timestamp getVisitCheckOut() {
+        return visitCheckOut;
+    }
+
+    public void setVisitCheckOut(Timestamp visitCheckOut) {
+        this.visitCheckOut = visitCheckOut;
+    }
+
+    public String getPetColor() {
+        return petColor;
+    }
+
+    public void setPetColor(String petColor) {
+        this.petColor = petColor;
+    }
+
+    public String getPetWeight() {
+        return petWeight;
+    }
+
+    public void setPetWeight(String petWeight) {
+        this.petWeight = petWeight;
+    }
+
+    public String getPetStatus() {
+        return petStatus;
+    }
+
+    public void setPetStatus(String petStatus) {
+        this.petStatus = petStatus;
+    }
+
+
 
 
 

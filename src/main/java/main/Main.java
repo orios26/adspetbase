@@ -17,7 +17,11 @@ public class Main  extends Application{
 
     public static BorderPane root = new BorderPane();
     public static BorderPane getRoot(){return root;}
-    public static int cid,pid,oid,olid;
+    public static int cid,pid,oid,olid, ptid;
+    public static void setPtid(int i){ptid = i;}
+    public static int getPtid(){return ptid;}
+    public static void setCid(int i){cid = i;}
+    public static void setPid(int i){pid = i;}
     public static int getCid(){return cid;}
     public static int getPid(){return pid;}
     public static int getOid(){return oid;}

@@ -15,7 +15,7 @@ import java.time.Period;
 
 
 
-public class addPetController  {
+public class newPetController  {
 
     @FXML // fx:id = "petName"
     private TextField petName;
@@ -50,9 +50,6 @@ public class addPetController  {
     @FXML // fx:id = "petBehavior"
     private ComboBox<String>petBehavior;
 
-    @FXML // fx:id = "ownerInfo"
-    private ComboBox<String>ownerInfo;
-
     @FXML // fx:id = "saveButton"
     private Button saveButton;
 
@@ -67,6 +64,7 @@ public class addPetController  {
 
     private int ptID;
     private int petId;
+    private String petNamePass;
 
     public void initialize()throws SQLException{
         ObservableList<String> type = FXCollections.observableArrayList();
@@ -83,7 +81,6 @@ public class addPetController  {
         fixed.add("Y");
         fixed.add("N");
         petFixed.setItems(fixed);
-
 
         String sql1 = "SELECT CLR_DESC FROM CLR";
         Connection connection1 = DbHelper.getInstance().getConnection();
@@ -112,49 +109,36 @@ public class addPetController  {
         psmt2.close();
         connection2.close();
 
-        String sql3 = "SELECT CUSTOMER_ID,CUS_LASTNAME, CUS_FIRSTNAME FROM CUSTOMER";
-        Connection connection3 = DbHelper.getInstance().getConnection();
-        PreparedStatement psmt3 = connection3.prepareStatement(sql3);
-        ResultSet rs3 = psmt3.executeQuery();
-        ObservableList<String>info = FXCollections.observableArrayList();
-        while (rs3.next()){
-            String s = rs3.getInt("CUSTOMER_ID")+"-" + rs3.getString("CUS_LASTNAME")+"-" + rs3.getString("CUS_FIRSTNAME");
-            info.add(s);
-        }
-        ownerInfo.setItems(info);
-        rs3.close();
-        psmt3.close();
-        connection3.close();
         breedFinder();
     }
 
     public void breedFinder()throws SQLException{
         petType.getSelectionModel().selectedItemProperty().addListener((observable, oldValue, newValue) ->{
             ptID = petType.getSelectionModel().getSelectedIndex()+1;
-        try {
-            String sql = "SELECT BREED_ID, BREED_NAME FROM BREED WHERE PET_TYPE_ID =" + ptID;
-            Connection connection = DbHelper.getInstance().getConnection();
-            PreparedStatement psmt = connection.prepareStatement(sql);
-            ResultSet rs = psmt.executeQuery();
-            ObservableList<String> breed = FXCollections.observableArrayList();
-            while (rs.next()) {
-                breed.add(rs.getString("BREED_ID")+"_"+rs.getString("BREED_NAME"));
+            try {
+                String sql = "SELECT BREED_ID, BREED_NAME FROM BREED WHERE PET_TYPE_ID =" + ptID;
+                Connection connection = DbHelper.getInstance().getConnection();
+                PreparedStatement psmt = connection.prepareStatement(sql);
+                ResultSet rs = psmt.executeQuery();
+                ObservableList<String> breed = FXCollections.observableArrayList();
+                while (rs.next()) {
+                    breed.add(rs.getString("BREED_ID")+"_"+rs.getString("BREED_NAME"));
+                }
+                petBreed.setItems(breed);
+                petBreed2.setItems(breed);
+                psmt.close();
+                connection.close();
+                rs.close();
+            }catch (SQLException e){
+                e.printStackTrace();
             }
-            petBreed.setItems(breed);
-            petBreed2.setItems(breed);
-            psmt.close();
-            connection.close();
-            rs.close();
-        }catch (SQLException e){
-            e.printStackTrace();
-        }
         });
 
     }
 
     public void saveCommand() throws SQLException {
-       String s = petBreed.getValue();
-       String s1 = petBreed2.getValue();
+        String s = petBreed.getValue();
+        String s1 = petBreed2.getValue();
         String [] brID;
         brID = s.split("_");
         String [] br1ID;
@@ -213,7 +197,6 @@ public class addPetController  {
         }
         p.close();
         connection4.close();
-        resultSet2.close();
 
         String sql3 = "INSERT INTO PET_BREED(PET_ID,PET_BREED_CODE,PET_DESCRIPTION,BREED_ID) VALUES (?,?,?,?)";
         Connection connection2 = DbHelper.getInstance().getConnection();
@@ -251,10 +234,8 @@ public class addPetController  {
         cp.close();
         connection5.close();
 
-        String owner = ownerInfo.getValue();
-        String [] ownerId = owner.split("-");
-        int i = Integer.parseInt(ownerId[0]);
-        System.out.println(i);
+       // int i = newCustomerController.getCID();
+        int i = Main.getCid();
 
         String petOwnerInsert = "INSERT INTO PET_OWNER(PET_ID, CUSTOMER_ID) VALUES (?,?)";
         Connection connection6 = DbHelper.getInstance().getConnection();
@@ -262,7 +243,7 @@ public class addPetController  {
         preparedStatement3.setInt(1,petId);
         preparedStatement3.setInt(2,i);
         preparedStatement3.execute();
-        System.out.println(i);
+        System.out.println("CID: "+i);
 
         String petWeightHist = "INSERT INTO PET_WEIGHT_HIST(PET_ID, WEIGHT_DATE, WEIGHT) VALUES (?,?,?)";
         Connection connection7 =DbHelper.getInstance().getConnection();
@@ -271,8 +252,6 @@ public class addPetController  {
         preparedStatement4.setDate(2,Date.valueOf(LocalDate.now()));
         preparedStatement4.setInt(3,Integer.parseInt(petWeightInsert.getText()));
         preparedStatement4.execute();
-        connection7.close();
-        preparedStatement4.close();
 
         String petB = "INSERT INTO PET_BEHAVIOR(PET_ID, BEHAVIOR_ID, PET_BEHAVIOR_STARTDATE) VALUES (?,?,?)";
         Connection connection8 = DbHelper.getInstance().getConnection();
@@ -289,15 +268,21 @@ public class addPetController  {
         alert.setHeaderText("PET ADDED");
         alert.setContentText(petName.getText() + " has been added to PetBase");
         alert.showAndWait();
+        petNamePass = petName.getText();
+
+        Main.setPtid(ptID);
+        Main.setPid(petId);
+
 
         try {
-            AnchorPane pane = FXMLLoader.load(getClass().getResource("fxmlAssets/addPetScreen.fxml"));
+            AnchorPane pane = FXMLLoader.load(getClass().getResource("fxmlAssets/newPetMedicationScreen.fxml"));
             BorderPane borderPane = Main.getRoot();
             borderPane.setCenter(pane);
         }catch (IOException e){
             e.printStackTrace();
         }
     }
+
 
     public int petWeightGrpChecker(int i){
         if( i >= 0 && i <= 20 ){return 1;}
@@ -306,5 +291,11 @@ public class addPetController  {
         if(i >= 60 && i <= 99){return 4;}
         else {return 5;}
     }
+
+    public int getPetId(){return petId;}
+
+    public String getPetNamePass(){return petNamePass;}
+
+    public int getPtID(){return ptID;}
 
 }

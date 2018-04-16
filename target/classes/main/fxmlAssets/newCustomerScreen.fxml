@@ -1,42 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.ComboBox?>
-<?import javafx.scene.control.DatePicker?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.Separator?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="custompanes" stylesheets="@../../../../../target/classes/main/fx.css" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.NewClientScreenController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="395.0" prefWidth="615.0" styleClass="custompanes" stylesheets="@../../../../../target/classes/main/fx.css" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.newCustomerController">
    <children>
-      <TextField layoutX="24.0" layoutY="73.0" promptText="Owner First" />
-      <TextField layoutX="186.0" layoutY="73.0" promptText="Owner Last" />
-      <DatePicker layoutX="353.0" layoutY="73.0" prefHeight="25.0" prefWidth="149.0" promptText="Date Signed" />
-      <TextField layoutX="24.0" layoutY="108.0" prefHeight="25.0" prefWidth="311.0" promptText="Owner Email" />
-      <TextField layoutX="26.0" layoutY="162.0" promptText="Street Address" />
-      <TextField layoutX="188.0" layoutY="162.0" promptText="City " />
-      <ComboBox layoutX="355.0" layoutY="162.0" prefHeight="25.0" prefWidth="73.0" promptText="State" />
-      <TextField layoutX="26.0" layoutY="199.0" promptText="Zip Code" />
-      <ComboBox layoutX="188.0" layoutY="199.0" prefHeight="25.0" prefWidth="87.0" promptText="Country" />
-      <TextField layoutX="28.0" layoutY="256.0" promptText="Home Phone" />
-      <TextField layoutX="28.0" layoutY="290.0" promptText="Alternative Phone" />
-      <Separator layoutX="2.0" layoutY="142.0" prefHeight="3.0" prefWidth="600.0" AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="1.0" AnchorPane.topAnchor="142.0" />
-      <Label layoutX="26.0" layoutY="14.0" prefHeight="17.0" prefWidth="254.0" text="New Client Information">
-         <font>
-            <Font size="18.0" />
-         </font>
-      </Label>
-      <Button fx:id="newCustomerButton" layoutX="22.0" layoutY="351.0" mnemonicParsing="false" onAction="#storeandNext" prefHeight="25.0" prefWidth="149.0" text="Next" />
-      <Button fx:id="cancelButton" layoutX="190.0" layoutY="351.0" mnemonicParsing="false" onAction="#closeButtonAction" prefHeight="25.0" prefWidth="143.0" text="Cancel" />
-      <Separator layoutX="2.0" layoutY="222.0" prefHeight="27.0" prefWidth="700.0" AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="1.0" AnchorPane.topAnchor="222.0" />
-      <Separator layoutX="2.0" layoutY="330.0" prefHeight="3.0" prefWidth="600.0" AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="1.0" AnchorPane.topAnchor="330.0" />
-      <Pane layoutX="13.0" layoutY="16.0" prefHeight="71.0" prefWidth="678.0" styleClass="backgroundpane">
+      <Pane layoutX="20.0" layoutY="14.0" prefHeight="66.0" prefWidth="575.0" styleClass="backgroundpane" stylesheets="@../../../../../target/classes/main/fx.css">
          <children>
-            <Label layoutX="14.0" layoutY="9.0" prefHeight="25.0" prefWidth="346.0" styleClass="customheads" text="New Customer Information" />
-         </children>
-      </Pane>
+            <Label layoutX="126.0" layoutY="11.0" prefHeight="35.0" prefWidth="324.0" styleClass="customheads" stylesheets="@../../../../../target/classes/main/fx.css" text="Add Customer Information">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="50.0" fitWidth="72.0" layoutX="36.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../dog-paw.png" />
+               </image>
+            </ImageView>
+         </children></Pane>
+      <TextField fx:id="firstName" layoutX="24.0" layoutY="84.0" prefHeight="25.0" prefWidth="139.0" promptText="First Name" styleClass="text-field" stylesheets="@../../../../../target/classes/main/fx.css" />
+      <TextField fx:id="lastName" layoutX="171.0" layoutY="84.0" prefHeight="25.0" prefWidth="139.0" promptText="Last Name" styleClass="text-field" stylesheets="@../../../../../target/classes/main/fx.css" />
+      <TextField fx:id="addressLine" layoutX="24.0" layoutY="125.0" prefHeight="25.0" prefWidth="139.0" promptText="Address Line" styleClass="text-field" stylesheets="@../../../../../target/classes/main/fx.css" />
+      <TextField fx:id="city" layoutX="171.0" layoutY="125.0" prefHeight="25.0" prefWidth="139.0" promptText="City" styleClass="text-field" stylesheets="@../../../../../target/classes/main/fx.css" />
+      <ComboBox fx:id="state" layoutX="313.0" layoutY="125.0" prefHeight="25.0" prefWidth="108.0" promptText="State" />
+      <TextField fx:id="zip" layoutX="431.0" layoutY="125.0" prefHeight="25.0" prefWidth="101.0" promptText="Zip" styleClass="text-field" stylesheets="@../../../../../target/classes/main/fx.css" />
+      <ComboBox fx:id="country" layoutX="542.0" layoutY="125.0" prefHeight="25.0" prefWidth="194.0" promptText="Country" />
+      <TextField fx:id="cusPhone" layoutX="24.0" layoutY="182.0" prefHeight="25.0" prefWidth="139.0" promptText="Phone" styleClass="text-field" stylesheets="@../../../../../target/classes/main/fx.css" />
+      <TextField fx:id="email" layoutX="174.0" layoutY="182.0" prefHeight="25.0" prefWidth="187.0" promptText="Email" stylesheets="@../../../../../target/classes/main/fx.css" />
+      <TextField fx:id="cusPhoneAlt" layoutX="24.0" layoutY="224.0" prefHeight="25.0" prefWidth="139.0" promptText="Alternate Phone" styleClass="text-field" stylesheets="@../../../../../target/classes/main/fx.css" />
+      <TextField fx:id="cusEmgContact" layoutX="24.0" layoutY="268.0" prefHeight="25.0" prefWidth="139.0" promptText="Emergency Contact" styleClass="text-field" stylesheets="@../../../../../target/classes/main/fx.css" />
+      <TextField fx:id="cusEmgPhone" layoutX="174.0" layoutY="268.0" prefHeight="25.0" prefWidth="139.0" promptText="Contact Phone" styleClass="text-field" stylesheets="@../../../../../target/classes/main/fx.css" />
+      <Button fx:id="save" layoutX="24.0" layoutY="317.0" mnemonicParsing="false" onAction="#saveCommand" prefHeight="25.0" prefWidth="93.0" stylesheets="@../../../../../target/classes/main/fx.css" text="Next">
+         <padding>
+            <Insets left="1.0" />
+         </padding></Button>
+      <Button layoutX="127.0" layoutY="317.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="93.0" stylesheets="@../../../../../target/classes/main/fx.css" text="Cancel" />
+      <Separator layoutX="4.0" layoutY="166.0" prefHeight="3.0" prefWidth="750.0" AnchorPane.leftAnchor="4.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="166.0" />
    </children>
 </AnchorPane>

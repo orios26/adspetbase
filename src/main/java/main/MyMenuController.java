@@ -332,6 +332,54 @@ public class MyMenuController {
     }
 
     @FXML
+    void switchAddMedication(ActionEvent event){
+        try{
+            AnchorPane pane = FXMLLoader.load(getClass().getResource("fxmlAssets/addMedicationScreen.fxml"));
+
+            BorderPane border = Main.getRoot();
+            border.setCenter(pane);
+        }
+        catch (IOException e){
+            e.printStackTrace();
+        }
+    }
+    @FXML
+    void switchEditMedication(ActionEvent event){
+        try{
+            AnchorPane pane = FXMLLoader.load(getClass().getResource("fxmlAssets/editPetMedScreen.fxml"));
+
+            BorderPane border = Main.getRoot();
+            border.setCenter(pane);
+        }
+        catch (IOException e){
+            e.printStackTrace();
+        }
+    }
+
+    @FXML
+    void switchAddVaccination(ActionEvent event){
+        try{
+            AnchorPane pane = FXMLLoader.load(getClass().getResource("fxmlAssets/addPetVaccination.fxml"));
+            BorderPane borderPane = Main.getRoot();
+            borderPane.setCenter(pane);
+        }catch (IOException e){
+            e.printStackTrace();
+        }
+    }
+
+    @FXML
+    void switchAddBehavior(ActionEvent event){
+        try{
+            AnchorPane pane = FXMLLoader.load(getClass().getResource("fxmlAssets/addPetBehavior.fxml"));
+            BorderPane borderPane = Main.getRoot();
+            borderPane.setCenter(pane);
+
+        }catch (IOException e){
+            e.printStackTrace();
+        }
+    }
+
+    @FXML
     void switchviewGrooming(ActionEvent event){
         try{
             AnchorPane pane = FXMLLoader.load(getClass().getResource("fxmlAssets/viewGroomingAppointments.fxml"));
