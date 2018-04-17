@@ -169,7 +169,7 @@ public class editMedicationController {
         alert.setContentText("Medication for "+petName+" has been updated");
         alert.showAndWait();
         try{
-            AnchorPane pane = FXMLLoader.load(getClass().getResource("editMedicationScreen.fxml"));
+            AnchorPane pane = FXMLLoader.load(getClass().getResource("fxmlAssets/editMedicationScreen.fxml"));
             BorderPane borderPane = Main.getRoot();
             borderPane.setCenter(pane);
         }catch (IOException e){e.printStackTrace();}
@@ -177,7 +177,7 @@ public class editMedicationController {
 
     public void clearScreen(ActionEvent event){
         try{
-            AnchorPane pane = FXMLLoader.load(getClass().getResource("editMedicationScreen.fxml"));
+            AnchorPane pane = FXMLLoader.load(getClass().getResource("fxmlAssets/editMedicationScreen.fxml"));
             BorderPane borderPane =Main.getRoot();
             borderPane.setCenter(pane);
         }catch (IOException e){e.printStackTrace();}

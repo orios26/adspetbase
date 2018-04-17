@@ -11,7 +11,7 @@ import javafx.scene.control.cell.PropertyValueFactory;
 import java.sql.*;
 import java.text.DecimalFormat;
 
-public class createServiceOrderController {
+public class editServiceOrder {
 
     private int OID, OLID, CID, PID, EID, SID, PWID, KID, BID;
     private String petName;
@@ -24,7 +24,7 @@ public class createServiceOrderController {
     @FXML
     TableColumn<OrderLine, Integer>orderLineId;
     @FXML
-    TableColumn<OrderLine, String>lineName;
+    TableColumn<OrderLine, String>price;
     @FXML
     TableColumn<OrderLine, String>service;
     @FXML
@@ -32,9 +32,6 @@ public class createServiceOrderController {
 
     @FXML
     TableColumn<OrderLine, String>employee;
-
-    @FXML
-    TableColumn<OrderLine, String>price;
 
     @FXML
     TableColumn<OrderLine, Date>startDate;
@@ -48,11 +45,13 @@ public class createServiceOrderController {
     @FXML // fx:id = "petInfo"
     private ComboBox<String>petInfo;
 
+
     @FXML //fx:id ="employeeInfo"
     private ComboBox<String>employeeInfo;
 
     @FXML //fx:id ="serviceSelect"
     private ComboBox<String>serviceSelect;
+
 
     @FXML //fx:id ="kennelSelect"
     private ComboBox<String>kennelSelect;
@@ -60,11 +59,20 @@ public class createServiceOrderController {
     @FXML //fx:id ="addLine"
     private Button addLine;
 
-    @FXML //fx:id ="generateButton"
-    private Button generateButoon;
+    @FXML //fx:id ="updateLine"
+    private Button updateLine;
 
-    @FXML // fx:id ="serviceLineName"
-    private TextField serviceLineName;
+    @FXML //fx:id ="updateOrder"
+    private Button updateOrder;
+
+    @FXML //fx:id ="orderStatus"
+    private ComboBox<String>orderStatus;
+
+    @FXML //fx:id ="orderNumber"
+    private ComboBox<Integer>orderNumber;
+
+    @FXML //fx:id ="orderLineNumber"
+    private ComboBox<Integer>orderLineNumber;
 
     @FXML //fx:id = "startDatePicker"
     private DatePicker startDatePicker;
@@ -72,14 +80,10 @@ public class createServiceOrderController {
     @FXML //fx:id = "endDatePicker"
     private DatePicker endDatePicker;
 
-    @FXML //fx:id = "estimatedTotal"
-    private TextField estimatedTotal;
-
 
     public void initialize()throws SQLException{
         orderId.setCellValueFactory(new PropertyValueFactory<OrderLine, Integer>("orderId"));
         orderLineId.setCellValueFactory(new PropertyValueFactory<OrderLine, Integer>("orderLineId"));
-        //lineName.setCellValueFactory(new PropertyValueFactory<OrderLine, String>("lineName"));
         pet.setCellValueFactory(new PropertyValueFactory<OrderLine, String>("cusLastname"));
         service.setCellValueFactory(new PropertyValueFactory<OrderLine, String>("serviceName"));
         employee.setCellValueFactory(new PropertyValueFactory<OrderLine, String>("employeeLastname"));
@@ -87,11 +91,12 @@ public class createServiceOrderController {
         startDate.setCellValueFactory(new PropertyValueFactory<OrderLine, Date>("startDate"));
         endDate.setCellValueFactory(new PropertyValueFactory<OrderLine, Date>("endDate"));
         addLine.setDisable(true);
+        updateLine.setDisable(true);
         serviceSelect.setDisable(true);
         petInfo.setDisable(true);
         employeeInfo.setDisable(true);
         kennelSelect.setDisable(true);
-        estimatedTotal.setEditable(false);
+
 
         String sql = "SELECT CUSTOMER_ID, CUS_LASTNAME, CUS_FIRSTNAME FROM CUSTOMER";
         Connection connection = DbHelper.getInstance().getConnection();
@@ -146,6 +151,16 @@ public class createServiceOrderController {
             String s = rs1.getInt("KENNEL_ID") + "_" + rs1.getString("KENNEL_SIZE");
             kennel.add(s);
         }
+
+        String sql2 = "SELECT ORDER_STATUS FROM ORDER_STATUS";
+        Connection connection4 = DbHelper.getInstance().getConnection();
+        PreparedStatement preparedStatement3 = connection4.prepareStatement(sql2);
+        ResultSet resultSet2 = preparedStatement3.executeQuery();
+        ObservableList<String>status = FXCollections.observableArrayList();
+        while(resultSet2.next()){
+            status.add(resultSet2.getString("ORDER_STATUS"));
+        }
+        orderStatus.setItems(status);
         kennelSelect.setItems(kennel);
         rs1.close();
         psmt1.close();
@@ -153,14 +168,97 @@ public class createServiceOrderController {
 
         customerInfo.getSelectionModel().selectedItemProperty().addListener((observable, oldValue, newValue) -> {
             try {
-                petFilter();
+                orderFinder();
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+        });
+
+        orderNumber.getSelectionModel().selectedItemProperty().addListener((observable, oldValue, newValue) -> {
+            try {
+                loadOrder();
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+        });
+
+        orderLineNumber.getSelectionModel().selectedItemProperty().addListener((observable, oldValue, newValue) -> {
+            try {
+                orderLineDetails();
             } catch (SQLException e) {
                 e.printStackTrace();
             }
         });
 
         serviceSelect.getSelectionModel().selectedItemProperty().addListener((observable, oldValue, newValue) ->
-        kennelCombo());
+                kennelCombo());
+    }
+
+    private void orderDetails()throws  SQLException{
+        String sql = "SELECT _ORDER.ORDER_START, _ORDER.ORDER_END, ORDER_STATUS.ORDER_STATUS FROM _ORDER " +
+                "JOIN ORDER_STATUS ON _ORDER.ORDER_STATUS_ID = ORDER_STATUS.ORDER_STATUS_ID WHERE _ORDER.ORDER_ID ="+OID;
+        Connection connection = DbHelper.getInstance().getConnection();
+        PreparedStatement preparedStatement = connection.prepareStatement(sql);
+        ResultSet resultSet = preparedStatement.executeQuery();
+        while(resultSet.next()){
+            startDatePicker.setValue(resultSet.getDate("ORDER_START").toLocalDate());
+            endDatePicker.setValue(resultSet.getDate("ORDER_END").toLocalDate());
+            orderStatus.setValue(resultSet.getString("ORDER_STATUS"));
+        }
+        preparedStatement.close();
+        connection.close();
+    }
+
+    private void orderFinder()throws SQLException{
+        CID = customerInfo.getSelectionModel().getSelectedIndex()+1;
+        String sql = "SELECT _ORDER.ORDER_ID FROM _ORDER " +
+                "JOIN CUSTOMER ON _ORDER.CUSTOMER_ID = CUSTOMER.CUSTOMER_ID WHERE CUSTOMER.CUSTOMER_ID ="+CID;
+        Connection connection = DbHelper.getInstance().getConnection();
+        PreparedStatement preparedStatement = connection.prepareStatement(sql);
+        ResultSet resultSet = preparedStatement.executeQuery();
+        ObservableList<Integer> orders = FXCollections.observableArrayList();
+        while (resultSet.next()){
+            orders.add(resultSet.getInt("ORDER_ID"));
+        }
+        orderNumber.setItems(orders);
+    }
+
+    private void loadOrder()throws SQLException{
+        OID = orderNumber.getValue();
+        tablePopulate();
+
+        String sql = "SELECT ORDER_LINE_ID FROM ORDER_LINE " +
+                "JOIN _ORDER ON ORDER_LINE.ORDER_ID = _ORDER.ORDER_ID WHERE _ORDER.ORDER_ID ="+OID;
+        Connection connection = DbHelper.getInstance().getConnection();
+        PreparedStatement preparedStatement = connection.prepareStatement(sql);
+        ResultSet resultSet = preparedStatement.executeQuery();
+        ObservableList<Integer>orderLines = FXCollections.observableArrayList();
+        while(resultSet.next()){
+            orderLines.add(resultSet.getInt("ORDER_LINE_ID"));
+        }
+        orderLineNumber.setItems(orderLines);
+        orderDetails();
+    }
+
+    private void orderLineDetails()throws SQLException{
+        OLID = orderLineNumber.getValue();
+        String sql = "SELECT PET.PET_NAME, _SERVICE.SERVICE_NAME, EMPLOYEE.EMPLOYEE_FIRSTNAME, EMPLOYEE.EMPLOYEE_LASTNAME, EMPLOYEE.EMPLOYEE_FIRSTNAME FROM ORDER_LINE " +
+                "JOIN EMPLOYEE ON ORDER_LINE.EMPLOYEE_ID = EMPLOYEE.EMPLOYEE_ID " +
+                "JOIN PET ON ORDER_LINE.PET_ID = PET.PET_ID " +
+                "JOIN _SERVICE ON ORDER_LINE.SERVICE_ID = _SERVICE.SERVICE_ID WHERE ORDER_LINE.ORDER_LINE_ID ="+OLID;
+        Connection connection = DbHelper.getInstance().getConnection();
+        PreparedStatement preparedStatement = connection.prepareStatement(sql);
+        ResultSet resultSet = preparedStatement.executeQuery();
+        while (resultSet.next()){
+            petInfo.setValue(resultSet.getString("PET_NAME"));
+            serviceSelect.setValue(resultSet.getString("SERVICE_NAME"));
+            employeeInfo.setValue(resultSet.getInt("EMPLOYEE_ID")+"_"+resultSet.getString("EMPLOYEE_LASTNAME")+"_"+resultSet.getString("EMPLOYEE_FIRSTNAME"));
+        }
+        petInfo.setDisable(false);
+        serviceSelect.setDisable(false);
+        employeeInfo.setDisable(false);
+        addLine.setDisable(false);
+        updateLine.setDisable(false);
     }
 
 
@@ -229,47 +327,91 @@ public class createServiceOrderController {
             alert.showAndWait();
         }
     }
-    public void generateOrderLine()throws SQLException{
-        //String serviceID = serviceSelect.getValue();
+
+    public void updateOrderLine()throws SQLException{
         String employeeID = employeeInfo.getValue();
         String petID = petInfo.getValue();
         String[]s,e,p;
         e = employeeID.split("_");
-        //s = serviceID.split("_");
         p = petID.split("_");
-        //SID = Integer.parseInt(s[0]);
+        EID = Integer.parseInt(e[0]);
+        PID = Integer.parseInt(p[0]);
+        PWID = Integer.parseInt(p[2]);
+        petName = p[1];
+
+        String update = "UPDATE ORDER_LINE SET PET_ID = ?, SERVICE_ID =?, EMPLOYEE_ID =? WHERE ORDER_LINE_ID ="+OLID;
+        Connection connection = DbHelper.getInstance().getConnection();
+        PreparedStatement preparedStatement = connection.prepareStatement(update);
+        preparedStatement.setInt(1,PID);
+        preparedStatement.setInt(2,serviceSelect.getSelectionModel().getSelectedIndex()+1);
+        preparedStatement.setInt(3,EID);
+        preparedStatement.execute();
+
+        preparedStatement.close();
+        connection.close();
+        Alert alert = new Alert(Alert.AlertType.INFORMATION);
+        alert.setTitle("PetBase update");
+        alert.setHeaderText("Updated Service OrderLine");
+        alert.setContentText("Order Line: " +OLID +" has been updated");
+        alert.showAndWait();
+    }
+
+    public void updateOrder()throws SQLException{
+        String update = "UPDATE _ORDER SET ORDER_START, ORDER_END, ORDER_STATUS_ID WHERE ORDER_ID="+OID;
+        Connection connection = DbHelper.getInstance().getConnection();
+        PreparedStatement preparedStatement = connection.prepareStatement(update);
+        preparedStatement.setDate(1,Date.valueOf(startDatePicker.getValue()));
+        preparedStatement.setDate(2,Date.valueOf(endDatePicker.getValue()));
+        preparedStatement.setInt(3,orderStatus.getSelectionModel().getSelectedIndex()+1);
+        preparedStatement.execute();
+        preparedStatement.close();
+        connection.close();
+        Alert alert = new Alert(Alert.AlertType.INFORMATION);
+        alert.setTitle("PetBase Update");
+        alert.setHeaderText("Updated Service Order");
+        alert.setContentText("Order: "+OID+" has been updated");
+        alert.showAndWait();
+    }
+
+    public void generateOrderLine()throws SQLException{
+
+        String employeeID = employeeInfo.getValue();
+        String petID = petInfo.getValue();
+        String[]s,e,p;
+        e = employeeID.split("_");
+        p = petID.split("_");
         EID = Integer.parseInt(e[0]);
         PID = Integer.parseInt(p[0]);
         PWID = Integer.parseInt(p[2]);
         petName = p[1];
 
         try{
-        String generateOrderLine = "INSERT INTO ORDER_LINE (ORDER_ID, LINE_NAME, ORDER_LINE_STATUS_ID, SERVICE_ID, QUANTITY, EMPLOYEE_ID, PET_ID)" +
-                " VALUES (?,?,?,?,?,?,?)";
-        Connection connection = DbHelper.getInstance().getConnection();
-        PreparedStatement preparedStatement = connection.prepareStatement(generateOrderLine, Statement.RETURN_GENERATED_KEYS);
-        preparedStatement.setInt(1,OID);
-        preparedStatement.setString(2,serviceName);
-        preparedStatement.setInt(3,1);
-        preparedStatement.setInt(4,SID);
-        preparedStatement.setInt(5,1);
-        preparedStatement.setInt(6,EID);
-        preparedStatement.setInt(7,PID);
-        preparedStatement.execute();
-        ResultSet resultSet = preparedStatement.getGeneratedKeys();
-        while (resultSet.next()){
-            OLID = resultSet.getInt(1);
-            System.out.println(OLID);
-        }
-        resultSet.close();
-        preparedStatement.close();
-        connection.close();
-        if(SID >=28 && SID <=32){
-            generateBoaarding();
-            generateKennelReservation();
-        }
-        tablePopulate();
-        kennelSelect.setDisable(true);}catch (SQLException sql){
+            String generateOrderLine = "INSERT INTO ORDER_LINE (ORDER_ID, LINE_NAME, ORDER_LINE_STATUS_ID, SERVICE_ID, QUANTITY, EMPLOYEE_ID, PET_ID)" +
+                    " VALUES (?,?,?,?,?,?,?)";
+            Connection connection = DbHelper.getInstance().getConnection();
+            PreparedStatement preparedStatement = connection.prepareStatement(generateOrderLine, Statement.RETURN_GENERATED_KEYS);
+            preparedStatement.setInt(1,OID);
+            preparedStatement.setString(2,serviceName);
+            preparedStatement.setInt(3,1);
+            preparedStatement.setInt(4,SID);
+            preparedStatement.setInt(5,1);
+            preparedStatement.setInt(6,EID);
+            preparedStatement.setInt(7,PID);
+            preparedStatement.execute();
+            ResultSet resultSet = preparedStatement.getGeneratedKeys();
+            while (resultSet.next()){
+                OLID = resultSet.getInt(1);
+                System.out.println(OLID);
+            }
+            resultSet.close();
+            preparedStatement.close();
+            connection.close();
+            if(SID >=28 && SID <=32){
+                generateBoaarding();
+                generateKennelReservation();
+            }
+            tablePopulate();
+            kennelSelect.setDisable(true);}catch (SQLException sql){
             Alert alert = new Alert(Alert.AlertType.INFORMATION);
             alert.setTitle("PetBase ERROR");
             alert.setHeaderText("Error Creating Service OrderLine");
@@ -277,7 +419,7 @@ public class createServiceOrderController {
             alert.showAndWait();
 
         }
-  }
+    }
 
     public void generateBoaarding() throws SQLException{
         String kennelID = kennelSelect.getValue();
@@ -286,22 +428,22 @@ public class createServiceOrderController {
         KID = Integer.parseInt(k[0]);
 
         try{
-        String generateBoarding = "INSERT INTO BOARDING_APPT (PET_ID, PET_WEIGHT_GRP_ID,BOARDING_APPT_DESC, BOARDING_APPT_CHECK_IN, BOARDING_APPT_CHECK_OUT, ORDER_LINE_ID)" +
-                " VALUES (?,?,?,?,?,?)";
-        Connection connection = DbHelper.getInstance().getConnection();
-        PreparedStatement preparedStatement = connection.prepareStatement(generateBoarding,Statement.RETURN_GENERATED_KEYS);
-        preparedStatement.setInt(1,PID);
-        preparedStatement.setInt(2,petWeightGrpChecker(PWID));
-        preparedStatement.setString(3,"Boarding for " +petName);
-        preparedStatement.setDate(4,Date.valueOf(startDatePicker.getValue()));
-        preparedStatement.setDate(5,Date.valueOf(endDatePicker.getValue()));
-        preparedStatement.setInt(6,OLID);
-        preparedStatement.execute();
-        ResultSet resultSet = preparedStatement.getGeneratedKeys();
-        while(resultSet.next()){
-            BID = resultSet.getInt(1);
-            System.out.println(BID);
-        }
+            String generateBoarding = "INSERT INTO BOARDING_APPT (PET_ID, PET_WEIGHT_GRP_ID,BOARDING_APPT_DESC, BOARDING_APPT_CHECK_IN, BOARDING_APPT_CHECK_OUT, ORDER_LINE_ID)" +
+                    " VALUES (?,?,?,?,?,?)";
+            Connection connection = DbHelper.getInstance().getConnection();
+            PreparedStatement preparedStatement = connection.prepareStatement(generateBoarding,Statement.RETURN_GENERATED_KEYS);
+            preparedStatement.setInt(1,PID);
+            preparedStatement.setInt(2,petWeightGrpChecker(PWID));
+            preparedStatement.setString(3,"Boarding for " +petName);
+            preparedStatement.setDate(4,Date.valueOf(startDatePicker.getValue()));
+            preparedStatement.setDate(5,Date.valueOf(endDatePicker.getValue()));
+            preparedStatement.setInt(6,OLID);
+            preparedStatement.execute();
+            ResultSet resultSet = preparedStatement.getGeneratedKeys();
+            while(resultSet.next()){
+                BID = resultSet.getInt(1);
+                System.out.println(BID);
+            }
         }catch (SQLException e){
             Alert alert = new Alert(Alert.AlertType.INFORMATION);
             alert.setTitle("PetBase ERROR");
@@ -309,9 +451,9 @@ public class createServiceOrderController {
             alert.setContentText("Please Validate Information Entered");
             alert.showAndWait();
         }
-  }
+    }
 
-  public void generateKennelReservation()throws SQLException{
+    public void generateKennelReservation()throws SQLException{
         try {
             String kennelReservation = "INSERT INTO KENNEL_RESERVATION(BOARDING_APPT_ID,KENNEL_ID,KENNEL_RSVP_DESC,KENNEL_RSVP_START_DATE,KENNEL_RSVP_END_DATE) VALUES (?,?,?,?,?)";
             Connection connection = DbHelper.getInstance().getConnection();
@@ -329,7 +471,7 @@ public class createServiceOrderController {
             alert.setContentText("Please Validate Information Entered");
             alert.showAndWait();
         }
-  }
+    }
 
     public int petWeightGrpChecker(int i){
         if( i >= 0 && i <= 20 ){return 1;}
@@ -366,6 +508,5 @@ public class createServiceOrderController {
             orders.add(order);
         }
         ordertbl.setItems(orders);
-        estimatedTotal.setText("$ " + String.format("%.2f",estimatedPrice));
     }
 }

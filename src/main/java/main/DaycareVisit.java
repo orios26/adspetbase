@@ -7,8 +7,11 @@ import java.sql.Timestamp;
 @Table(name = "DAYCARE_VISIT", schema = "dbo", catalog = "PetBase")
 public class DaycareVisit {
     private int daycareVisitId;
-    private int visitId;
-    private int daycareRoomId;
+    private String roomName;
+    private int petId;
+    private String petName;
+    private String cusLastname;
+    private String cusFirstname;
     private String daycareVisitDesc;
     private Timestamp daycareVisitStartDate;
     private Timestamp daycareVisitEndDate;
@@ -51,6 +54,46 @@ public class DaycareVisit {
 
     public void setDaycareVisitEndDate(Timestamp daycareVisitEndDate) {
         this.daycareVisitEndDate = daycareVisitEndDate;
+    }
+
+    public String getRoomName() {
+        return roomName;
+    }
+
+    public void setRoomName(String roomName) {
+        this.roomName = roomName;
+    }
+
+    public int getPetId() {
+        return petId;
+    }
+
+    public void setPetId(int petId) {
+        this.petId = petId;
+    }
+
+    public String getPetName() {
+        return petName;
+    }
+
+    public void setPetName(String petName) {
+        this.petName = petName;
+    }
+
+    public String getCusLastname() {
+        return cusLastname;
+    }
+
+    public void setCusLastname(String cusLastname) {
+        this.cusLastname = cusLastname;
+    }
+
+    public String getCusFirstname() {
+        return cusFirstname;
+    }
+
+    public void setCusFirstname(String cusFirstname) {
+        this.cusFirstname = cusFirstname;
     }
 
     @Override

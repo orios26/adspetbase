@@ -105,8 +105,8 @@ public class createGroomingApptController {
         String orderGenerate = "INSERT INTO _ORDER (CUSTOMER_ID, ORDER_START, ORDER_END, ORDER_STATUS_ID) VALUES (?,?,?,?)";
         PreparedStatement preparedStatement = connection.prepareStatement(orderGenerate, PreparedStatement.RETURN_GENERATED_KEYS);
         preparedStatement.setInt(1,CID);
-        preparedStatement.setDate(2, java.sql.Date.valueOf(date));
-        preparedStatement.setDate(3, java.sql.Date.valueOf(date));
+        preparedStatement.setTimestamp(2, Timestamp.valueOf(startTime.getLocalDateTime()));
+        preparedStatement.setTimestamp(3,Timestamp.valueOf(endTime.getLocalDateTime()));
         preparedStatement.setInt(4,1);
         preparedStatement.execute();
 

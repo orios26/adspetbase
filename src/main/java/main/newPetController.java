@@ -17,7 +17,7 @@ import java.time.Period;
 
 public class newPetController  {
 
-    @FXML // fx:id = "petName"
+    @FXML // fx:id = "cusLastname"
     private TextField petName;
 
     @FXML // fx:id = "petMicroChip"
@@ -29,13 +29,13 @@ public class newPetController  {
     @FXML // fx:id = "petType"
     private ComboBox<String>petType;
 
-    @FXML // fx:id = "petGender"
+    @FXML // fx:id = "cusFirstname"
     private ComboBox<String>petGender;
 
     @FXML
     private ComboBox<String>petFixed;
 
-    @FXML // fx:id = "petBreed"
+    @FXML // fx:id = "orderStart"
     private ComboBox<String>petBreed;
 
     @FXML // fx:id = "petBreed2"

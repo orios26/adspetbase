@@ -34,14 +34,14 @@
               <items>
                 <MenuItem mnemonicParsing="false" onAction="#switchAddMedication" text="Add Medication" />
                   <MenuItem mnemonicParsing="false" onAction="#switchEditMedication" text="Edit Medication" />
-                  <MenuItem mnemonicParsing="false" text="View Medication" />
+                  <MenuItem mnemonicParsing="false" onAction="#switchViewPetMed" text="View Medication" />
               </items>
             </Menu>
             <Menu mnemonicParsing="false" text="Vaccination">
               <items>
                 <MenuItem mnemonicParsing="false" onAction="#switchAddVaccination" text="Add Vaccination" />
                   <MenuItem mnemonicParsing="false" text="Edit Vaccination" />
-                  <MenuItem mnemonicParsing="false" text="View Vaccine History" />
+                  <MenuItem mnemonicParsing="false" onAction="#switchViewVaccines" text="View Vaccine History" />
               </items>
             </Menu>
             <Menu mnemonicParsing="false" text="Behavior">
@@ -56,12 +56,14 @@
         <Menu fx:id="Boarding" mnemonicParsing="false" text="Boarding">
             <items>
                 <MenuItem id="createBoarding" fx:id="createBoarding" mnemonicParsing="false" onAction="#switchcreateBoarding" text="Create Appt" />
+            <MenuItem id="createBoarding" mnemonicParsing="false" onAction="#switchEditBoarding" text="Edit Boarding" />
                 <MenuItem id="viewBoarding" fx:id="viewBoarding" mnemonicParsing="false" onAction="#switchviewBoarding" text="View Appts" />
             </items>
         </Menu>
         <Menu fx:id="Grooming" mnemonicParsing="false" text="Grooming">
             <items>
                 <MenuItem id="createGrooming" fx:id="createGrooming" mnemonicParsing="false" onAction="#switchcreateGrooming" text="Create Appt" />
+            <MenuItem id="createGrooming" fx:id="createGrooming1" mnemonicParsing="false" onAction="#switchEditGrooming" text="Edit Appt" />
                 <MenuItem id="viewGrooming" fx:id="viewGrooming" mnemonicParsing="false" onAction="#switchviewGrooming" text="View Appts" />
             </items>
         </Menu>
@@ -75,8 +77,8 @@
         <Menu mnemonicParsing="false" text="Services">
             <items>
                 <MenuItem mnemonicParsing="false" onAction="#switchCreateServiceOrder" text="Create Service Order" />
-                <MenuItem mnemonicParsing="false" text="View Active Orders" />
-                <MenuItem mnemonicParsing="false" text="View Completed Orders" />
+                <MenuItem mnemonicParsing="false" onAction="#switchEditServiceOrder" text="Edit Service Order" />
+                <MenuItem mnemonicParsing="false" onAction="#switchViewServiceOrder" text="View Service Orders" />
             </items>
         </Menu>
         <Menu mnemonicParsing="false" text="Manage">

@@ -11,6 +11,8 @@ public class PetVaccine {
     private int vaccineId;
     private Date petVaccineStartdate;
     private Date petVaccineEnddate;
+    private String petName;
+    private String vaccineName;
 
     @Id
     @Column(name = "PET_VACCINE_ID", nullable = false)
@@ -56,6 +58,21 @@ public class PetVaccine {
 
     public void setVaccineId(int vaccineId) {
         this.vaccineId = vaccineId;
+    }
+
+    public String getPetName() {
+        return petName;
+    }
+    public void setPetName(String petName) {
+        this.petName = petName;
+    }
+
+    public String getVaccineName() {
+        return vaccineName;
+    }
+
+    public void setVaccineName(String vaccineName) {
+        this.vaccineName = vaccineName;
     }
 
     @Override

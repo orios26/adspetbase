@@ -8,6 +8,10 @@ import java.sql.Timestamp;
 public class Order {
     private int orderId;
     private int customerId;
+    private String cusLastname;
+    private String cusFirstname;
+    private String orderStatus;
+    private String cusEmail;
     private Timestamp orderStart;
     private Timestamp orderEnd;
     private int orderStatusId;
@@ -55,6 +59,37 @@ public class Order {
 
     public void setOrderStatusId(int orderStatusId) {
         this.orderStatusId = orderStatusId;
+    }
+
+    public String getCusLastname() {
+        return cusLastname;
+    }
+
+    public void setCusLastname(String cusLastname) {
+        this.cusLastname = cusLastname;
+    }
+
+    public String getCusFirstname() {
+        return cusFirstname;
+    }
+
+    public void setCusFirstname(String cusFirstname) {
+        this.cusFirstname = cusFirstname;
+    }
+
+    public String getOrderStatus() {
+        return orderStatus;
+    }
+
+    public void setOrderStatus(String orderStatus) {
+        this.orderStatus = orderStatus;
+    }
+    public String getCusEmail() {
+        return cusEmail;
+    }
+
+    public void setCusEmail(String cusEmail) {
+        this.cusEmail = cusEmail;
     }
 
     @Override

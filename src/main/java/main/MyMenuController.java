@@ -293,6 +293,18 @@ public class MyMenuController {
     }
 
     @FXML
+    void switchEditBoarding(ActionEvent event){
+        try{
+            AnchorPane pane = FXMLLoader.load(getClass().getResource("fxmlAssets/editBoarding.fxml"));
+            BorderPane border = Main.getRoot();
+            border.setCenter(pane);
+        }
+        catch (IOException e){
+            e.printStackTrace();
+        }
+    }
+
+    @FXML
     void switchcreateGrooming(ActionEvent event){
         try{
             AnchorPane pane = FXMLLoader.load(getClass().getResource("fxmlAssets/createGroomingScreen.fxml"));
@@ -306,9 +318,9 @@ public class MyMenuController {
     }
 
     @FXML
-    void switcheditGrooming(ActionEvent event){
+    void switchEditGrooming(ActionEvent event){
         try{
-            AnchorPane pane = FXMLLoader.load(getClass().getResource("editGroomingScreen.fxml"));
+            AnchorPane pane = FXMLLoader.load(getClass().getResource("fxmlAssets/editGrooming.fxml"));
 
             BorderPane border = Main.getRoot();
             border.setCenter(pane);
@@ -355,11 +367,34 @@ public class MyMenuController {
             e.printStackTrace();
         }
     }
+    @FXML
+    void switchViewPetMed(ActionEvent event){
+        try{
+            AnchorPane pane = FXMLLoader.load(getClass().getResource("fxmlAssets/viewPetMed.fxml"));
+
+            BorderPane border = Main.getRoot();
+            border.setCenter(pane);
+        }
+        catch (IOException e){
+            e.printStackTrace();
+        }
+    }
 
     @FXML
     void switchAddVaccination(ActionEvent event){
         try{
             AnchorPane pane = FXMLLoader.load(getClass().getResource("fxmlAssets/addPetVaccination.fxml"));
+            BorderPane borderPane = Main.getRoot();
+            borderPane.setCenter(pane);
+        }catch (IOException e){
+            e.printStackTrace();
+        }
+    }
+
+    @FXML
+    void switchViewVaccines(ActionEvent event){
+        try{
+            AnchorPane pane = FXMLLoader.load(getClass().getResource("fxmlAssets/viewPetVaccines.fxml"));
             BorderPane borderPane = Main.getRoot();
             borderPane.setCenter(pane);
         }catch (IOException e){
@@ -421,7 +456,7 @@ public class MyMenuController {
     @FXML
     void switchviewDaycareroom(ActionEvent event){
         try{
-            AnchorPane pane = FXMLLoader.load(getClass().getResource("fxmlAssets/tableviewexample.fxml"));
+            AnchorPane pane = FXMLLoader.load(getClass().getResource("fxmlAssets/viewDaycareVisits.fxml"));
 
             BorderPane border = Main.getRoot();
             border.setCenter(pane);
@@ -448,6 +483,26 @@ public class MyMenuController {
     void switchCreateServiceOrder(ActionEvent event){
         try{
             AnchorPane pane = FXMLLoader.load(getClass().getResource("fxmlAssets/createServiceOrder.fxml"));
+            BorderPane borderPane = Main.getRoot();
+            borderPane.setCenter(pane);
+        }catch(IOException e){
+            e.printStackTrace();
+        }
+    }
+    @FXML
+    void switchEditServiceOrder(ActionEvent event){
+        try{
+            AnchorPane pane = FXMLLoader.load(getClass().getResource("fxmlAssets/editServiceOrder.fxml"));
+            BorderPane borderPane = Main.getRoot();
+            borderPane.setCenter(pane);
+        }catch(IOException e){
+            e.printStackTrace();
+        }
+    }
+    @FXML
+    void switchViewServiceOrder(ActionEvent event){
+        try{
+            AnchorPane pane = FXMLLoader.load(getClass().getResource("fxmlAssets/viewSalesOrders.fxml"));
             BorderPane borderPane = Main.getRoot();
             borderPane.setCenter(pane);
         }catch(IOException e){

@@ -13,6 +13,11 @@ public class BoardingAppt {
     private Timestamp boardingApptCheckIn;
     private Timestamp boardingApptCheckOut;
     private int orderLineId;
+    private String petName;
+    private String petWeight;
+    private String petBreed;
+    private int kennelId;
+
 
     @Id
     @Column(name = "BOARDING_APPT_ID", nullable = false)
@@ -76,6 +81,37 @@ public class BoardingAppt {
 
     public void setOrderLineId(int orderLineId) {
         this.orderLineId = orderLineId;
+    }
+    public String getPetName() {
+        return petName;
+    }
+
+    public void setPetName(String petName) {
+        this.petName = petName;
+    }
+
+    public String getPetWeight() {
+        return petWeight;
+    }
+
+    public void setPetWeight(String petWeight) {
+        this.petWeight = petWeight;
+    }
+
+    public String getPetBreed() {
+        return petBreed;
+    }
+
+    public void setPetBreed(String petBreed) {
+        this.petBreed = petBreed;
+    }
+
+    public int getKennelId() {
+        return kennelId;
+    }
+
+    public void setKennelId(int kennelId) {
+        this.kennelId = kennelId;
     }
 
 

@@ -10,7 +10,7 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="custompanes" stylesheets="@../../../../../target/classes/main/fx.css" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.ViewPetController">
    <children>
-      <TableView fx:id="petView" layoutX="14.0" layoutY="77.0" prefHeight="303.0" prefWidth="720.0">
+      <TableView fx:id="tblpet" layoutX="14.0" layoutY="77.0" prefHeight="303.0" prefWidth="720.0">
         <columns>
           <TableColumn fx:id="petId" prefWidth="29.0" text="ID" />
           <TableColumn fx:id="petName" prefWidth="77.0" text="Name" />

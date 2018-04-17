@@ -14,6 +14,8 @@ public class PetMed {
     private String petMedDossage;
     private Date petMedStartDate;
     private Date petMedEndDate;
+    private String petName;
+    private String medStatus;
 
     @Id
     @Column(name = "PET_MED_ID", nullable = false)
@@ -94,6 +96,23 @@ public class PetMed {
     public void setPetMedEndDate(Date petMedEndDate) {
         this.petMedEndDate = petMedEndDate;
     }
+
+    public String getPetName() {
+        return petName;
+    }
+
+    public void setPetName(String petName) {
+        this.petName = petName;
+    }
+
+    public String getMedStatus() {
+        return medStatus;
+    }
+
+    public void setMedStatus(String medStatus) {
+        this.medStatus = medStatus;
+    }
+
 
     @Override
     public boolean equals(Object o) {

@@ -6,37 +6,38 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" stylesheets="@../../../../../target/classes/main/fx.css" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" stylesheets="@../../../../../target/classes/main/fx.css" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.homeController">
    <children>
-      <Label layoutX="14.0" layoutY="41.0" prefHeight="32.0" prefWidth="187.0" styleClass="customheads" stylesheets="@../../../../../target/classes/main/fx.css" text="Arrivals Today">
+      <Label layoutX="14.0" layoutY="41.0" prefHeight="32.0" prefWidth="187.0" styleClass="customheads" stylesheets="@../../../../../target/classes/main/fx.css" text="Future Arrivals">
          <font>
             <Font size="18.0" />
          </font>
       </Label>
-      <Label layoutX="14.0" layoutY="312.0" prefHeight="27.0" prefWidth="175.0" styleClass="customheads" stylesheets="@../../../../../target/classes/main/fx.css" text="Departures Today">
+      <Label layoutX="14.0" layoutY="312.0" prefHeight="32.0" prefWidth="218.0" styleClass="customheads" stylesheets="@../../../../../target/classes/main/fx.css" text="Future Departures">
          <font>
             <Font size="18.0" />
          </font>
       </Label>
-      <TableView layoutX="9.0" layoutY="73.0" prefHeight="200.0" prefWidth="769.0" stylesheets="@../../../../../target/classes/main/fx.css">
+      <TableView fx:id="tblArrivals" layoutX="9.0" layoutY="73.0" prefHeight="200.0" prefWidth="769.0" stylesheets="@../../../../../target/classes/main/fx.css">
         <columns>
-          <TableColumn prefWidth="87.0" text="Owner First" />
-          <TableColumn text="Owner Last" />
-            <TableColumn prefWidth="75.0" text="Pet Name" />
-            <TableColumn prefWidth="66.0" text="Arrival" />
-            <TableColumn prefWidth="74.0" text="Departure" />
-            <TableColumn prefWidth="79.0" text="Kennel" />
+          <TableColumn fx:id="arrivalId" prefWidth="49.0" text="BID" />
+          <TableColumn fx:id="arrivalPet" prefWidth="130.0" text="Pet" />
+            <TableColumn fx:id="arrivalWeight" prefWidth="82.0" text="Weight" />
+            <TableColumn fx:id="arrivalBreedCode" prefWidth="121.0" text="Breed" />
+            <TableColumn fx:id="arrivalkennelId" prefWidth="64.0" text="Kennel" />
+            <TableColumn fx:id="arrivalCheckIn" prefWidth="145.0" text="Check In" />
+            <TableColumn fx:id="arrivalCheckOut" prefWidth="174.0" text="Check Out" />
         </columns>
       </TableView>
-      <TableView layoutX="9.0" layoutY="344.0" prefHeight="200.0" prefWidth="769.0" stylesheets="@../../../../../target/classes/main/fx.css">
+      <TableView fx:id="tblDepartures" layoutX="9.0" layoutY="344.0" prefHeight="200.0" prefWidth="769.0" stylesheets="@../../../../../target/classes/main/fx.css">
         <columns>
-          <TableColumn prefWidth="75.0" text="Owner First" />
-          <TableColumn prefWidth="75.0" text="Owner Last" />
-            <TableColumn prefWidth="75.0" text="Pet Name" />
-            <TableColumn prefWidth="75.0" text="Arrival" />
-            <TableColumn prefWidth="75.0" text="Departure" />
-            <TableColumn prefWidth="84.0" text="Kennel " />
+          <TableColumn fx:id="departureId" prefWidth="49.0" text="BID" />
+          <TableColumn fx:id="departurePet" prefWidth="134.0" text="Pet" />
+            <TableColumn fx:id="departureWeight" prefWidth="76.0" text="Weight" />
+            <TableColumn fx:id="departureBreedCode" prefWidth="126.0" text="Breed" />
+            <TableColumn fx:id="departurekennelId" prefWidth="67.0" text="Kennel" />
+            <TableColumn fx:id="departureCheckIn" prefWidth="142.0" text="Check In" />
+            <TableColumn fx:id="departureCheckOut" prefWidth="171.0" text="Check Out" />
         </columns>
       </TableView>
    </children>

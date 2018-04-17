@@ -8,15 +8,19 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="custompanes" stylesheets="@../../../../../target/classes/main/fx.css" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.viewPetController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="custompanes" stylesheets="@../../../../../target/classes/main/fx.css" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.ViewPetController">
    <children>
-      <TableView fx:id="petView" layoutX="14.0" layoutY="77.0" prefHeight="303.0" prefWidth="571.0">
+      <TableView fx:id="tblpet" layoutX="14.0" layoutY="77.0" prefHeight="303.0" prefWidth="720.0">
         <columns>
-          <TableColumn fx:id="petNameColumn" prefWidth="82.0" text="Pet Name" />
-          <TableColumn prefWidth="86.0" text="Weight" />
-            <TableColumn prefWidth="109.0" text="DoB" />
-            <TableColumn prefWidth="133.0" text="Breed 1" />
-            <TableColumn prefWidth="154.0" text="Behavior" />
+          <TableColumn fx:id="petId" prefWidth="29.0" text="ID" />
+          <TableColumn fx:id="petName" prefWidth="77.0" text="Name" />
+            <TableColumn fx:id="petDoB" prefWidth="75.0" text="DoB" />
+            <TableColumn fx:id="breed" prefWidth="115.0" text="Breed" />
+            <TableColumn fx:id="color" prefWidth="79.0" text="Color" />
+            <TableColumn fx:id="weight" prefWidth="73.0" text="Weight" />
+            <TableColumn fx:id="ownerLast" prefWidth="88.0" text="Owner Last" />
+            <TableColumn fx:id="ownerFirst" prefWidth="104.0" text="Owner First" />
+            <TableColumn fx:id="status" prefWidth="72.0" text="Status" />
         </columns>
       </TableView>
       <Pane layoutX="14.0" layoutY="14.0" prefHeight="110.0" prefWidth="240.0" styleClass="backgroundpane">
@@ -28,7 +32,6 @@
             </Label>
          </children>
       </Pane>
-      <Button layoutX="609.0" layoutY="88.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="67.0" text="Edit" />
-      <Button layoutX="609.0" layoutY="129.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="67.0" text="Delete" />
+      <Button layoutX="14.0" layoutY="386.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="67.0" text="Delete" />
    </children>
 </AnchorPane>

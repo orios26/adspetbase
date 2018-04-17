@@ -64,7 +64,7 @@ public class ViewPetController {
             pet.setPetDob(resultSet.getDate("PET_DOB"));
             pet.setPetBreed(resultSet.getString("PET_DESCRIPTION"));
             pet.setPetColor(resultSet.getString("PET_CLR"));
-            //pet.setPetWeight(resultSet.getInt("WEIGHT")+ " lbs");
+            pet.setPetWeight(resultSet.getInt("WEIGHT")+ " lbs");
             pet.setOwnerLast(resultSet.getString("CUS_LASTNAME"));
             pet.setOwnerFirst(resultSet.getString("CUS_FIRSTNAME"));
             pet.setPetStatus(resultSet.getString("PET_STATUS"));

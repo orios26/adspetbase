@@ -188,13 +188,26 @@ public class createBoardingApptController {
         preparedStatement2.setDate(5,Date.valueOf(departureDate.getValue()));
         preparedStatement2.setInt(6,OLID);
         preparedStatement2.execute();
-//
-//        ResultSet resultSet2 = preparedStatement2.getGeneratedKeys();
-//        while (resultSet2.next()){
-//            BID = resultSet2.getInt(1);
-//        }
+
+        ResultSet resultSet2 = preparedStatement2.getGeneratedKeys();
+        while (resultSet2.next()){
+            BID = resultSet2.getInt(1);
+        }
         preparedStatement2.close();
         connection2.close();
+
+        Connection connection3 = DbHelper.getInstance().getConnection();
+        String kennelreserve = "INSERT INTO KENNEL_RESERVATION(BOARDING_APPT_ID, KENNEL_ID, KENNEL_RSVP_START_DATE,KENNEL_RSVP_END_DATE) VALUE" +
+                "(?,?,?,?) ";
+        PreparedStatement preparedStatement3 = connection3.prepareStatement(kennelreserve);
+        preparedStatement3.setInt(1,BID);
+        preparedStatement3.setInt(2,KID);
+        preparedStatement3.setDate(3,Date.valueOf(arrivalDate.getValue()));
+        preparedStatement3.setDate(4,Date.valueOf(departureDate.getValue()));
+        preparedStatement3.execute();
+        preparedStatement3.close();
+        connection3.close();
+
         Alert alert = new Alert(Alert.AlertType.INFORMATION);
         alert.setTitle("PetBase Update");
         alert.setHeaderText("BOARDING APPT ADDED");
