@@ -40,7 +40,7 @@ public class viewDaycareRoom {
                "JOIN PET ON VISIT.PET_ID = PET.PET_ID " +
                "JOIN PET_OWNER ON PET.PET_ID = PET_OWNER.PET_ID " +
                "JOIN CUSTOMER ON PET_OWNER.CUSTOMER_ID = CUSTOMER.CUSTOMER_ID " +
-               "JOIN DAYCARE_ROOM ON DAYCARE_VISIT.DAYCARE_ROOM_ID = DAYCARE_ROOM.DAYCARE_ROOM_ID WHERE DAYCARE_VISIT_START_DATE BETWEEN {ts '2018-04-26 00:00:00'} AND {ts '2018-04-26 23:59:59'}";
+               "JOIN DAYCARE_ROOM ON DAYCARE_VISIT.DAYCARE_ROOM_ID = DAYCARE_ROOM.DAYCARE_ROOM_ID WHERE DAYCARE_VISIT_START_DATE BETWEEN {ts '2018-04-26 00:00:00'} AND {ts '2018-04-26 23:59:59'} ORDER BY DAYCARE_ROOM_NAME";
        PreparedStatement preparedStatement = connection.prepareStatement(sql);
        ResultSet rs = preparedStatement.executeQuery();
        ObservableList<DaycareVisit> orders = FXCollections.observableArrayList();
@@ -58,6 +58,5 @@ public class viewDaycareRoom {
        tblDaycareVisits.setItems(orders);
        preparedStatement.close();
        rs.close();
-
    }
 }

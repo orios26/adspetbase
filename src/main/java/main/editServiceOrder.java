@@ -84,7 +84,7 @@ public class editServiceOrder {
     public void initialize()throws SQLException{
         orderId.setCellValueFactory(new PropertyValueFactory<OrderLine, Integer>("orderId"));
         orderLineId.setCellValueFactory(new PropertyValueFactory<OrderLine, Integer>("orderLineId"));
-        pet.setCellValueFactory(new PropertyValueFactory<OrderLine, String>("cusLastname"));
+        pet.setCellValueFactory(new PropertyValueFactory<OrderLine, String>("petName"));
         service.setCellValueFactory(new PropertyValueFactory<OrderLine, String>("serviceName"));
         employee.setCellValueFactory(new PropertyValueFactory<OrderLine, String>("employeeLastname"));
         price.setCellValueFactory(new PropertyValueFactory<OrderLine, String>("priceString"));
@@ -210,7 +210,10 @@ public class editServiceOrder {
     }
 
     private void orderFinder()throws SQLException{
-        CID = customerInfo.getSelectionModel().getSelectedIndex()+1;
+        String customerID = customerInfo.getValue();
+        String[]c;
+        c = customerID.split("_");
+        CID = Integer.parseInt(c[0]);
         String sql = "SELECT _ORDER.ORDER_ID FROM _ORDER " +
                 "JOIN CUSTOMER ON _ORDER.CUSTOMER_ID = CUSTOMER.CUSTOMER_ID WHERE CUSTOMER.CUSTOMER_ID ="+CID;
         Connection connection = DbHelper.getInstance().getConnection();
@@ -237,21 +240,23 @@ public class editServiceOrder {
             orderLines.add(resultSet.getInt("ORDER_LINE_ID"));
         }
         orderLineNumber.setItems(orderLines);
+        petFilter();
         orderDetails();
     }
 
     private void orderLineDetails()throws SQLException{
         OLID = orderLineNumber.getValue();
-        String sql = "SELECT PET.PET_NAME, _SERVICE.SERVICE_NAME, EMPLOYEE.EMPLOYEE_FIRSTNAME, EMPLOYEE.EMPLOYEE_LASTNAME, EMPLOYEE.EMPLOYEE_FIRSTNAME FROM ORDER_LINE " +
+        String sql = "SELECT PET.PET_ID, PET.PET_NAME,PET_WEIGHT_HIST.WEIGHT, _SERVICE.SERVICE_ID, _SERVICE.SERVICE_NAME, EMPLOYEE.EMPLOYEE_ID, EMPLOYEE.EMPLOYEE_LASTNAME, EMPLOYEE.EMPLOYEE_FIRSTNAME FROM ORDER_LINE " +
                 "JOIN EMPLOYEE ON ORDER_LINE.EMPLOYEE_ID = EMPLOYEE.EMPLOYEE_ID " +
                 "JOIN PET ON ORDER_LINE.PET_ID = PET.PET_ID " +
-                "JOIN _SERVICE ON ORDER_LINE.SERVICE_ID = _SERVICE.SERVICE_ID WHERE ORDER_LINE.ORDER_LINE_ID ="+OLID;
+                "JOIN PET_WEIGHT_HIST ON PET.PET_ID = PET_WEIGHT_HIST.PET_ID " +
+                "JOIN _SERVICE ON ORDER_LINE.SERVICE_ID = _SERVICE.SERVICE_ID WHERE ORDER_LINE_ID = "+OLID;
         Connection connection = DbHelper.getInstance().getConnection();
         PreparedStatement preparedStatement = connection.prepareStatement(sql);
         ResultSet resultSet = preparedStatement.executeQuery();
         while (resultSet.next()){
-            petInfo.setValue(resultSet.getString("PET_NAME"));
-            serviceSelect.setValue(resultSet.getString("SERVICE_NAME"));
+            petInfo.setValue(resultSet.getInt("PET_ID")+"_"+resultSet.getString("PET_NAME")+resultSet.getInt("WEIGHT"));
+            serviceSelect.setValue(resultSet.getInt("SERVICE_ID")+"_"+resultSet.getString("SERVICE_NAME"));
             employeeInfo.setValue(resultSet.getInt("EMPLOYEE_ID")+"_"+resultSet.getString("EMPLOYEE_LASTNAME")+"_"+resultSet.getString("EMPLOYEE_FIRSTNAME"));
         }
         petInfo.setDisable(false);
@@ -259,6 +264,7 @@ public class editServiceOrder {
         employeeInfo.setDisable(false);
         addLine.setDisable(false);
         updateLine.setDisable(false);
+
     }
 
 
@@ -273,7 +279,7 @@ public class editServiceOrder {
         ResultSet resultSet = preparedStatement.executeQuery();
         ObservableList<String> pets = FXCollections.observableArrayList();
         while(resultSet.next()){
-            pets.add(resultSet.getInt("PET_ID") + "_"+resultSet.getString("PET_NAME")+"_"+resultSet.getInt("WEIGHT") +"_lbs");
+            pets.add(resultSet.getInt("PET_ID") + "_"+resultSet.getString("PET_NAME")+"_"+resultSet.getInt("WEIGHT"));
         }
         petInfo.setItems(pets);
     }
@@ -290,54 +296,62 @@ public class editServiceOrder {
 
     }
 
-    public void GenerateOrder()throws SQLException{
-        String customerID = customerInfo.getValue();
-        String[]c;
-        c = customerID.split("_");
-        CID = Integer.parseInt(c[0]);
-        try {
-            Connection connection = DbHelper.getInstance().getConnection();
-            String generateOrder = "INSERT INTO _ORDER(CUSTOMER_ID, ORDER_START, ORDER_END, ORDER_STATUS_ID) VALUES (?,?,?,?)";
-            PreparedStatement preparedStatement = connection.prepareStatement(generateOrder, Statement.RETURN_GENERATED_KEYS);
-            preparedStatement.setInt(1, CID);
-            preparedStatement.setDate(2, Date.valueOf(startDatePicker.getValue()));
-            preparedStatement.setDate(3, Date.valueOf(endDatePicker.getValue()));
-            preparedStatement.setInt(4, 1);
-            preparedStatement.execute();
-            ResultSet resultSet = preparedStatement.getGeneratedKeys();
-            while (resultSet.next()) {
-                OID = resultSet.getInt(1);
-                System.out.println(OID);
-            }
-            Alert alert = new Alert(Alert.AlertType.INFORMATION);
-            alert.setTitle("PetBase Update");
-            alert.setHeaderText("Service Order Created");
-            alert.setContentText("Order for " +c[2] + ", " +c[1]+" created");
-            alert.showAndWait();
-            addLine.setDisable(false);
-            serviceSelect.setDisable(false);
-            petInfo.setDisable(false);
-            employeeInfo.setDisable(false);
-
-        }catch (SQLException e){
-            Alert alert = new Alert(Alert.AlertType.INFORMATION);
-            alert.setTitle("PetBase ERROR");
-            alert.setHeaderText("Error Creating Service Order");
-            alert.setContentText("Please Validate Information Entered");
-            alert.showAndWait();
-        }
-    }
+//    public void GenerateOrder()throws SQLException{
+//        String customerID = customerInfo.getValue();
+//        String[]c;
+//        c = customerID.split("_");
+//        CID = Integer.parseInt(c[0]);
+//        try {
+//            Connection connection = DbHelper.getInstance().getConnection();
+//            String generateOrder = "INSERT INTO _ORDER(CUSTOMER_ID, ORDER_START, ORDER_END, ORDER_STATUS_ID) VALUES (?,?,?,?)";
+//            PreparedStatement preparedStatement = connection.prepareStatement(generateOrder, Statement.RETURN_GENERATED_KEYS);
+//            preparedStatement.setInt(1, CID);
+//            preparedStatement.setDate(2, Date.valueOf(startDatePicker.getValue()));
+//            preparedStatement.setDate(3, Date.valueOf(endDatePicker.getValue()));
+//            preparedStatement.setInt(4, 1);
+//            preparedStatement.execute();
+//            ResultSet resultSet = preparedStatement.getGeneratedKeys();
+//            while (resultSet.next()) {
+//                OID = resultSet.getInt(1);
+//                System.out.println(OID);
+//            }
+//            Alert alert = new Alert(Alert.AlertType.INFORMATION);
+//            alert.setTitle("PetBase Update");
+//            alert.setHeaderText("Service Order Created");
+//            alert.setContentText("Order for " +c[2] + ", " +c[1]+" created");
+//            alert.showAndWait();
+//            addLine.setDisable(false);
+//            serviceSelect.setDisable(false);
+//            petInfo.setDisable(false);
+//            employeeInfo.setDisable(false);
+//
+//        }catch (SQLException e){
+//            Alert alert = new Alert(Alert.AlertType.INFORMATION);
+//            alert.setTitle("PetBase ERROR");
+//            alert.setHeaderText("Error Creating Service Order");
+//            alert.setContentText("Please Validate Information Entered");
+//            alert.showAndWait();
+//        }
+//    }
 
     public void updateOrderLine()throws SQLException{
         String employeeID = employeeInfo.getValue();
         String petID = petInfo.getValue();
+        String service = serviceSelect.getValue();
         String[]s,e,p;
         e = employeeID.split("_");
         p = petID.split("_");
+        s = service.split("_");
+
         EID = Integer.parseInt(e[0]);
         PID = Integer.parseInt(p[0]);
-        PWID = Integer.parseInt(p[2]);
+        SID = Integer.parseInt(s[0]);
+        //PWID = Integer.parseInt(p[2]);
         petName = p[1];
+        System.out.println("EMPLOYEE: " + EID);
+        System.out.println("PET: "+PID);
+        System.out.println(OLID);
+
 
         String update = "UPDATE ORDER_LINE SET PET_ID = ?, SERVICE_ID =?, EMPLOYEE_ID =? WHERE ORDER_LINE_ID ="+OLID;
         Connection connection = DbHelper.getInstance().getConnection();
@@ -346,18 +360,20 @@ public class editServiceOrder {
         preparedStatement.setInt(2,serviceSelect.getSelectionModel().getSelectedIndex()+1);
         preparedStatement.setInt(3,EID);
         preparedStatement.execute();
-
         preparedStatement.close();
         connection.close();
+
         Alert alert = new Alert(Alert.AlertType.INFORMATION);
         alert.setTitle("PetBase update");
         alert.setHeaderText("Updated Service OrderLine");
         alert.setContentText("Order Line: " +OLID +" has been updated");
         alert.showAndWait();
+        tablePopulate();
+        ordertbl.refresh();
     }
 
     public void updateOrder()throws SQLException{
-        String update = "UPDATE _ORDER SET ORDER_START, ORDER_END, ORDER_STATUS_ID WHERE ORDER_ID="+OID;
+        String update = "UPDATE _ORDER SET ORDER_START =?, ORDER_END=?, ORDER_STATUS_ID=? WHERE ORDER_ID="+OID;
         Connection connection = DbHelper.getInstance().getConnection();
         PreparedStatement preparedStatement = connection.prepareStatement(update);
         preparedStatement.setDate(1,Date.valueOf(startDatePicker.getValue()));
@@ -371,18 +387,24 @@ public class editServiceOrder {
         alert.setHeaderText("Updated Service Order");
         alert.setContentText("Order: "+OID+" has been updated");
         alert.showAndWait();
+        tablePopulate();
+        ordertbl.refresh();
+
     }
 
     public void generateOrderLine()throws SQLException{
 
         String employeeID = employeeInfo.getValue();
         String petID = petInfo.getValue();
+        String service = serviceSelect.getValue();
         String[]s,e,p;
         e = employeeID.split("_");
         p = petID.split("_");
+        s = service.split("_");
         EID = Integer.parseInt(e[0]);
         PID = Integer.parseInt(p[0]);
-        PWID = Integer.parseInt(p[2]);
+        SID = Integer.parseInt(s[0]);
+        //PWID = Integer.parseInt(p[2]);
         petName = p[1];
 
         try{
@@ -417,7 +439,6 @@ public class editServiceOrder {
             alert.setHeaderText("Error Creating Service OrderLine");
             alert.setContentText("Please Validate Information Entered");
             alert.showAndWait();
-
         }
     }
 
@@ -491,7 +512,6 @@ public class editServiceOrder {
         PreparedStatement preparedStatement = connection.prepareStatement(populate);
         ResultSet resultSet = preparedStatement.executeQuery();
         ObservableList<OrderLine>orders = FXCollections.observableArrayList();
-        double estimatedPrice = 0;
         while(resultSet.next()){
             OrderLine order = new OrderLine();
             DecimalFormat formatter = new DecimalFormat("#0.00");
@@ -504,7 +524,6 @@ public class editServiceOrder {
             order.setPriceString(String.format("$ "+"%.2f",resultSet.getDouble("SERVICE_PRICE")));
             order.setStartDate(resultSet.getDate("ORDER_START"));
             order.setEndDate(resultSet.getDate("ORDER_END"));
-            estimatedPrice+=order.getPrice();
             orders.add(order);
         }
         ordertbl.setItems(orders);

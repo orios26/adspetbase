@@ -137,40 +137,21 @@ public class ManageEmployeeController {
     }
 
     public void savePressed() throws SQLException {
-        if (editable == true) {
-            Connection connection = DbHelper.getInstance().getConnection();
-            String sql = "UPDATE EMPLOYEE" +
-                    " SET EMPLOYEE_FIRSTNAME = ?, EMPLOYEE_LASTNAME = ?," +
-                    " EMPLOYEE_STATUS_ID =?, EMPLOYEE_START_DATE = ?, " +
-                    " EMPLOYEE_END_DATE = ?, EMPLOYEE_PHONE = ? WHERE EMPLOYEE_ID = " + id;
-            PreparedStatement p = connection.prepareStatement(sql);
-            p.setString(1, employeeFirst.getText());
-            p.setString(2, employeeLast.getText());
-            p.setInt(3, statusCombo.getSelectionModel().getSelectedIndex() + 1);
-            p.setDate(4, Date.valueOf(startDateSelect.getValue()));
-            p.setDate(5, Date.valueOf(startDateSelect.getValue()));
-            p.setString(6, phoneText.getText());
-            p.execute();
-            connection.close();
-            p.close();
-            id = 0;
-        } else {
             Connection connection = DbHelper.getInstance().getConnection();
             String sql = "INSERT INTO EMPLOYEE" +
                     "(EMPLOYEE_FIRSTNAME, EMPLOYEE_LASTNAME," +
                     " EMPLOYEE_STATUS_ID, EMPLOYEE_START_DATE, " +
-                    " EMPLOYEE_END_DATE, EMPLOYEE_PHONE) VALUES (?,?,?,?,?,?)";
+                    " EMPLOYEE_PHONE) VALUES (?,?,?,?,?)";
             PreparedStatement p = connection.prepareStatement(sql);
             p.setString(1, employeeFirst.getText());
             p.setString(2, employeeLast.getText());
             p.setInt(3, statusCombo.getSelectionModel().getSelectedIndex() + 1);
             p.setDate(4, Date.valueOf(startDateSelect.getValue()));
-            p.setDate(5, Date.valueOf(startDateSelect.getValue()));
-            p.setString(6, phoneText.getText());
+            p.setString(5, phoneText.getText());
             p.execute();
             connection.close();
             p.close();
-        }
+
         initialize();
     }
 

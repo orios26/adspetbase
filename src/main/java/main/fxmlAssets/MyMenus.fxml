@@ -40,7 +40,6 @@
             <Menu mnemonicParsing="false" text="Vaccination">
               <items>
                 <MenuItem mnemonicParsing="false" onAction="#switchAddVaccination" text="Add Vaccination" />
-                  <MenuItem mnemonicParsing="false" text="Edit Vaccination" />
                   <MenuItem mnemonicParsing="false" onAction="#switchViewVaccines" text="View Vaccine History" />
               </items>
             </Menu>
@@ -48,7 +47,7 @@
               <items>
                 <MenuItem mnemonicParsing="false" onAction="#switchAddBehavior" text="Add Behavior" />
                   <MenuItem mnemonicParsing="false" text="Edit Behavior" />
-                  <MenuItem mnemonicParsing="false" text="View Behaviors" />
+                  <MenuItem mnemonicParsing="false" onAction="#switchViewPetBehavior" text="View Behaviors" />
               </items>
             </Menu>
             </items>

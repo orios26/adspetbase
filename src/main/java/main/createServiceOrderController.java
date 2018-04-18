@@ -79,8 +79,7 @@ public class createServiceOrderController {
     public void initialize()throws SQLException{
         orderId.setCellValueFactory(new PropertyValueFactory<OrderLine, Integer>("orderId"));
         orderLineId.setCellValueFactory(new PropertyValueFactory<OrderLine, Integer>("orderLineId"));
-        //lineName.setCellValueFactory(new PropertyValueFactory<OrderLine, String>("lineName"));
-        pet.setCellValueFactory(new PropertyValueFactory<OrderLine, String>("cusLastname"));
+        pet.setCellValueFactory(new PropertyValueFactory<OrderLine, String>("petName"));
         service.setCellValueFactory(new PropertyValueFactory<OrderLine, String>("serviceName"));
         employee.setCellValueFactory(new PropertyValueFactory<OrderLine, String>("employeeLastname"));
         price.setCellValueFactory(new PropertyValueFactory<OrderLine, String>("priceString"));

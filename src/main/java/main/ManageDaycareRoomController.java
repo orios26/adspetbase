@@ -3,8 +3,10 @@ package main;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.scene.layout.BorderPane;
 
 import java.sql.*;
 
@@ -77,18 +79,6 @@ public class ManageDaycareRoomController {
     }
 
     public void saveButtonPressed()throws SQLException{
-        if (editable=true){
-            Connection connection = DbHelper.getInstance().getConnection();
-            String sql = "UPDATE DAYCARE_ROOM SET DAYCARE_ROOM_NAME = ?, DAYCARE_ROOM_SIZE = ?, DAYCARE_ROOM_CREATE_DATE = ? WHERE DAYCARE_ROOM_ID ="+id;
-            PreparedStatement psmt = connection.prepareStatement(sql);
-            psmt.setString(1,roomName.getText());
-            psmt.setString(2,roomSize.getText());
-            psmt.setDate(3,Date.valueOf(dateCreate.getValue()));
-            psmt.execute();
-            psmt.close();
-            connection.close();
-
-        }else {
             Connection connection = DbHelper.getInstance().getConnection();
             String sql = "INSERT INTO DAYCARE_ROOM (DAYCARE_ROOM_NAME, DAYCARE_ROOM_SIZE, DAYCARE_ROOM_CREATE_DATE) VALUES (?,?,?)";
             PreparedStatement psmt = connection.prepareStatement(sql);
@@ -98,7 +88,7 @@ public class ManageDaycareRoomController {
             psmt.execute();
             psmt.close();
             connection.close();
-        }
+
         initialize();
     }
 

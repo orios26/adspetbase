@@ -68,7 +68,7 @@ public class homeController {
 
 
         Connection connection = DbHelper.getInstance().getConnection();
-        String sql = "SELECT BOARDING_APPT.BOARDING_APPT_ID, PET.PET_NAME, PET_WEIGHT_HIST.WEIGHT, PET_BREED.PET_BREED_CODE, KENNEL.KENNEL_ID, BOARDING_APPT.BOARDING_APPT_CHECK_IN, BOARDING_APPT.BOARDING_APPT_CHECK_OUT FROM BOARDING_APPT " +
+        String sql = "SELECT BOARDING_APPT.BOARDING_APPT_ID, PET.PET_NAME, PET_WEIGHT_HIST.WEIGHT, PET_BREED.PET_DESCRIPTION, KENNEL.KENNEL_ID, BOARDING_APPT.BOARDING_APPT_CHECK_IN, BOARDING_APPT.BOARDING_APPT_CHECK_OUT FROM BOARDING_APPT " +
                 "JOIN PET ON BOARDING_APPT.PET_ID = PET.PET_ID " +
                 "JOIN PET_WEIGHT_HIST ON PET.PET_ID = PET_WEIGHT_HIST.PET_ID " +
                 "JOIN PET_BREED ON PET.PET_ID = PET_BREED.PET_ID " +
@@ -82,7 +82,7 @@ public class homeController {
             arrive.setBoardingApptId(resultSet.getInt("BOARDING_APPT_ID"));
             arrive.setPetName(resultSet.getString("PET_NAME"));
             arrive.setPetWeight(resultSet.getString("WEIGHT")+ " lbs");
-            arrive.setPetBreed(resultSet.getString("PET_BREED_CODE"));
+            arrive.setPetBreed(resultSet.getString("PET_DESCRIPTION"));
             arrive.setKennelId(resultSet.getInt("KENNEL_ID"));
             arrive.setBoardingApptCheckIn(resultSet.getTimestamp("BOARDING_APPT_CHECK_IN"));
             arrive.setBoardingApptCheckOut(resultSet.getTimestamp("BOARDING_APPT_CHECK_OUT"));
@@ -91,7 +91,7 @@ public class homeController {
         tblArrivals.setItems(arrivals);
 
         Connection connection1 = DbHelper.getInstance().getConnection();
-        String sql1 = "SELECT BOARDING_APPT.BOARDING_APPT_ID, PET.PET_NAME, PET_WEIGHT_HIST.WEIGHT, PET_BREED.PET_BREED_CODE, KENNEL.KENNEL_ID, BOARDING_APPT.BOARDING_APPT_CHECK_IN, BOARDING_APPT.BOARDING_APPT_CHECK_OUT FROM BOARDING_APPT " +
+        String sql1 = "SELECT BOARDING_APPT.BOARDING_APPT_ID, PET.PET_NAME, PET_WEIGHT_HIST.WEIGHT, PET_BREED.PET_DESCRIPTION, KENNEL.KENNEL_ID, BOARDING_APPT.BOARDING_APPT_CHECK_IN, BOARDING_APPT.BOARDING_APPT_CHECK_OUT FROM BOARDING_APPT " +
                 "JOIN PET ON BOARDING_APPT.PET_ID = PET.PET_ID " +
                 "JOIN PET_WEIGHT_HIST ON PET.PET_ID = PET_WEIGHT_HIST.PET_ID " +
                 "JOIN PET_BREED ON PET.PET_ID = PET_BREED.PET_ID " +
@@ -105,15 +105,13 @@ public class homeController {
             depart.setBoardingApptId(resultSet1.getInt("BOARDING_APPT_ID"));
             depart.setPetName(resultSet1.getString("PET_NAME"));
             depart.setPetWeight(resultSet1.getString("WEIGHT")+ " lbs");
-            depart.setPetBreed(resultSet1.getString("PET_BREED_CODE"));
+            depart.setPetBreed(resultSet1.getString("PET_DESCRIPTION"));
             depart.setKennelId(resultSet1.getInt("KENNEL_ID"));
             depart.setBoardingApptCheckIn(resultSet1.getTimestamp("BOARDING_APPT_CHECK_IN"));
             depart.setBoardingApptCheckOut(resultSet1.getTimestamp("BOARDING_APPT_CHECK_OUT"));
             departures.add(depart);
         }
         tblDepartures.setItems(departures);
-
-
     }
 
 }

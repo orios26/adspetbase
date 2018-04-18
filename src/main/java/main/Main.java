@@ -41,7 +41,7 @@ public class Main  extends Application{
         scene.getStylesheets().add(getClass().getResource("fx.css").toExternalForm());
         primaryStage.setScene(scene);
 
-        //primaryStage.getIcons().add(new Image("dog-paw.png"));
+        //primaryStage.getIcons().add(new Image("C:/Users/Oti/IdeaProjects/target/classes/main/imageAssets/dog-paw.png"));
         primaryStage.show();
     }
 

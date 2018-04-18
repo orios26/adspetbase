@@ -151,6 +151,7 @@ public class createBoardingApptController {
             OID = resultSet.getInt(1);
             System.out.println(OID);
         }
+        System.out.println("ORDER ID: "+OID);
         resultSet.close();
         connection.close();
         preparedStatement.close();
@@ -174,13 +175,13 @@ public class createBoardingApptController {
         resultSet1.close();
         preparedStatement1.close();
         connection1.close();
-        System.out.println(OLID);
+        System.out.println("OLID: "+OLID);
 
-        String sql = "INSERT INTO BOARDING_APPT(PET_ID, PET_WEIGHT_GRP_ID, BOARDING_APPT_DESC, BOARDING_APPT_CHECK_IN, BOARDING_APPT_CHECK_OUT, ORDER_LINE_ID)" +
+        String sql = "INSERT INTO BOARDING_APPT(PET_ID, PET_WEIGHT_GRP_ID, BOARDING_APPT_DESC, BOARDING_APPT_CHECK_IN, BOARDING_APPT_CHECK_OUT, ORDER_LINE_ID) " +
                 "VALUES (?,?,?,?,?,?)";
         Connection connection2 = DbHelper.getInstance().getConnection();
-        PreparedStatement preparedStatement2 = connection2.prepareStatement(sql);
-//        preparedStatement2.execute(sql, Statement.RETURN_GENERATED_KEYS);
+        PreparedStatement preparedStatement2 = connection2.prepareStatement(sql, PreparedStatement.RETURN_GENERATED_KEYS);
+        //preparedStatement2.execute(sql, Statement.RETURN_GENERATED_KEYS);
         preparedStatement2.setInt(1,PID);
         preparedStatement2.setInt(2,petWeightGrpChecker(PWID));
         preparedStatement2.setString(3,specialCareInst.getText());
@@ -197,7 +198,7 @@ public class createBoardingApptController {
         connection2.close();
 
         Connection connection3 = DbHelper.getInstance().getConnection();
-        String kennelreserve = "INSERT INTO KENNEL_RESERVATION(BOARDING_APPT_ID, KENNEL_ID, KENNEL_RSVP_START_DATE,KENNEL_RSVP_END_DATE) VALUE" +
+        String kennelreserve = "INSERT INTO KENNEL_RESERVATION(BOARDING_APPT_ID, KENNEL_ID, KENNEL_RSVP_START_DATE,KENNEL_RSVP_END_DATE) VALUES " +
                 "(?,?,?,?) ";
         PreparedStatement preparedStatement3 = connection3.prepareStatement(kennelreserve);
         preparedStatement3.setInt(1,BID);

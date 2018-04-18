@@ -11,6 +11,8 @@ public class PetBehavior {
     private int behaviorId;
     private Date petBehaviorStartdate;
     private Date petBehaviorEnddate;
+    private String petName;
+    private String petBehaviorName;
 
     @Id
     @Column(name = "PET_BEHAVIOR_ID", nullable = false)
@@ -40,6 +42,22 @@ public class PetBehavior {
 
     public void setPetBehaviorEnddate(Date petBehaviorEnddate) {
         this.petBehaviorEnddate = petBehaviorEnddate;
+    }
+
+    public String getPetName() {
+        return petName;
+    }
+
+    public void setPetName(String petName) {
+        this.petName = petName;
+    }
+
+    public String getPetBehaviorName() {
+        return petBehaviorName;
+    }
+
+    public void setPetBehaviorName(String petBehaviorName) {
+        this.petBehaviorName = petBehaviorName;
     }
 
     @Override

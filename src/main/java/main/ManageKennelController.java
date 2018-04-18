@@ -104,21 +104,13 @@ public class ManageKennelController {
     }
 
     public void savePressed()throws SQLException{
-        if(editable == true){
-            String sql = "UPDATE KENNEL SET KENNEL_STATUS_ID = ?, KENNEL_SIZE_ID = ? WHERE KENNEL_ID =" + id;
-            Connection connection = DbHelper.getInstance().getConnection();
-            PreparedStatement p = connection.prepareStatement(sql);
-            p.setInt(1,kennelStatusCombo.getSelectionModel().getSelectedIndex()+1);
-            p.setInt(2,kennelSizeCombo.getSelectionModel().getSelectedIndex()+1);
-            p.execute();
-        } else{
+
             String sql = "INSERT INTO KENNEL (KENNEL_STATUS_ID, KENNEL_SIZE_ID) VALUES (?,?)";
             Connection connection = DbHelper.getInstance().getConnection();
             PreparedStatement p = connection.prepareStatement(sql);
             p.setInt(1,kennelStatusCombo.getSelectionModel().getSelectedIndex()+1);
             p.setInt(2,kennelSizeCombo.getSelectionModel().getSelectedIndex()+1);
             p.execute();
-        }
         initialize();
     }
 }

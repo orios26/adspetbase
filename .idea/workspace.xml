@@ -2,45 +2,46 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c84f7339-9eb0-4964-b28a-c7bb59c6c379" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/main/editBoardingController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/main/editGroomingApptController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/main/editServiceOrder.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/main/homeController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/main/viewDaycareRoom.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/main/viewPetMed.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/main/viewPetVaccines.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/main/viewServiceOrders.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/BoardingAppt.class" afterPath="$PROJECT_DIR$/target/classes/main/BoardingAppt.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/DaycareVisit.class" afterPath="$PROJECT_DIR$/target/classes/main/DaycareVisit.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/main/imageAssets/dog-head.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/main/imageAssets/dog-paw.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/main/imageAssets/girl.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/main/imageAssets/man.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/main/imageAssets/petbasebackgroundwithlogo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/main/imageAssets/petbaseblankbackgrounds.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/main/imageAssets/petbaseicon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/main/imageAssets/petbasevaccinationscreen.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/main/imageAssets/petcustomerscreen.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/main/imageAssets/petmedicationscreen.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/main/imageAssets/pets-hair-salon-tools-kit.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/main/imageAssets/pills.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/main/imageAssets/syringe.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/main/daycareCheckIn.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/main/editBehavior.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/main/viewBoardingAppointements.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/main/viewPetBehavior.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/ManageDaycareRoomController.class" afterPath="$PROJECT_DIR$/target/classes/main/ManageDaycareRoomController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/ManageEmployeeController.class" afterPath="$PROJECT_DIR$/target/classes/main/ManageEmployeeController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/ManageKennelController.class" afterPath="$PROJECT_DIR$/target/classes/main/ManageKennelController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/MyMenuController.class" afterPath="$PROJECT_DIR$/target/classes/main/MyMenuController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/Order.class" afterPath="$PROJECT_DIR$/target/classes/main/Order.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/Pet.class" afterPath="$PROJECT_DIR$/target/classes/main/Pet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/PetMed.class" afterPath="$PROJECT_DIR$/target/classes/main/PetMed.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/PetVaccine.class" afterPath="$PROJECT_DIR$/target/classes/main/PetVaccine.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/ViewPetController.class" afterPath="$PROJECT_DIR$/target/classes/main/ViewPetController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/Visit.class" afterPath="$PROJECT_DIR$/target/classes/main/Visit.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/PetBehavior.class" afterPath="$PROJECT_DIR$/target/classes/main/PetBehavior.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/createBoardingApptController.class" afterPath="$PROJECT_DIR$/target/classes/main/createBoardingApptController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/main/BoardingAppt.java" afterPath="$PROJECT_DIR$/src/main/java/main/BoardingAppt.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/main/DaycareVisit.java" afterPath="$PROJECT_DIR$/src/main/java/main/DaycareVisit.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/main/Main.java" afterPath="$PROJECT_DIR$/src/main/java/main/Main.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/main/ManageDaycareRoomController.java" afterPath="$PROJECT_DIR$/src/main/java/main/ManageDaycareRoomController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/main/ManageEmployeeController.java" afterPath="$PROJECT_DIR$/src/main/java/main/ManageEmployeeController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/main/ManageKennelController.java" afterPath="$PROJECT_DIR$/src/main/java/main/ManageKennelController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/main/MyMenuController.java" afterPath="$PROJECT_DIR$/src/main/java/main/MyMenuController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/main/Order.java" afterPath="$PROJECT_DIR$/src/main/java/main/Order.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/main/PetMed.java" afterPath="$PROJECT_DIR$/src/main/java/main/PetMed.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/main/PetVaccine.java" afterPath="$PROJECT_DIR$/src/main/java/main/PetVaccine.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/main/ViewPetController.java" afterPath="$PROJECT_DIR$/src/main/java/main/ViewPetController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/main/addPetController.java" afterPath="$PROJECT_DIR$/src/main/java/main/addPetController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/main/PetBehavior.java" afterPath="$PROJECT_DIR$/src/main/java/main/PetBehavior.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/main/createBoardingApptController.java" afterPath="$PROJECT_DIR$/src/main/java/main/createBoardingApptController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/main/createGroomingApptController.java" afterPath="$PROJECT_DIR$/src/main/java/main/createGroomingApptController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/main/createServiceOrderController.java" afterPath="$PROJECT_DIR$/src/main/java/main/createServiceOrderController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/main/editMedicationController.java" afterPath="$PROJECT_DIR$/src/main/java/main/editMedicationController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/main/editServiceOrder.java" afterPath="$PROJECT_DIR$/src/main/java/main/editServiceOrder.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/main/fxmlAssets/MyMenus.fxml" afterPath="$PROJECT_DIR$/src/main/java/main/fxmlAssets/MyMenus.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/main/fxmlAssets/PaneOne.fxml" afterPath="$PROJECT_DIR$/src/main/java/main/fxmlAssets/PaneOne.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/main/fxmlAssets/viewPetInformation.fxml" afterPath="$PROJECT_DIR$/src/main/java/main/fxmlAssets/viewPetInformation.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/main/newPetController.java" afterPath="$PROJECT_DIR$/src/main/java/main/newPetController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/main/fxmlAssets/daycareCheckIn.fxml" afterPath="$PROJECT_DIR$/src/main/java/main/fxmlAssets/daycareCheckIn.fxml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/main/homeController.java" afterPath="$PROJECT_DIR$/src/main/java/main/homeController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/main/viewDaycareRoom.java" afterPath="$PROJECT_DIR$/src/main/java/main/viewDaycareRoom.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/main/viewPetVaccines.java" afterPath="$PROJECT_DIR$/src/main/java/main/viewPetVaccines.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/fxmlAssets/MyMenus.fxml" afterPath="$PROJECT_DIR$/target/classes/main/fxmlAssets/MyMenus.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/fxmlAssets/PaneOne.fxml" afterPath="$PROJECT_DIR$/target/classes/main/fxmlAssets/PaneOne.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/fxmlAssets/newCatVaccinationScreen.fxml" afterPath="$PROJECT_DIR$/target/classes/main/fxmlAssets/newCatVaccinationScreen.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/fxmlAssets/viewPetInformation.fxml" afterPath="$PROJECT_DIR$/target/classes/main/fxmlAssets/viewPetInformation.fxml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/fxmlAssets/daycareCheckIn.fxml" afterPath="$PROJECT_DIR$/target/classes/main/fxmlAssets/daycareCheckIn.fxml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -83,74 +84,13 @@
     </expand>
     <select />
   </component>
-  <component name="DockManager">
-    <window id="3">
-      <content type="file-editors">
-        <state>
-          <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-            <file leaf-file-name="editBoardingController.java" pinned="false" current-in-tab="true">
-              <entry file="file://$PROJECT_DIR$/src/main/java/main/editBoardingController.java">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="600">
-                    <caret line="136" column="18" lean-forward="false" selection-start-line="136" selection-start-column="18" selection-end-line="136" selection-end-column="18" />
-                    <folding>
-                      <marker date="1523925229372" expanded="true" signature="1239:1376" ph="SELECT PET.P... PET" />
-                      <marker date="1523925229372" expanded="true" signature="1239:1377" ph="SELECT PET.P... PET" />
-                      <marker date="1523925229372" expanded="true" signature="1987:2323" ph="SELECT KENNE... KENNEL" />
-                      <marker date="1523925229372" expanded="true" signature="2876:2947" ph="SELECT EMPLO... EMPLOYEE" />
-                      <marker date="1523925229372" expanded="true" signature="4343:5101" ph="SELECT BOARD... BOARDING_APPT" />
-                      <marker date="1523925229372" expanded="true" signature="6119:6259" ph="SELECT BOARD... BOARDING_APPT" />
-                      <marker date="1523925229372" expanded="true" signature="6119:6261" ph="SELECT BOARD... BOARDING_APPT" />
-                      <marker date="1523925229372" expanded="true" signature="7621:7691" ph="UPDATE _ORDE... " />
-                      <marker date="1523925229372" expanded="true" signature="7627:7691" ph="INSERT INTO _ORDER... " />
-                      <marker date="1523925229372" expanded="true" signature="8486:8656" ph="SELECT ORDER... ORDER_LINE" />
-                      <marker date="1523925229372" expanded="true" signature="9023:9061" ph="UPDATE ORDER... " />
-                      <marker date="1523925229372" expanded="true" signature="9023:9082" ph="UPDATE ORDER... " />
-                      <marker date="1523925229372" expanded="true" signature="9029:9061" ph="INSERT INTO ORDER_LINE... " />
-                      <marker date="1523925229372" expanded="true" signature="9389:9409" ph="UPDATE BOARD... " />
-                      <marker date="1523925229372" expanded="true" signature="9389:9410" ph="UPDATE BOARD... " />
-                      <marker date="1523925229372" expanded="true" signature="9389:9413" ph="UPDATE BOARD... " />
-                      <marker date="1523925229372" expanded="true" signature="9389:9422" ph="UPDATE BOARD... " />
-                      <marker date="1523925229372" expanded="true" signature="9389:9425" ph="UPDATE BOARD... " />
-                      <marker date="1523925229372" expanded="true" signature="9389:9442" ph="UPDATE BOARD... " />
-                      <marker date="1523925229372" expanded="true" signature="9389:9445" ph="UPDATE BOARD... " />
-                      <marker date="1523925229372" expanded="true" signature="9389:9448" ph="UPDATE BOARD... " />
-                      <marker date="1523925229372" expanded="true" signature="9389:9466" ph="UPDATE BOARD... " />
-                      <marker date="1523925229372" expanded="true" signature="9389:9469" ph="UPDATE BOARD... " />
-                      <marker date="1523925229372" expanded="true" signature="9389:9472" ph="UPDATE BOARD... " />
-                      <marker date="1523925229372" expanded="true" signature="9389:9494" ph="UPDATE BOARD... " />
-                      <marker date="1523925229372" expanded="true" signature="9389:9497" ph="UPDATE BOARD... " />
-                      <marker date="1523925229372" expanded="true" signature="9389:9500" ph="UPDATE BOARD... " />
-                      <marker date="1523925229372" expanded="true" signature="9389:9523" ph="UPDATE BOARD... " />
-                      <marker date="1523925229372" expanded="true" signature="9389:9526" ph="UPDATE BOARD... " />
-                      <marker date="1523925229372" expanded="true" signature="9389:9528" ph="UPDATE BOARD... " />
-                      <marker date="1523925229372" expanded="true" signature="9389:9553" ph="UPDATE BOARD... " />
-                      <marker date="1523925229372" expanded="true" signature="9389:9554" ph="UPDATE BOARD... " />
-                      <marker date="1523925229372" expanded="true" signature="9396:9409" ph="INSERT INTO BOARDING_APPT... " />
-                      <marker date="1523925229372" expanded="true" signature="10328:10550" ph="SELECT KENNE... KENNEL_RESERVATION" />
-                      <marker date="1523925229372" expanded="true" signature="10946:11042" ph="UPDATE KENNE... " />
-                      <marker date="1523925229372" expanded="true" signature="10946:11047" ph="UPDATE KENNE... " />
-                      <marker date="1523925229372" expanded="true" signature="10946:11069" ph="UPDATE KENNE... " />
-                      <marker date="1523925229372" expanded="true" signature="10946:11070" ph="UPDATE KENNE... " />
-                      <marker date="1523925229372" expanded="true" signature="10946:11071" ph="UPDATE KENNE... " />
-                      <marker date="1523925229372" expanded="true" signature="10952:11042" ph="INSERT INTO KENNEL_RESERVATION... " />
-                    </folding>
-                  </state>
-                </provider>
-              </entry>
-            </file>
-          </leaf>
-        </state>
-      </content>
-    </window>
-  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="MyMenuController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/main/MyMenuController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3621">
-              <caret line="494" column="85" lean-forward="false" selection-start-line="494" selection-start-column="85" selection-end-line="494" selection-end-column="85" />
+            <state relative-caret-position="29">
+              <caret line="443" column="0" lean-forward="false" selection-start-line="443" selection-start-column="0" selection-end-line="443" selection-end-column="0" />
               <folding>
                 <element signature="method#getInformationPane#0;class#MyMenuController#0" expanded="false" />
                 <element signature="method#switchHome#0;class#MyMenuController#0" expanded="false" />
@@ -168,18 +108,19 @@
                 <element signature="method#switcheditBoarding#0;class#MyMenuController#0" expanded="false" />
                 <element signature="method#switchcancelBoarding#0;class#MyMenuController#0" expanded="false" />
                 <element signature="method#switchcreateGrooming#0;class#MyMenuController#0" expanded="false" />
+                <element signature="method#switchEditGrooming#0;class#MyMenuController#0" expanded="false" />
                 <element signature="method#switchcancelGrooming#0;class#MyMenuController#0" expanded="false" />
                 <element signature="method#switchAddMedication#0;class#MyMenuController#0" expanded="false" />
                 <element signature="method#switchEditMedication#0;class#MyMenuController#0" expanded="false" />
                 <element signature="method#switchViewPetMed#0;class#MyMenuController#0" expanded="false" />
                 <element signature="method#switchAddVaccination#0;class#MyMenuController#0" expanded="false" />
                 <element signature="method#switchViewVaccines#0;class#MyMenuController#0" expanded="false" />
-                <element signature="method#switchAddBehavior#0;class#MyMenuController#0" expanded="false" />
                 <element signature="method#switchviewGrooming#0;class#MyMenuController#0" expanded="false" />
-                <element signature="method#switchcheckinDaycare#0;class#MyMenuController#0" expanded="false" />
                 <element signature="method#switchcheckoutDaycare#0;class#MyMenuController#0" expanded="false" />
                 <element signature="method#switchviewDaycareroom#0;class#MyMenuController#0" expanded="false" />
                 <element signature="method#switchManageKennels#0;class#MyMenuController#0" expanded="false" />
+                <element signature="method#switchCreateServiceOrder#0;class#MyMenuController#0" expanded="false" />
+                <element signature="method#switchEditServiceOrder#0;class#MyMenuController#0" expanded="false" />
                 <element signature="method#switchViewServiceOrder#0;class#MyMenuController#0" expanded="false" />
                 <element signature="method#switchManageEmployees#0;class#MyMenuController#0" expanded="false" />
                 <element signature="method#switchManageDaycareRooms#0;class#MyMenuController#0" expanded="false" />
@@ -191,7 +132,7 @@
       <file leaf-file-name="createGroomingApptController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/main/createGroomingApptController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1853">
+            <state relative-caret-position="559">
               <caret line="109" column="38" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="168" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -206,107 +147,112 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="editGroomingApptController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/main/editGroomingApptController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3774">
-              <caret line="222" column="28" lean-forward="false" selection-start-line="222" selection-start-column="28" selection-end-line="222" selection-end-column="28" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <marker date="1523944589542" expanded="true" signature="1173:1319" ph="SELECT PET.P... PET" />
-                <marker date="1523944589542" expanded="true" signature="1931:2002" ph="SELECT EMPLO... EMPLOYEE" />
-                <marker date="1523944589542" expanded="true" signature="2554:2591" ph="SELECT ORDER... ORDER_STATUS" />
-                <marker date="1523944589542" expanded="true" signature="3939:3970" ph="SELECT VISIT... VISI" />
-                <marker date="1523944589542" expanded="true" signature="3939:4029" ph="SELECT VISIT... VISIT" />
-                <marker date="1523944589542" expanded="true" signature="3939:4116" ph="SELECT VISIT... VISIT" />
-                <marker date="1523944589542" expanded="true" signature="3939:4198" ph="SELECT VISIT... VISIT" />
-                <marker date="1523944589542" expanded="true" signature="3939:4328" ph="SELECT VISIT... VISIT" />
-                <marker date="1523944589542" expanded="true" signature="3939:4330" ph="SELECT VISIT... VISIT" />
-                <marker date="1523944589542" expanded="true" signature="3939:4331" ph="SELECT VISIT... VISIT" />
-                <marker date="1523944589542" expanded="true" signature="5100:5635" ph="SELECT VISIT... VISIT" />
-                <marker date="1523944589542" expanded="true" signature="6851:7293" ph="SELECT _ORDE... VISIT" />
-                <marker date="1523944589542" expanded="true" signature="7723:7809" ph="UPDATE _ORDE... " />
-                <marker date="1523944589542" expanded="true" signature="7729:7773" ph="INSERT INTO _ORDER... " />
-                <marker date="1523944589542" expanded="true" signature="8314:8765" ph="SELECT ORDER... VISIT" />
-                <marker date="1523944589542" expanded="true" signature="9185:9286" ph="UPDATE ORDER... " />
-                <marker date="1523944589542" expanded="true" signature="9191:9286" ph="INSERT INTO ORDER_LINE... " />
-                <marker date="1523944589542" expanded="true" signature="9743:9818" ph="UPDATE VISIT... " />
-                <marker date="1523944589542" expanded="true" signature="9743:9819" ph="UPDATE VISIT... " />
-                <marker date="1523944589542" expanded="true" signature="9743:9825" ph="UPDATE VISIT... " />
-                <marker date="1523944589542" expanded="true" signature="9743:9830" ph="UPDATE VISIT... " />
-                <marker date="1523944589542" expanded="true" signature="9743:9834" ph="UPDATE VISIT... " />
-                <marker date="1523944589542" expanded="true" signature="9743:9836" ph="UPDATE VISIT... " />
-                <marker date="1523944589542" expanded="true" signature="9749:9818" ph="INSERT INTO VISIT... " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="createServiceOrderController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/main/createServiceOrderController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3077">
-              <caret line="196" column="18" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="371" selection-end-column="0" />
+            <state relative-caret-position="119">
+              <caret line="223" column="0" lean-forward="false" selection-start-line="223" selection-start-column="0" selection-end-line="227" selection-end-column="32" />
               <folding>
                 <element signature="method#petWeightGrpChecker#0;class#createServiceOrderController#0" expanded="false" />
                 <element signature="method#tablePopulate#0;class#createServiceOrderController#0" expanded="false" />
-                <marker date="1523899038450" expanded="false" signature="3034:3095" ph="SELECT CUSTO... CUSTOMER" />
-                <marker date="1523899038450" expanded="false" signature="3730:3801" ph="SELECT EMPLO... EMPLOYEE" />
-                <marker date="1523899038450" expanded="true" signature="4452:4640" ph="SELECT SERVI... _SERVICE" />
-                <marker date="1523899038450" expanded="true" signature="4452:4641" ph="SELECT SERVI... _SERVICE" />
-                <marker date="1523899038450" expanded="false" signature="5262:5598" ph="SELECT KENNE... KENNEL" />
-                <marker date="1523899038450" expanded="false" signature="6681:7004" ph="SELECT PET.P... PET" />
-                <marker date="1523899038450" expanded="false" signature="8133:8222" ph="INSERT INTO ORDER... " />
-                <marker date="1523899038450" expanded="true" signature="10198:10351" ph="INSERT INTO ORDER_LINE... " />
-                <marker date="1523899038450" expanded="false" signature="11921:12099" ph="INSERT INTO BOARDING_APPT... " />
-                <marker date="1523899038450" expanded="false" signature="13340:13478" ph="INSERT INTO KENNEL_RESERVATION... " />
-                <marker date="1523899038450" expanded="false" signature="14715:15240" ph="SELECT ORDER... ORDER_LINE" />
-                <marker date="1523899038450" expanded="false" signature="14715:15270" ph="SELECT ORDER... ORDER_LINE" />
+                <marker date="1523986046118" expanded="false" signature="2933:2994" ph="SELECT CUSTO... CUSTOMER" />
+                <marker date="1523986046118" expanded="false" signature="3629:3700" ph="SELECT EMPLO... EMPLOYEE" />
+                <marker date="1523986046118" expanded="true" signature="4351:4539" ph="SELECT SERVI... _SERVICE" />
+                <marker date="1523986046118" expanded="true" signature="4351:4540" ph="SELECT SERVI... _SERVICE" />
+                <marker date="1523986046118" expanded="false" signature="5161:5497" ph="SELECT KENNE... KENNEL" />
+                <marker date="1523986046118" expanded="false" signature="6580:6903" ph="SELECT PET.P... PET" />
+                <marker date="1523986046118" expanded="false" signature="8032:8121" ph="INSERT INTO ORDER... " />
+                <marker date="1523986046118" expanded="true" signature="10097:10250" ph="INSERT INTO ORDER_LINE... " />
+                <marker date="1523986046118" expanded="false" signature="11820:11998" ph="INSERT INTO BOARDING_APPT... " />
+                <marker date="1523986046118" expanded="false" signature="13239:13377" ph="INSERT INTO KENNEL_RESERVATION... " />
+                <marker date="1523986046118" expanded="false" signature="14614:15139" ph="SELECT ORDER... ORDER_LINE" />
+                <marker date="1523986046118" expanded="false" signature="14614:15169" ph="SELECT ORDER... ORDER_LINE" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="editServiceOrder.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="editServiceOrder.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/main/editServiceOrder.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="363" column="0" lean-forward="false" selection-start-line="363" selection-start-column="0" selection-end-line="363" selection-end-column="0" />
+            <state relative-caret-position="-1768">
+              <caret line="347" column="37" lean-forward="false" selection-start-line="347" selection-start-column="37" selection-end-line="347" selection-end-column="37" />
               <folding>
-                <marker date="1523950568154" expanded="true" signature="3006:3067" ph="SELECT CUSTO... CUSTOMER" />
-                <marker date="1523950568154" expanded="true" signature="3702:3773" ph="SELECT EMPLO... EMPLOYEE" />
-                <marker date="1523950568154" expanded="true" signature="4424:4612" ph="SELECT SERVI... _SERVICE" />
-                <marker date="1523950568154" expanded="true" signature="5234:5570" ph="SELECT KENNE... KENNEL" />
-                <marker date="1523950568154" expanded="true" signature="6011:6048" ph="SELECT ORDER... ORDER_STATUS" />
-                <marker date="1523950568154" expanded="true" signature="7636:7838" ph="SELECT _ORDE... _ORDER" />
-                <marker date="1523950568154" expanded="true" signature="8555:8698" ph="SELECT _ORDE... _ORDER" />
-                <marker date="1523950568154" expanded="true" signature="9277:9411" ph="SELECT ORDER... ORDER_LINE" />
-                <marker date="1523950568154" expanded="true" signature="10019:10426" ph="SELECT PET.P... ORDER_LINE" />
-                <marker date="1523950568154" expanded="true" signature="11330:11653" ph="SELECT PET.P... PET" />
-                <marker date="1523950568154" expanded="true" signature="12782:12871" ph="INSERT INTO _ORDER... " />
-                <marker date="1523950568154" expanded="true" signature="14691:14776" ph="UPDATE ORDER... " />
-                <marker date="1523950568154" expanded="true" signature="15560:15633" ph="UPDATE _ORDE... " />
-                <marker date="1523950568154" expanded="true" signature="16834:16991" ph="INSERT INTO ORDER_LINE... " />
-                <marker date="1523950568154" expanded="true" signature="18663:18845" ph="INSERT INTO BOARDING_APPT... " />
-                <marker date="1523950568154" expanded="true" signature="20146:20284" ph="INSERT INTO KENNEL_RESERVATION... " />
-                <marker date="1523950568154" expanded="true" signature="21523:22078" ph="SELECT ORDER... ORDER_LINE" />
+                <element signature="method#orderDetails#0;class#editServiceOrder#0" expanded="false" />
+                <element signature="method#kennelCombo#0;class#editServiceOrder#0" expanded="false" />
+                <element signature="e#12758#12811#0" expanded="false" />
+                <marker date="1524010312976" expanded="true" signature="3002:3063" ph="SELECT CUSTO... CUSTOMER" />
+                <marker date="1524010312976" expanded="true" signature="3698:3769" ph="SELECT EMPLO... EMPLOYEE" />
+                <marker date="1524010312976" expanded="true" signature="4420:4608" ph="SELECT SERVI... _SERVICE" />
+                <marker date="1524010312976" expanded="true" signature="5230:5566" ph="SELECT KENNE... KENNEL" />
+                <marker date="1524010312976" expanded="true" signature="6007:6044" ph="SELECT ORDER... ORDER_STATUS" />
+                <marker date="1524010312976" expanded="false" signature="7632:7834" ph="SELECT _ORDE... _ORDER" />
+                <marker date="1524010312976" expanded="true" signature="8627:8770" ph="SELECT _ORDE... _ORDER" />
+                <marker date="1524010312976" expanded="false" signature="9349:9483" ph="SELECT ORDER... ORDER_LINE" />
+                <marker date="1524010312976" expanded="false" signature="10112:10304" ph="SELECT PET.P... ORDER_LIN" />
+                <marker date="1524010312976" expanded="false" signature="10112:10533" ph="SELECT PET.P... ORDER_LINE" />
+                <marker date="1524010312976" expanded="false" signature="10112:10615" ph="SELECT PET.P... ORDER_LINE" />
+                <marker date="1524010312976" expanded="false" signature="10112:10624" ph="SELECT PET.P... ORDER_LINE" />
+                <marker date="1524010312976" expanded="false" signature="10112:10636" ph="SELECT PET.P... ORDER_LINE" />
+                <marker date="1524010312976" expanded="false" signature="10112:10638" ph="SELECT PET.P... ORDER_LINE" />
+                <marker date="1524010312976" expanded="false" signature="10112:10639" ph="SELECT PET.P... ORDER_LINE" />
+                <marker date="1524010312976" expanded="true" signature="11637:11960" ph="SELECT PET.P... PET" />
+                <marker date="1524010312976" expanded="false" signature="13097:13186" ph="INSERT INTO _ORDER... " />
+                <marker date="1524010312976" expanded="true" signature="15312:15397" ph="UPDATE ORDER... " />
+                <marker date="1524010312976" expanded="true" signature="16234:16314" ph="UPDATE _ORDE... " />
+                <marker date="1524010312976" expanded="true" signature="17692:17849" ph="INSERT INTO ORDER_LINE... " />
+                <marker date="1524010312976" expanded="false" signature="19520:19702" ph="INSERT INTO BOARDING_APPT... " />
+                <marker date="1524010312976" expanded="false" signature="21003:21141" ph="INSERT INTO KENNEL_RESERVATION... " />
+                <marker date="1524010312976" expanded="true" signature="22380:22935" ph="SELECT ORDER... ORDER_LINE" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ManageEmployeeController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/main/ManageEmployeeController.java">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/main/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1394">
-              <caret line="94" column="0" lean-forward="false" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
+            <state relative-caret-position="477">
+              <caret line="53" column="1" lean-forward="true" selection-start-line="53" selection-start-column="1" selection-end-line="53" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="createBoardingApptController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/main/createBoardingApptController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-738">
+              <caret line="153" column="43" lean-forward="false" selection-start-line="153" selection-start-column="43" selection-end-line="153" selection-end-column="43" />
               <folding>
-                <marker date="1523479966977" expanded="true" signature="3196:3239" ph="SELECT EMPLO... EMPLOYEE_STATUS" />
-                <marker date="1523479966977" expanded="true" signature="3991:4250" ph="SELECT EMPLO... EMPLOYEE" />
-                <marker date="1523479966977" expanded="true" signature="4986:5238" ph="UPDATE EMPLO... " />
-                <marker date="1523479966977" expanded="true" signature="4986:5239" ph="UPDATE EMPLO... " />
-                <marker date="1523479966977" expanded="true" signature="5905:6115" ph="INSERT INTO EMPLOYEE... " />
-                <marker date="1523479966977" expanded="true" signature="5905:6137" ph="INSERT INTO EMPLOYEE... " />
+                <marker date="1524007193811" expanded="true" signature="1238:1299" ph="SELECT CUSTO... CUSTOMER" />
+                <marker date="1524007193811" expanded="true" signature="1930:2266" ph="SELECT KENNE... KENNEL" />
+                <marker date="1524007193811" expanded="true" signature="2819:2890" ph="SELECT EMPLO... EMPLOYEE" />
+                <marker date="1524007193811" expanded="true" signature="3907:4053" ph="SELECT PET.P... PET" />
+                <marker date="1524007193811" expanded="true" signature="3907:4234" ph="SELECT PET.P... PET" />
+                <marker date="1524007193811" expanded="true" signature="5608:5698" ph="INSERT INTO _ORDER... " />
+                <marker date="1524007193811" expanded="true" signature="6517:6670" ph="INSERT INTO ORDER_LINE... " />
+                <marker date="1524007193811" expanded="true" signature="7488:7666" ph="INSERT INTO BOARDING_APPT... " />
+                <marker date="1524007193811" expanded="true" signature="8676:8818" ph="INSERT INTO KENNEL_RESERVATION... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="daycareCheckIn.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/main/daycareCheckIn.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="720">
+              <caret line="155" column="27" lean-forward="true" selection-start-line="155" selection-start-column="27" selection-end-line="155" selection-end-column="27" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <marker date="1523995692568" expanded="true" signature="781:842" ph="SELECT CUSTO... CUSTOMER" />
+                <marker date="1523995692568" expanded="true" signature="1466:1508" ph="SELECT DAYCA... DAYCARE_ROOM" />
+                <marker date="1523995692568" expanded="true" signature="2418:2745" ph="SELECT PET.P... PET" />
+                <marker date="1523995692568" expanded="true" signature="3631:3728" ph="INSERT INTO _ORDER... " />
+                <marker date="1523995692568" expanded="true" signature="4551:4703" ph="INSERT INTO ORDER_LINE... " />
+                <marker date="1523995692568" expanded="true" signature="5591:5697" ph="INSERT INTO VISIT... " />
+                <marker date="1523995692568" expanded="true" signature="6512:6648" ph="INSERT INTO DAYCARE_VISIT... " />
               </folding>
             </state>
           </provider>
@@ -315,18 +261,59 @@
       <file leaf-file-name="viewPetVaccines.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/main/viewPetVaccines.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+            <state relative-caret-position="397">
+              <caret line="105" column="5" lean-forward="true" selection-start-line="105" selection-start-column="5" selection-end-line="105" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <marker date="1523930729690" expanded="true" signature="1254:1383" ph="SELECT PET.P... PET_VACCIN" />
-                <marker date="1523930729690" expanded="true" signature="1254:1448" ph="SELECT PET.P... PET_VACCINE" />
-                <marker date="1523930729690" expanded="true" signature="1254:1537" ph="SELECT PET.P... PET_VACCINE" />
-                <marker date="1523930729690" expanded="true" signature="1254:1538" ph="SELECT PET.P... PET_VACCINE" />
-                <marker date="1523930729690" expanded="true" signature="2292:2332" ph="SELECT PET.P... PET" />
-                <marker date="1523930729690" expanded="true" signature="3788:4091" ph="SELECT PET.P... PET_VACCINE" />
-                <marker date="1523930729690" expanded="true" signature="3788:4092" ph="SELECT PET.P... PET_VACCINE" />
-                <marker date="1523930729690" expanded="true" signature="3788:4097" ph="SELECT PET.P... PET_VACCINE" />
+                <marker date="1523999899180" expanded="true" signature="1251:1380" ph="SELECT PET.P... PET_VACCIN" />
+                <marker date="1523999899180" expanded="true" signature="1251:1445" ph="SELECT PET.P... PET_VACCINE" />
+                <marker date="1523999899180" expanded="true" signature="1251:1534" ph="SELECT PET.P... PET_VACCINE" />
+                <marker date="1523999899180" expanded="true" signature="1251:1535" ph="SELECT PET.P... PET_VACCINE" />
+                <marker date="1523999899180" expanded="true" signature="2289:2329" ph="SELECT PET.P... PET" />
+                <marker date="1523999899180" expanded="true" signature="3816:4119" ph="SELECT PET.P... PET_VACCINE" />
+                <marker date="1523999899180" expanded="true" signature="3816:4120" ph="SELECT PET.P... PET_VACCINE" />
+                <marker date="1523999899180" expanded="true" signature="3816:4125" ph="SELECT PET.P... PET_VACCINE" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="viewPetBehavior.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/main/viewPetBehavior.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <marker date="1523999989546" expanded="true" signature="1409:1532" ph="SELECT PET.P... PE" />
+                <marker date="1523999989546" expanded="true" signature="1409:1607" ph="SELECT PET.P... PET" />
+                <marker date="1523999989546" expanded="true" signature="1409:1693" ph="SELECT PET.P... PET" />
+                <marker date="1523999989546" expanded="true" signature="1409:1694" ph="SELECT PET.P... PET" />
+                <marker date="1523999989546" expanded="true" signature="2454:2494" ph="SELECT PET.P... PET" />
+                <marker date="1523999989546" expanded="true" signature="3983:4279" ph="SELECT PET.P... PET" />
+                <marker date="1523999989546" expanded="true" signature="3983:4280" ph="SELECT PET.P... PET" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="viewDaycareRoom.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/main/viewDaycareRoom.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1003">
+              <caret line="59" column="18" lean-forward="false" selection-start-line="59" selection-start-column="18" selection-end-line="59" selection-end-column="18" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <marker date="1523996433203" expanded="true" signature="1453:1621" ph="SELECT DAYCA... DAYCARE_VISI" />
+                <marker date="1523996433203" expanded="true" signature="1453:1695" ph="SELECT DAYCA... DAYCARE_VISIT" />
+                <marker date="1523996433203" expanded="true" signature="1453:1753" ph="SELECT DAYCA... DAYCARE_VISIT" />
+                <marker date="1523996433203" expanded="true" signature="1453:1821" ph="SELECT DAYCA... DAYCARE_VISIT" />
+                <marker date="1523996433203" expanded="true" signature="1453:1903" ph="SELECT DAYCA... DAYCARE_VISIT" />
+                <marker date="1523996433203" expanded="true" signature="1453:2005" ph="SELECT DAYCA... DAYCARE_VISIT" />
+                <marker date="1523996433203" expanded="true" signature="1453:2006" ph="SELECT DAYCA... DAYCARE_VISIT" />
+                <marker date="1523996433203" expanded="true" signature="1453:2102" ph="SELECT DAYCA... DAYCARE_VISIT" />
+                <marker date="1523996433203" expanded="true" signature="1453:2103" ph="SELECT DAYCA... DAYCARE_VISIT" />
+                <marker date="1523996433203" expanded="true" signature="1453:2130" ph="SELECT DAYCA... DAYCARE_VISIT" />
               </folding>
             </state>
           </provider>
@@ -352,22 +339,13 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/main/Kennel.java" />
-        <option value="$PROJECT_DIR$/src/main/java/main/fxmlAssets/EmployeeDetailController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/main/ExampleController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/main/Employee.java" />
-        <option value="$PROJECT_DIR$/src/main/java/main/EmployeeDetailController.java" />
         <option value="$PROJECT_DIR$/src/main/java/main/Customer.java" />
         <option value="$PROJECT_DIR$/src/main/java/main/KennelReportController.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/main/ManageEmployeeController.java" />
         <option value="$PROJECT_DIR$/src/main/java/main/viewCustomerController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/main/ManageDaycareRoomController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/main/ManageKennelController.java" />
         <option value="$PROJECT_DIR$/src/main/java/main/addCustomerController.java" />
         <option value="$PROJECT_DIR$/src/main/java/main/editCustomerInformationController.java" />
         <option value="$PROJECT_DIR$/src/main/java/main/OrderLine.java" />
-        <option value="$PROJECT_DIR$/src/main/java/main/createServiceOrderController.java" />
         <option value="$PROJECT_DIR$/src/main/java/main/fx.css" />
         <option value="$PROJECT_DIR$/target/classes/main/fx.css" />
         <option value="$PROJECT_DIR$/src/main/java/main/addVaccination.java" />
@@ -375,7 +353,6 @@
         <option value="$PROJECT_DIR$/src/main/java/main/addPetBehaviorController.java" />
         <option value="$PROJECT_DIR$/src/main/java/main/addMedicationController.java" />
         <option value="$PROJECT_DIR$/src/main/java/main/newCustomerController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/main/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/main/newCatVaccinationController.java" />
         <option value="$PROJECT_DIR$/src/main/java/main/newPetMedicationController.java" />
         <option value="$PROJECT_DIR$/src/main/java/main/newDogVaccinationController.java" />
@@ -392,17 +369,27 @@
         <option value="$PROJECT_DIR$/src/main/java/main/PetMed.java" />
         <option value="$PROJECT_DIR$/src/main/java/main/viewPetMed.java" />
         <option value="$PROJECT_DIR$/src/main/java/main/PetVaccine.java" />
-        <option value="$PROJECT_DIR$/src/main/java/main/createBoardingApptController.java" />
         <option value="$PROJECT_DIR$/src/main/java/main/BoardingAppt.java" />
         <option value="$PROJECT_DIR$/src/main/java/main/fxmlAssets/homeController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/main/homeController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/main/viewDaycareRoom.java" />
         <option value="$PROJECT_DIR$/src/main/java/main/editBoardingController.java" />
         <option value="$PROJECT_DIR$/src/main/java/main/createGroomingApptController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/main/viewPetVaccines.java" />
         <option value="$PROJECT_DIR$/src/main/java/main/editGroomingApptController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/main/ManageEmployeeController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/main/ManageKennelController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/main/createServiceOrderController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/main/ManageDaycareRoomController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/main/homeController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/main/viewBoardingAppointements.java" />
+        <option value="$PROJECT_DIR$/src/main/java/main/PetBehavior.java" />
+        <option value="$PROJECT_DIR$/src/main/java/main/editBehavior.java" />
         <option value="$PROJECT_DIR$/src/main/java/main/MyMenuController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/main/daycareCheckIn.java" />
+        <option value="$PROJECT_DIR$/src/main/java/main/viewDaycareRoom.java" />
+        <option value="$PROJECT_DIR$/src/main/java/main/viewPetVaccines.java" />
+        <option value="$PROJECT_DIR$/src/main/java/main/viewPetBehavior.java" />
+        <option value="$PROJECT_DIR$/src/main/java/main/createBoardingApptController.java" />
         <option value="$PROJECT_DIR$/src/main/java/main/editServiceOrder.java" />
+        <option value="$PROJECT_DIR$/src/main/java/main/Main.java" />
       </list>
     </option>
   </component>
@@ -426,10 +413,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1358" />
+    <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1096" />
+    <option name="width" value="1382" />
+    <option name="height" value="784" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -715,7 +702,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -749,13 +736,31 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="adspetbase" type="b2602c69:ProjectViewProjectNode" />
+              <item name="adspetbase" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="adspetbase" type="b2602c69:ProjectViewProjectNode" />
+              <item name="adspetbase" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="classes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="adspetbase" type="b2602c69:ProjectViewProjectNode" />
+              <item name="adspetbase" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="classes" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="AndroidView" />
       <pane id="PackagesPane" />
-      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -776,6 +781,7 @@
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Oti\IdeaProjects\adspetbase\target\classes\main" />
+      <recent name="C:\Users\Oti\IdeaProjects\adspetbase\src\main\java\main\imageAssets" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -919,7 +925,8 @@
       <workItem from="1523299424883" duration="117060000" />
       <workItem from="1523646572399" duration="18802000" />
       <workItem from="1523688070256" duration="76468000" />
-      <workItem from="1523950663969" duration="3000" />
+      <workItem from="1523950663969" duration="425000" />
+      <workItem from="1523983007227" duration="20664000" />
     </task>
     <task id="LOCAL-00001" summary="-m blaj">
       <created>1523481936770</created>
@@ -942,30 +949,39 @@
       <option name="project" value="LOCAL" />
       <updated>1523859447243</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="-m edit screens uploaded. still need to debug edit service order">
+      <created>1523950733082</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1523950733082</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="265783000" />
+    <option name="totallyTimeSpent" value="286869000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1358" y="-8" width="1936" height="1096" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32786885" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1852123" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.057985757" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.056631893" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18177083" sideWeight="0.13201821" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14322917" sideWeight="0.8679818" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25841874" sideWeight="0.8679818" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.073938504" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -977,7 +993,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32786885" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.06954612" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32935917" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1025,7 +1040,8 @@
     <MESSAGE value="-m blaj" />
     <MESSAGE value="-m newest version. includes order creating" />
     <MESSAGE value="-m new customer information sequence functional" />
-    <option name="LAST_COMMIT_MESSAGE" value="-m new customer information sequence functional" />
+    <MESSAGE value="-m edit screens uploaded. still need to debug edit service order" />
+    <option name="LAST_COMMIT_MESSAGE" value="-m edit screens uploaded. still need to debug edit service order" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1042,82 +1058,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/main/KennelReportController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="55" column="0" lean-forward="false" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/main/fxmlAssets/NewClientScreenController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-951">
-          <caret line="20" column="30" lean-forward="true" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/main/viewCustomerController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1564">
-          <caret line="92" column="25" lean-forward="true" selection-start-line="92" selection-start-column="25" selection-end-line="92" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/main/EmployeeHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#486#496#0" expanded="false" />
-            <marker date="1523224586847" expanded="true" signature="529:536" ph="SELECT * fro... EMPLOYEE" />
-            <marker date="1523224586847" expanded="true" signature="529:614" ph="SELECT EMPLO... " />
-            <marker date="1523224586847" expanded="true" signature="529:771" ph="SELECT EMPLO... " />
-            <marker date="1523224586847" expanded="true" signature="529:806" ph="SELECT EMPLO... EMPLOYEE" />
-            <marker date="1523224586847" expanded="true" signature="529:848" ph="SELECT EMPLO... EMPLOYEEJOIN" />
-            <marker date="1523224586847" expanded="true" signature="529:916" ph="SELECT EMPLO... EMPLOYEE" />
-            <marker date="1523224586847" expanded="true" signature="939:1195" ph="SELECT * FRO... EMPLOYEE" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/main/ManageDaycareRoomController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="81" column="153" lean-forward="true" selection-start-line="81" selection-start-column="25" selection-end-line="81" selection-end-column="153" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_162/javafx-src.zip!/javafx/fxml/FXMLLoader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="1772" column="0" lean-forward="false" selection-start-line="1772" selection-start-column="0" selection-end-line="1772" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/main/ManageKennelController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1377">
-          <caret line="81" column="31" lean-forward="false" selection-start-line="81" selection-start-column="31" selection-end-line="81" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <marker date="1523563031172" expanded="true" signature="1520:1742" ph="SELECT KENNE... KENNEL" />
-            <marker date="1523563031172" expanded="true" signature="1520:1842" ph="SELECT KENNE... KENNEL" />
-            <marker date="1523563031172" expanded="true" signature="1520:1843" ph="SELECT KENNE... KENNEL" />
-            <marker date="1523563031172" expanded="true" signature="2504:2539" ph="SELECT KENNE... KENNEL_SIZE" />
-            <marker date="1523563031172" expanded="true" signature="2961:2995" ph="SELECT KENNE... KENNEL_SIZE" />
-            <marker date="1523563031172" expanded="true" signature="2961:3000" ph="SELECT KENNE... KENNEL_STATUS" />
-            <marker date="1523563031172" expanded="true" signature="3556:3839" ph="SELECT KENNE... KENNEL" />
-            <marker date="1523563031172" expanded="true" signature="4395:4409" ph="UPDATE KENNE... " />
-            <marker date="1523563031172" expanded="true" signature="4395:4434" ph="UPDATE KENNE... " />
-            <marker date="1523563031172" expanded="true" signature="4395:4435" ph="UPDATE KENNE... " />
-            <marker date="1523563031172" expanded="true" signature="4395:4454" ph="UPDATE KENNE... " />
-            <marker date="1523563031172" expanded="true" signature="4395:4471" ph="UPDATE KENNE... " />
-            <marker date="1523563031172" expanded="true" signature="4856:4922" ph="INSERT INTO KENNEL... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="493">
@@ -1187,6 +1127,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="571">
           <caret line="101" column="34" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="107" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1259,14 +1200,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/main/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="21" column="39" lean-forward="false" selection-start-line="21" selection-start-column="39" selection-end-line="21" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/main/newCustomerController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="464">
@@ -1311,27 +1244,6 @@
           <folding>
             <element signature="imports" expanded="true" />
             <marker date="1523838757723" expanded="true" signature="1188:1356" ph="INSERT INTO PET_MED... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/main/newPetController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="253" column="37" lean-forward="false" selection-start-line="253" selection-start-column="37" selection-end-line="253" selection-end-column="37" />
-          <folding>
-            <marker date="1523899038812" expanded="true" signature="2085:2109" ph="SELECT CLR_D... CLR" />
-            <marker date="1523899038812" expanded="true" signature="2629:2663" ph="SELECT BEHAV... BEHAVIOR" />
-            <marker date="1523899038812" expanded="true" signature="3448:3506" ph="SELECT BREED... BREED" />
-            <marker date="1523899038812" expanded="true" signature="4824:5006" ph="INSERT INTO PET... " />
-            <marker date="1523899038812" expanded="true" signature="5700:5745" ph="SELECT BREED... BREED" />
-            <marker date="1523899038812" expanded="true" signature="5773:5818" ph="SELECT BREED... BREED" />
-            <marker date="1523899038812" expanded="true" signature="6964:7050" ph="INSERT INTO PET_BREED... " />
-            <marker date="1523899038812" expanded="true" signature="7410:7460" ph="SELECT CLR_C... CLR" />
-            <marker date="1523899038812" expanded="true" signature="8076:8152" ph="INSERT INTO PET_CLR... " />
-            <marker date="1523899038812" expanded="true" signature="8656:8711" ph="INSERT INTO PET_OWNER... " />
-            <marker date="1523899038812" expanded="true" signature="9074:9145" ph="INSERT INTO PET_WEIGHT_HIST... " />
-            <marker date="1523899038812" expanded="true" signature="9569:9653" ph="INSERT INTO PET_BEHAVIOR... " />
           </folding>
         </state>
       </provider>
@@ -1393,6 +1305,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1541,92 +1454,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/main/viewServiceOrders.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-62">
-          <caret line="32" column="60" lean-forward="false" selection-start-line="32" selection-start-column="60" selection-end-line="32" selection-end-column="60" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1523900617366" expanded="true" signature="1399:1546" ph="SELECT _ORDE... _ORDE" />
-            <marker date="1523900617366" expanded="true" signature="1399:1626" ph="SELECT _ORDE... _ORDER" />
-            <marker date="1523900617366" expanded="true" signature="1399:1744" ph="SELECT _ORDE... _ORDER" />
-            <marker date="1523900617366" expanded="true" signature="1399:1745" ph="SELECT _ORDE... _ORDER" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/main/homeController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="98" column="175" lean-forward="false" selection-start-line="98" selection-start-column="80" selection-end-line="98" selection-end-column="175" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1523916984626" expanded="true" signature="3008:3736" ph="SELECT BOARD... BOARDING_APPT" />
-            <marker date="1523916984626" expanded="true" signature="4775:5504" ph="SELECT BOARD... BOARDING_APPT" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/main/viewDaycareRoom.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="48" column="64" lean-forward="true" selection-start-line="48" selection-start-column="64" selection-end-line="48" selection-end-column="64" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1523917423799" expanded="true" signature="1453:1621" ph="SELECT DAYCA... DAYCARE_VISI" />
-            <marker date="1523917423799" expanded="true" signature="1453:1695" ph="SELECT DAYCA... DAYCARE_VISIT" />
-            <marker date="1523917423799" expanded="true" signature="1453:1753" ph="SELECT DAYCA... DAYCARE_VISIT" />
-            <marker date="1523917423799" expanded="true" signature="1453:1821" ph="SELECT DAYCA... DAYCARE_VISIT" />
-            <marker date="1523917423799" expanded="true" signature="1453:1903" ph="SELECT DAYCA... DAYCARE_VISIT" />
-            <marker date="1523917423799" expanded="true" signature="1453:2005" ph="SELECT DAYCA... DAYCARE_VISIT" />
-            <marker date="1523917423799" expanded="true" signature="1453:2006" ph="SELECT DAYCA... DAYCARE_VISIT" />
-            <marker date="1523917423799" expanded="true" signature="1453:2102" ph="SELECT DAYCA... DAYCARE_VISIT" />
-            <marker date="1523917423799" expanded="true" signature="1453:2103" ph="SELECT DAYCA... DAYCARE_VISIT" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/main/BoardingAppt.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="748">
-          <caret line="114" column="5" lean-forward="false" selection-start-line="114" selection-start-column="5" selection-end-line="114" selection-end-column="5" />
-          <folding>
-            <element signature="e#2180#2181#0" expanded="true" />
-            <element signature="e#2210#2211#0" expanded="true" />
-            <element signature="e#2256#2257#0" expanded="true" />
-            <element signature="e#2294#2295#0" expanded="true" />
-            <element signature="e#2330#2331#0" expanded="true" />
-            <element signature="e#2362#2363#0" expanded="true" />
-            <element signature="e#2412#2413#0" expanded="true" />
-            <element signature="e#2454#2455#0" expanded="true" />
-            <element signature="e#2489#2490#0" expanded="true" />
-            <element signature="e#2520#2521#0" expanded="true" />
-            <element signature="e#2568#2569#0" expanded="true" />
-            <element signature="e#2608#2609#0" expanded="true" />
-            <element signature="e#2640#2641#0" expanded="true" />
-            <element signature="e#2671#2672#0" expanded="true" />
-            <element signature="e#2716#2717#0" expanded="true" />
-            <element signature="e#2756#2757#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/main/editMedicationController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
-          <caret line="179" column="81" lean-forward="false" selection-start-line="179" selection-start-column="81" selection-end-line="179" selection-end-column="81" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1523904021342" expanded="true" signature="1213:1253" ph="SELECT PET.P... PET" />
-            <marker date="1523904021342" expanded="true" signature="1847:1888" ph="SELECT PET_M... PET_MED_STATUS" />
-            <marker date="1523904021342" expanded="true" signature="2896:3037" ph="SELECT PET_M... PET_MED" />
-            <marker date="1523904021342" expanded="true" signature="4184:4498" ph="SELECT MED_N... PET_MED" />
-            <marker date="1523904021342" expanded="true" signature="4184:4523" ph="SELECT MED_N... PET_MED" />
-            <marker date="1523904021342" expanded="true" signature="5453:5609" ph="UPDATE PET_M... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/main/editCustomerInformationController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="327">
@@ -1662,78 +1489,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/main/createBoardingApptController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding>
-            <marker date="1523914072728" expanded="true" signature="1238:1299" ph="SELECT CUSTO... CUSTOMER" />
-            <marker date="1523914072728" expanded="true" signature="1930:2266" ph="SELECT KENNE... KENNEL" />
-            <marker date="1523914072728" expanded="true" signature="2819:2890" ph="SELECT EMPLO... EMPLOYEE" />
-            <marker date="1523914072728" expanded="true" signature="3907:4053" ph="SELECT PET.P... PET" />
-            <marker date="1523914072728" expanded="true" signature="3907:4234" ph="SELECT PET.P... PET" />
-            <marker date="1523914072728" expanded="true" signature="5608:5698" ph="INSERT INTO _ORDER... " />
-            <marker date="1523914072728" expanded="true" signature="6471:6624" ph="INSERT INTO ORDER_LINE... " />
-            <marker date="1523914072728" expanded="true" signature="7433:7610" ph="INSERT INTO BOARDING_APPT... " />
-            <marker date="1523914072728" expanded="true" signature="8579:8719" ph="INSERT INTO KENNEL_RESERVATION... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/main/viewPetVaccines.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1523930729690" expanded="true" signature="1254:1383" ph="SELECT PET.P... PET_VACCIN" />
-            <marker date="1523930729690" expanded="true" signature="1254:1448" ph="SELECT PET.P... PET_VACCINE" />
-            <marker date="1523930729690" expanded="true" signature="1254:1537" ph="SELECT PET.P... PET_VACCINE" />
-            <marker date="1523930729690" expanded="true" signature="1254:1538" ph="SELECT PET.P... PET_VACCINE" />
-            <marker date="1523930729690" expanded="true" signature="2292:2332" ph="SELECT PET.P... PET" />
-            <marker date="1523930729690" expanded="true" signature="3788:4091" ph="SELECT PET.P... PET_VACCINE" />
-            <marker date="1523930729690" expanded="true" signature="3788:4092" ph="SELECT PET.P... PET_VACCINE" />
-            <marker date="1523930729690" expanded="true" signature="3788:4097" ph="SELECT PET.P... PET_VACCINE" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/main/createGroomingApptController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1853">
-          <caret line="109" column="38" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="168" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1523925790054" expanded="true" signature="997:1058" ph="SELECT CUSTO... CUSTOMER" />
-            <marker date="1523925790054" expanded="true" signature="1691:1762" ph="SELECT EMPLO... EMPLOYEE" />
-            <marker date="1523925790054" expanded="true" signature="2784:3005" ph="SELECT PET.P... PET" />
-            <marker date="1523925790054" expanded="true" signature="4062:4152" ph="INSERT INTO ORDER... " />
-            <marker date="1523925790054" expanded="true" signature="4972:5125" ph="INSERT INTO ORDER_LINE... " />
-            <marker date="1523925790054" expanded="true" signature="5944:6069" ph="INSERT INTO VISIT... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/main/viewPetMed.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="302">
-          <caret line="103" column="53" lean-forward="true" selection-start-line="103" selection-start-column="53" selection-end-line="103" selection-end-column="53" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1523906938156" expanded="true" signature="1463:1764" ph="SELECT PET.P... PET_MED" />
-            <marker date="1523906938156" expanded="true" signature="2538:2578" ph="SELECT PET.P... PET" />
-            <marker date="1523906938156" expanded="true" signature="4109:4429" ph="SELECT PET.P... PET_MED" />
-            <marker date="1523906938156" expanded="true" signature="4109:4430" ph="SELECT PET.P... PET_MED" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/main/editGroomingApptController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3774">
           <caret line="222" column="28" lean-forward="false" selection-start-line="222" selection-start-column="28" selection-end-line="222" selection-end-column="28" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
             <marker date="1523944589542" expanded="true" signature="1173:1319" ph="SELECT PET.P... PET" />
             <marker date="1523944589542" expanded="true" signature="1931:2002" ph="SELECT EMPLO... EMPLOYEE" />
             <marker date="1523944589542" expanded="true" signature="2554:2591" ph="SELECT ORDER... ORDER_STATUS" />
@@ -1762,47 +1523,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/main/ManageEmployeeController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1394">
-          <caret line="94" column="0" lean-forward="false" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
-          <folding>
-            <marker date="1523479966977" expanded="true" signature="3196:3239" ph="SELECT EMPLO... EMPLOYEE_STATUS" />
-            <marker date="1523479966977" expanded="true" signature="3991:4250" ph="SELECT EMPLO... EMPLOYEE" />
-            <marker date="1523479966977" expanded="true" signature="4986:5238" ph="UPDATE EMPLO... " />
-            <marker date="1523479966977" expanded="true" signature="4986:5239" ph="UPDATE EMPLO... " />
-            <marker date="1523479966977" expanded="true" signature="5905:6115" ph="INSERT INTO EMPLOYEE... " />
-            <marker date="1523479966977" expanded="true" signature="5905:6137" ph="INSERT INTO EMPLOYEE... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/main/createServiceOrderController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3077">
-          <caret line="196" column="18" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="371" selection-end-column="0" />
-          <folding>
-            <element signature="method#petWeightGrpChecker#0;class#createServiceOrderController#0" expanded="false" />
-            <element signature="method#tablePopulate#0;class#createServiceOrderController#0" expanded="false" />
-            <marker date="1523899038450" expanded="false" signature="3034:3095" ph="SELECT CUSTO... CUSTOMER" />
-            <marker date="1523899038450" expanded="false" signature="3730:3801" ph="SELECT EMPLO... EMPLOYEE" />
-            <marker date="1523899038450" expanded="true" signature="4452:4640" ph="SELECT SERVI... _SERVICE" />
-            <marker date="1523899038450" expanded="true" signature="4452:4641" ph="SELECT SERVI... _SERVICE" />
-            <marker date="1523899038450" expanded="false" signature="5262:5598" ph="SELECT KENNE... KENNEL" />
-            <marker date="1523899038450" expanded="false" signature="6681:7004" ph="SELECT PET.P... PET" />
-            <marker date="1523899038450" expanded="false" signature="8133:8222" ph="INSERT INTO ORDER... " />
-            <marker date="1523899038450" expanded="true" signature="10198:10351" ph="INSERT INTO ORDER_LINE... " />
-            <marker date="1523899038450" expanded="false" signature="11921:12099" ph="INSERT INTO BOARDING_APPT... " />
-            <marker date="1523899038450" expanded="false" signature="13340:13478" ph="INSERT INTO KENNEL_RESERVATION... " />
-            <marker date="1523899038450" expanded="false" signature="14715:15240" ph="SELECT ORDER... ORDER_LINE" />
-            <marker date="1523899038450" expanded="false" signature="14715:15270" ph="SELECT ORDER... ORDER_LINE" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/main/editBoardingController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
+        <state relative-caret-position="481">
           <caret line="136" column="18" lean-forward="false" selection-start-line="136" selection-start-column="18" selection-end-line="136" selection-end-column="18" />
           <folding>
             <marker date="1523925229372" expanded="true" signature="1239:1376" ph="SELECT PET.P... PET" />
@@ -1849,10 +1572,215 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/main/ManageEmployeeController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="583">
+          <caret line="149" column="25" lean-forward="false" selection-start-line="149" selection-start-column="25" selection-end-line="149" selection-end-column="25" />
+          <folding>
+            <marker date="1523985674629" expanded="true" signature="3196:3239" ph="SELECT EMPLO... EMPLOYEE_STATUS" />
+            <marker date="1523985674629" expanded="true" signature="3991:4250" ph="SELECT EMPLO... EMPLOYEE" />
+            <marker date="1523985674629" expanded="true" signature="4954:5145" ph="INSERT INTO EMPLOYEE... " />
+            <marker date="1523985674629" expanded="true" signature="4954:5165" ph="INSERT INTO EMPLOYEE... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/main/ManageKennelController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="532">
+          <caret line="112" column="24" lean-forward="false" selection-start-line="112" selection-start-column="24" selection-end-line="112" selection-end-column="24" />
+          <folding>
+            <marker date="1523985780507" expanded="true" signature="1520:1742" ph="SELECT KENNE... KENNEL" />
+            <marker date="1523985780507" expanded="true" signature="1520:1842" ph="SELECT KENNE... KENNEL" />
+            <marker date="1523985780507" expanded="true" signature="1520:1843" ph="SELECT KENNE... KENNEL" />
+            <marker date="1523985780507" expanded="true" signature="2504:2539" ph="SELECT KENNE... KENNEL_SIZE" />
+            <marker date="1523985780507" expanded="true" signature="2961:2995" ph="SELECT KENNE... KENNEL_SIZE" />
+            <marker date="1523985780507" expanded="true" signature="2961:3000" ph="SELECT KENNE... KENNEL_STATUS" />
+            <marker date="1523985780507" expanded="true" signature="3556:3839" ph="SELECT KENNE... KENNEL" />
+            <marker date="1523985780507" expanded="true" signature="4366:4432" ph="INSERT INTO KENNEL... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/main/ManageDaycareRoomController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-97">
+          <caret line="63" column="55" lean-forward="false" selection-start-line="63" selection-start-column="55" selection-end-line="63" selection-end-column="55" />
+          <folding>
+            <marker date="1523986344494" expanded="true" signature="1426:1452" ph="SELECT * FRO... DAYCARE_ROOM" />
+            <marker date="1523986344494" expanded="true" signature="2174:2261" ph="SELECT DAYCA... DAYCARE_ROOM" />
+            <marker date="1523986344494" expanded="true" signature="2962:3066" ph="INSERT INTO DAYCARE_ROOM... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/main/homeController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="107" column="68" lean-forward="false" selection-start-line="107" selection-start-column="68" selection-end-line="107" selection-end-column="68" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1523987518161" expanded="true" signature="3008:3737" ph="SELECT BOARD... BOARDING_APPT" />
+            <marker date="1523987518161" expanded="true" signature="4777:5507" ph="SELECT BOARD... BOARDING_APPT" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/main/viewBoardingAppointements.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="73">
+          <caret line="50" column="116" lean-forward="false" selection-start-line="50" selection-start-column="116" selection-end-line="50" selection-end-column="116" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1523987810525" expanded="true" signature="1732:2403" ph="SELECT BOARD... BOARDING_APPT" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/main/PetBehavior.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="60" column="5" lean-forward="false" selection-start-line="60" selection-start-column="5" selection-end-line="60" selection-end-column="5" />
+          <folding>
+            <element signature="e#1240#1241#0" expanded="true" />
+            <element signature="e#1270#1271#0" expanded="true" />
+            <element signature="e#1316#1317#0" expanded="true" />
+            <element signature="e#1354#1355#0" expanded="true" />
+            <element signature="e#1396#1397#0" expanded="true" />
+            <element signature="e#1434#1435#0" expanded="true" />
+            <element signature="e#1496#1497#0" expanded="true" />
+            <element signature="e#1550#1551#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/main/viewPetMed.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="417">
+          <caret line="79" column="13" lean-forward="true" selection-start-line="79" selection-start-column="13" selection-end-line="79" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1523906938156" expanded="true" signature="1463:1764" ph="SELECT PET.P... PET_MED" />
+            <marker date="1523906938156" expanded="true" signature="2538:2578" ph="SELECT PET.P... PET" />
+            <marker date="1523906938156" expanded="true" signature="4109:4429" ph="SELECT PET.P... PET_MED" />
+            <marker date="1523906938156" expanded="true" signature="4109:4430" ph="SELECT PET.P... PET_MED" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/main/newPetController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-13">
+          <caret line="253" column="37" lean-forward="false" selection-start-line="253" selection-start-column="37" selection-end-line="253" selection-end-column="37" />
+          <folding>
+            <marker date="1523899038812" expanded="true" signature="2085:2109" ph="SELECT CLR_D... CLR" />
+            <marker date="1523899038812" expanded="true" signature="2629:2663" ph="SELECT BEHAV... BEHAVIOR" />
+            <marker date="1523899038812" expanded="true" signature="3448:3506" ph="SELECT BREED... BREED" />
+            <marker date="1523899038812" expanded="true" signature="4824:5006" ph="INSERT INTO PET... " />
+            <marker date="1523899038812" expanded="true" signature="5700:5745" ph="SELECT BREED... BREED" />
+            <marker date="1523899038812" expanded="true" signature="5773:5818" ph="SELECT BREED... BREED" />
+            <marker date="1523899038812" expanded="true" signature="6964:7050" ph="INSERT INTO PET_BREED... " />
+            <marker date="1523899038812" expanded="true" signature="7410:7460" ph="SELECT CLR_C... CLR" />
+            <marker date="1523899038812" expanded="true" signature="8076:8152" ph="INSERT INTO PET_CLR... " />
+            <marker date="1523899038812" expanded="true" signature="8656:8711" ph="INSERT INTO PET_OWNER... " />
+            <marker date="1523899038812" expanded="true" signature="9074:9145" ph="INSERT INTO PET_WEIGHT_HIST... " />
+            <marker date="1523899038812" expanded="true" signature="9569:9653" ph="INSERT INTO PET_BEHAVIOR... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/main/editMedicationController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2227">
+          <caret line="179" column="81" lean-forward="false" selection-start-line="179" selection-start-column="81" selection-end-line="179" selection-end-column="81" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1523904021342" expanded="true" signature="1213:1253" ph="SELECT PET.P... PET" />
+            <marker date="1523904021342" expanded="true" signature="1847:1888" ph="SELECT PET_M... PET_MED_STATUS" />
+            <marker date="1523904021342" expanded="true" signature="2896:3037" ph="SELECT PET_M... PET_MED" />
+            <marker date="1523904021342" expanded="true" signature="4184:4498" ph="SELECT MED_N... PET_MED" />
+            <marker date="1523904021342" expanded="true" signature="4184:4523" ph="SELECT MED_N... PET_MED" />
+            <marker date="1523904021342" expanded="true" signature="5453:5609" ph="UPDATE PET_M... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/main/editBehavior.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/main/BoardingAppt.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1275">
+          <caret line="114" column="5" lean-forward="false" selection-start-line="114" selection-start-column="5" selection-end-line="114" selection-end-column="5" />
+          <folding>
+            <element signature="e#2716#2717#0" expanded="false" />
+            <element signature="e#2756#2757#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/main/viewServiceOrders.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="32" column="60" lean-forward="false" selection-start-line="32" selection-start-column="60" selection-end-line="32" selection-end-column="60" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1523900617366" expanded="true" signature="1399:1546" ph="SELECT _ORDE... _ORDE" />
+            <marker date="1523900617366" expanded="true" signature="1399:1626" ph="SELECT _ORDE... _ORDER" />
+            <marker date="1523900617366" expanded="true" signature="1399:1744" ph="SELECT _ORDE... _ORDER" />
+            <marker date="1523900617366" expanded="true" signature="1399:1745" ph="SELECT _ORDE... _ORDER" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/main/createGroomingApptController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="559">
+          <caret line="109" column="38" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="168" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1523925790054" expanded="true" signature="997:1058" ph="SELECT CUSTO... CUSTOMER" />
+            <marker date="1523925790054" expanded="true" signature="1691:1762" ph="SELECT EMPLO... EMPLOYEE" />
+            <marker date="1523925790054" expanded="true" signature="2784:3005" ph="SELECT PET.P... PET" />
+            <marker date="1523925790054" expanded="true" signature="4062:4152" ph="INSERT INTO ORDER... " />
+            <marker date="1523925790054" expanded="true" signature="4972:5125" ph="INSERT INTO ORDER_LINE... " />
+            <marker date="1523925790054" expanded="true" signature="5944:6069" ph="INSERT INTO VISIT... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/main/createServiceOrderController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="223" column="0" lean-forward="false" selection-start-line="223" selection-start-column="0" selection-end-line="227" selection-end-column="32" />
+          <folding>
+            <element signature="method#petWeightGrpChecker#0;class#createServiceOrderController#0" expanded="false" />
+            <element signature="method#tablePopulate#0;class#createServiceOrderController#0" expanded="false" />
+            <marker date="1523986046118" expanded="false" signature="2933:2994" ph="SELECT CUSTO... CUSTOMER" />
+            <marker date="1523986046118" expanded="false" signature="3629:3700" ph="SELECT EMPLO... EMPLOYEE" />
+            <marker date="1523986046118" expanded="true" signature="4351:4539" ph="SELECT SERVI... _SERVICE" />
+            <marker date="1523986046118" expanded="true" signature="4351:4540" ph="SELECT SERVI... _SERVICE" />
+            <marker date="1523986046118" expanded="false" signature="5161:5497" ph="SELECT KENNE... KENNEL" />
+            <marker date="1523986046118" expanded="false" signature="6580:6903" ph="SELECT PET.P... PET" />
+            <marker date="1523986046118" expanded="false" signature="8032:8121" ph="INSERT INTO ORDER... " />
+            <marker date="1523986046118" expanded="true" signature="10097:10250" ph="INSERT INTO ORDER_LINE... " />
+            <marker date="1523986046118" expanded="false" signature="11820:11998" ph="INSERT INTO BOARDING_APPT... " />
+            <marker date="1523986046118" expanded="false" signature="13239:13377" ph="INSERT INTO KENNEL_RESERVATION... " />
+            <marker date="1523986046118" expanded="false" signature="14614:15139" ph="SELECT ORDER... ORDER_LINE" />
+            <marker date="1523986046118" expanded="false" signature="14614:15169" ph="SELECT ORDER... ORDER_LINE" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/main/MyMenuController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3621">
-          <caret line="494" column="85" lean-forward="false" selection-start-line="494" selection-start-column="85" selection-end-line="494" selection-end-column="85" />
+        <state relative-caret-position="29">
+          <caret line="443" column="0" lean-forward="false" selection-start-line="443" selection-start-column="0" selection-end-line="443" selection-end-column="0" />
           <folding>
             <element signature="method#getInformationPane#0;class#MyMenuController#0" expanded="false" />
             <element signature="method#switchHome#0;class#MyMenuController#0" expanded="false" />
@@ -1870,18 +1798,19 @@
             <element signature="method#switcheditBoarding#0;class#MyMenuController#0" expanded="false" />
             <element signature="method#switchcancelBoarding#0;class#MyMenuController#0" expanded="false" />
             <element signature="method#switchcreateGrooming#0;class#MyMenuController#0" expanded="false" />
+            <element signature="method#switchEditGrooming#0;class#MyMenuController#0" expanded="false" />
             <element signature="method#switchcancelGrooming#0;class#MyMenuController#0" expanded="false" />
             <element signature="method#switchAddMedication#0;class#MyMenuController#0" expanded="false" />
             <element signature="method#switchEditMedication#0;class#MyMenuController#0" expanded="false" />
             <element signature="method#switchViewPetMed#0;class#MyMenuController#0" expanded="false" />
             <element signature="method#switchAddVaccination#0;class#MyMenuController#0" expanded="false" />
             <element signature="method#switchViewVaccines#0;class#MyMenuController#0" expanded="false" />
-            <element signature="method#switchAddBehavior#0;class#MyMenuController#0" expanded="false" />
             <element signature="method#switchviewGrooming#0;class#MyMenuController#0" expanded="false" />
-            <element signature="method#switchcheckinDaycare#0;class#MyMenuController#0" expanded="false" />
             <element signature="method#switchcheckoutDaycare#0;class#MyMenuController#0" expanded="false" />
             <element signature="method#switchviewDaycareroom#0;class#MyMenuController#0" expanded="false" />
             <element signature="method#switchManageKennels#0;class#MyMenuController#0" expanded="false" />
+            <element signature="method#switchCreateServiceOrder#0;class#MyMenuController#0" expanded="false" />
+            <element signature="method#switchEditServiceOrder#0;class#MyMenuController#0" expanded="false" />
             <element signature="method#switchViewServiceOrder#0;class#MyMenuController#0" expanded="false" />
             <element signature="method#switchManageEmployees#0;class#MyMenuController#0" expanded="false" />
             <element signature="method#switchManageDaycareRooms#0;class#MyMenuController#0" expanded="false" />
@@ -1889,29 +1818,136 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/main/daycareCheckIn.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="155" column="27" lean-forward="true" selection-start-line="155" selection-start-column="27" selection-end-line="155" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1523995692568" expanded="true" signature="781:842" ph="SELECT CUSTO... CUSTOMER" />
+            <marker date="1523995692568" expanded="true" signature="1466:1508" ph="SELECT DAYCA... DAYCARE_ROOM" />
+            <marker date="1523995692568" expanded="true" signature="2418:2745" ph="SELECT PET.P... PET" />
+            <marker date="1523995692568" expanded="true" signature="3631:3728" ph="INSERT INTO _ORDER... " />
+            <marker date="1523995692568" expanded="true" signature="4551:4703" ph="INSERT INTO ORDER_LINE... " />
+            <marker date="1523995692568" expanded="true" signature="5591:5697" ph="INSERT INTO VISIT... " />
+            <marker date="1523995692568" expanded="true" signature="6512:6648" ph="INSERT INTO DAYCARE_VISIT... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/main/viewDaycareRoom.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1003">
+          <caret line="59" column="18" lean-forward="false" selection-start-line="59" selection-start-column="18" selection-end-line="59" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1523996433203" expanded="true" signature="1453:1621" ph="SELECT DAYCA... DAYCARE_VISI" />
+            <marker date="1523996433203" expanded="true" signature="1453:1695" ph="SELECT DAYCA... DAYCARE_VISIT" />
+            <marker date="1523996433203" expanded="true" signature="1453:1753" ph="SELECT DAYCA... DAYCARE_VISIT" />
+            <marker date="1523996433203" expanded="true" signature="1453:1821" ph="SELECT DAYCA... DAYCARE_VISIT" />
+            <marker date="1523996433203" expanded="true" signature="1453:1903" ph="SELECT DAYCA... DAYCARE_VISIT" />
+            <marker date="1523996433203" expanded="true" signature="1453:2005" ph="SELECT DAYCA... DAYCARE_VISIT" />
+            <marker date="1523996433203" expanded="true" signature="1453:2006" ph="SELECT DAYCA... DAYCARE_VISIT" />
+            <marker date="1523996433203" expanded="true" signature="1453:2102" ph="SELECT DAYCA... DAYCARE_VISIT" />
+            <marker date="1523996433203" expanded="true" signature="1453:2103" ph="SELECT DAYCA... DAYCARE_VISIT" />
+            <marker date="1523996433203" expanded="true" signature="1453:2130" ph="SELECT DAYCA... DAYCARE_VISIT" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/main/viewPetVaccines.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="397">
+          <caret line="105" column="5" lean-forward="true" selection-start-line="105" selection-start-column="5" selection-end-line="105" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1523999899180" expanded="true" signature="1251:1380" ph="SELECT PET.P... PET_VACCIN" />
+            <marker date="1523999899180" expanded="true" signature="1251:1445" ph="SELECT PET.P... PET_VACCINE" />
+            <marker date="1523999899180" expanded="true" signature="1251:1534" ph="SELECT PET.P... PET_VACCINE" />
+            <marker date="1523999899180" expanded="true" signature="1251:1535" ph="SELECT PET.P... PET_VACCINE" />
+            <marker date="1523999899180" expanded="true" signature="2289:2329" ph="SELECT PET.P... PET" />
+            <marker date="1523999899180" expanded="true" signature="3816:4119" ph="SELECT PET.P... PET_VACCINE" />
+            <marker date="1523999899180" expanded="true" signature="3816:4120" ph="SELECT PET.P... PET_VACCINE" />
+            <marker date="1523999899180" expanded="true" signature="3816:4125" ph="SELECT PET.P... PET_VACCINE" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/main/viewPetBehavior.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1523999989546" expanded="true" signature="1409:1532" ph="SELECT PET.P... PE" />
+            <marker date="1523999989546" expanded="true" signature="1409:1607" ph="SELECT PET.P... PET" />
+            <marker date="1523999989546" expanded="true" signature="1409:1693" ph="SELECT PET.P... PET" />
+            <marker date="1523999989546" expanded="true" signature="1409:1694" ph="SELECT PET.P... PET" />
+            <marker date="1523999989546" expanded="true" signature="2454:2494" ph="SELECT PET.P... PET" />
+            <marker date="1523999989546" expanded="true" signature="3983:4279" ph="SELECT PET.P... PET" />
+            <marker date="1523999989546" expanded="true" signature="3983:4280" ph="SELECT PET.P... PET" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/main/createBoardingApptController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-738">
+          <caret line="153" column="43" lean-forward="false" selection-start-line="153" selection-start-column="43" selection-end-line="153" selection-end-column="43" />
+          <folding>
+            <marker date="1524007193811" expanded="true" signature="1238:1299" ph="SELECT CUSTO... CUSTOMER" />
+            <marker date="1524007193811" expanded="true" signature="1930:2266" ph="SELECT KENNE... KENNEL" />
+            <marker date="1524007193811" expanded="true" signature="2819:2890" ph="SELECT EMPLO... EMPLOYEE" />
+            <marker date="1524007193811" expanded="true" signature="3907:4053" ph="SELECT PET.P... PET" />
+            <marker date="1524007193811" expanded="true" signature="3907:4234" ph="SELECT PET.P... PET" />
+            <marker date="1524007193811" expanded="true" signature="5608:5698" ph="INSERT INTO _ORDER... " />
+            <marker date="1524007193811" expanded="true" signature="6517:6670" ph="INSERT INTO ORDER_LINE... " />
+            <marker date="1524007193811" expanded="true" signature="7488:7666" ph="INSERT INTO BOARDING_APPT... " />
+            <marker date="1524007193811" expanded="true" signature="8676:8818" ph="INSERT INTO KENNEL_RESERVATION... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/main/editServiceOrder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="363" column="0" lean-forward="false" selection-start-line="363" selection-start-column="0" selection-end-line="363" selection-end-column="0" />
+        <state relative-caret-position="-1768">
+          <caret line="347" column="37" lean-forward="false" selection-start-line="347" selection-start-column="37" selection-end-line="347" selection-end-column="37" />
           <folding>
-            <marker date="1523950568154" expanded="true" signature="3006:3067" ph="SELECT CUSTO... CUSTOMER" />
-            <marker date="1523950568154" expanded="true" signature="3702:3773" ph="SELECT EMPLO... EMPLOYEE" />
-            <marker date="1523950568154" expanded="true" signature="4424:4612" ph="SELECT SERVI... _SERVICE" />
-            <marker date="1523950568154" expanded="true" signature="5234:5570" ph="SELECT KENNE... KENNEL" />
-            <marker date="1523950568154" expanded="true" signature="6011:6048" ph="SELECT ORDER... ORDER_STATUS" />
-            <marker date="1523950568154" expanded="true" signature="7636:7838" ph="SELECT _ORDE... _ORDER" />
-            <marker date="1523950568154" expanded="true" signature="8555:8698" ph="SELECT _ORDE... _ORDER" />
-            <marker date="1523950568154" expanded="true" signature="9277:9411" ph="SELECT ORDER... ORDER_LINE" />
-            <marker date="1523950568154" expanded="true" signature="10019:10426" ph="SELECT PET.P... ORDER_LINE" />
-            <marker date="1523950568154" expanded="true" signature="11330:11653" ph="SELECT PET.P... PET" />
-            <marker date="1523950568154" expanded="true" signature="12782:12871" ph="INSERT INTO _ORDER... " />
-            <marker date="1523950568154" expanded="true" signature="14691:14776" ph="UPDATE ORDER... " />
-            <marker date="1523950568154" expanded="true" signature="15560:15633" ph="UPDATE _ORDE... " />
-            <marker date="1523950568154" expanded="true" signature="16834:16991" ph="INSERT INTO ORDER_LINE... " />
-            <marker date="1523950568154" expanded="true" signature="18663:18845" ph="INSERT INTO BOARDING_APPT... " />
-            <marker date="1523950568154" expanded="true" signature="20146:20284" ph="INSERT INTO KENNEL_RESERVATION... " />
-            <marker date="1523950568154" expanded="true" signature="21523:22078" ph="SELECT ORDER... ORDER_LINE" />
+            <element signature="method#orderDetails#0;class#editServiceOrder#0" expanded="false" />
+            <element signature="method#kennelCombo#0;class#editServiceOrder#0" expanded="false" />
+            <element signature="e#12758#12811#0" expanded="false" />
+            <marker date="1524010312976" expanded="true" signature="3002:3063" ph="SELECT CUSTO... CUSTOMER" />
+            <marker date="1524010312976" expanded="true" signature="3698:3769" ph="SELECT EMPLO... EMPLOYEE" />
+            <marker date="1524010312976" expanded="true" signature="4420:4608" ph="SELECT SERVI... _SERVICE" />
+            <marker date="1524010312976" expanded="true" signature="5230:5566" ph="SELECT KENNE... KENNEL" />
+            <marker date="1524010312976" expanded="true" signature="6007:6044" ph="SELECT ORDER... ORDER_STATUS" />
+            <marker date="1524010312976" expanded="false" signature="7632:7834" ph="SELECT _ORDE... _ORDER" />
+            <marker date="1524010312976" expanded="true" signature="8627:8770" ph="SELECT _ORDE... _ORDER" />
+            <marker date="1524010312976" expanded="false" signature="9349:9483" ph="SELECT ORDER... ORDER_LINE" />
+            <marker date="1524010312976" expanded="false" signature="10112:10304" ph="SELECT PET.P... ORDER_LIN" />
+            <marker date="1524010312976" expanded="false" signature="10112:10533" ph="SELECT PET.P... ORDER_LINE" />
+            <marker date="1524010312976" expanded="false" signature="10112:10615" ph="SELECT PET.P... ORDER_LINE" />
+            <marker date="1524010312976" expanded="false" signature="10112:10624" ph="SELECT PET.P... ORDER_LINE" />
+            <marker date="1524010312976" expanded="false" signature="10112:10636" ph="SELECT PET.P... ORDER_LINE" />
+            <marker date="1524010312976" expanded="false" signature="10112:10638" ph="SELECT PET.P... ORDER_LINE" />
+            <marker date="1524010312976" expanded="false" signature="10112:10639" ph="SELECT PET.P... ORDER_LINE" />
+            <marker date="1524010312976" expanded="true" signature="11637:11960" ph="SELECT PET.P... PET" />
+            <marker date="1524010312976" expanded="false" signature="13097:13186" ph="INSERT INTO _ORDER... " />
+            <marker date="1524010312976" expanded="true" signature="15312:15397" ph="UPDATE ORDER... " />
+            <marker date="1524010312976" expanded="true" signature="16234:16314" ph="UPDATE _ORDE... " />
+            <marker date="1524010312976" expanded="true" signature="17692:17849" ph="INSERT INTO ORDER_LINE... " />
+            <marker date="1524010312976" expanded="false" signature="19520:19702" ph="INSERT INTO BOARDING_APPT... " />
+            <marker date="1524010312976" expanded="false" signature="21003:21141" ph="INSERT INTO KENNEL_RESERVATION... " />
+            <marker date="1524010312976" expanded="true" signature="22380:22935" ph="SELECT ORDER... ORDER_LINE" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/main/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="477">
+          <caret line="53" column="1" lean-forward="true" selection-start-line="53" selection-start-column="1" selection-end-line="53" selection-end-column="1" />
+          <folding />
         </state>
       </provider>
     </entry>

@@ -11,10 +11,8 @@ import javafx.scene.control.cell.PropertyValueFactory;
 import java.sql.*;
 
 public class viewPetVaccines {
-
     @FXML
     TableView<PetVaccine>tblVaccines;
-
     @FXML
     TableColumn<PetVaccine, String>petName;
     @FXML
@@ -28,7 +26,7 @@ public class viewPetVaccines {
     private ComboBox<String>petSelect;
 
 
-    public void initialize() throws SQLException{
+    public void initialize()throws SQLException{
         petName.setCellValueFactory(new PropertyValueFactory<PetVaccine, String>("petName"));
         vaccineName.setCellValueFactory(new PropertyValueFactory<PetVaccine, String>("vaccineName"));
         vaccStartDate.setCellValueFactory(new PropertyValueFactory<PetVaccine, Date>("petVaccineStartdate"));
@@ -87,6 +85,7 @@ public class viewPetVaccines {
         p = pID.split("_");
         int PID = Integer.parseInt(p[0]);
 
+        tblVaccines.refresh();
 
         String sql = "SELECT PET.PET_NAME, VACCINATION.VACCINE_NAME, PET_VACCINE.PET_VACCINE_STARTDATE, PET_VACCINE.PET_VACCINE_ENDDATE FROM PET_VACCINE " +
                 "JOIN PET ON PET_VACCINE.PET_ID = PET.PET_ID " +
@@ -104,6 +103,7 @@ public class viewPetVaccines {
             vaccs.add(vacc1);
         }
         tblVaccines.setItems(vaccs);
+        tblVaccines.refresh();
         preparedStatement.close();
         rs.close();
     }

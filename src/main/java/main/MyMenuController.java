@@ -282,8 +282,7 @@ public class MyMenuController {
     @FXML
     void switchviewBoarding(ActionEvent event){
         try{
-            AnchorPane pane = FXMLLoader.load(getClass().getResource("viewBoardingScreen.fxml"));
-
+            AnchorPane pane = FXMLLoader.load(getClass().getResource("fxmlAssets/viewBoardingAppointments.fxml"));
             BorderPane border = Main.getRoot();
             border.setCenter(pane);
         }
@@ -413,6 +412,18 @@ public class MyMenuController {
             e.printStackTrace();
         }
     }
+    @FXML
+    void switchViewPetBehavior(ActionEvent event){
+        try{
+            AnchorPane pane = FXMLLoader.load(getClass().getResource("fxmlAssets/viewPetBehaviors.fxml"));
+            BorderPane borderPane = Main.getRoot();
+            borderPane.setCenter(pane);
+
+        }catch (IOException e){
+            e.printStackTrace();
+        }
+    }
+
 
     @FXML
     void switchviewGrooming(ActionEvent event){
@@ -431,7 +442,6 @@ public class MyMenuController {
     void switchcheckinDaycare(ActionEvent event){
         try{
             AnchorPane pane = FXMLLoader.load(getClass().getResource("fxmlAssets/daycareCheckIn.fxml"));
-
             BorderPane border = Main.getRoot();
             border.setCenter(pane);
         }
