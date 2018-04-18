@@ -38,12 +38,13 @@ public class Main  extends Application{
         //constructing our scene using the static root
         root.setTop(navBar);
         root.setCenter(content);
-        root.setBottom(bottom);
+        root.setRight(bottom);
         primaryStage.setTitle("PetBase");
         Scene scene = new Scene(root);
         scene.getStylesheets().add(getClass().getResource("fx.css").toExternalForm());
         primaryStage.setScene(scene);
 
+        //primaryStage.getIcons().add()
         //primaryStage.getIcons().add(new Image("imageAssets/dog-paw.png"));
         primaryStage.show();
     }

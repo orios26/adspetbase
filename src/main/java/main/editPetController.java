@@ -5,19 +5,9 @@ import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.control.*;
-import javafx.scene.layout.AnchorPane;
-import javafx.scene.layout.BorderPane;
-
-import java.io.IOException;
 import java.sql.*;
-import java.time.LocalDate;
-import java.time.Period;
-
-
 
 public class editPetController {
-
-
 
     @FXML // fx:id = "petMicroChip"
     private TextField petMicroChip;
@@ -140,8 +130,9 @@ public class editPetController {
     public void loadDetails() throws SQLException {
         String pet = petInfo.getValue();
         String p[];
-        p = pet.split("_");
-        PID = Integer.parseInt(p[0]);
+        //p = pet.split("_");
+        //PID = Integer.parseInt(p[0]);
+        PID = petInfo.getSelectionModel().getSelectedIndex()+1;
         String sql = "SELECT PET.PET_MICROCHIP_NUM, PET.PET_DOB, PET_TYPE.PET_TYPE, PET.PET_GENDER, PET_BREED.PET_DESCRIPTION, PET.FIXED, PET_WEIGHT_HIST.WEIGHT, PET_CLR.PET_CLR, PET.PET_FEEDING_INSTRUCTIONS FROM PET " +
                 "JOIN PET_CLR ON PET.PET_ID = PET_CLR.PET_ID " +
                 "JOIN PET_WEIGHT_HIST ON PET.PET_ID = PET_WEIGHT_HIST.PET_ID " +
@@ -164,11 +155,14 @@ public class editPetController {
         resultSet.close();
         preparedStatement.close();
         connection.close();
+        ptID = petType.getSelectionModel().getSelectedIndex()+1;
+        breedFinder();
+
 
     }
 
     public void update()throws SQLException{
-        String update = "UPDATE PET SET PET_DOB = ?, PET_GENDER=?, FIXED=?, PET_TYPE_ID=?, PET_MICROCHIP_NUM, PET_WEIGHT_GRP_ID, PET_FEEDING_INSTRUCTIONS WHERE PET_ID ="+PID;
+        String update = "UPDATE PET SET PET_DOB = ?, PET_GENDER=?, FIXED=?, PET_TYPE_ID=?, PET_MICROCHIP_NUM=?, PET_WEIGHT_GRP_ID=?, PET_FEEDING_INSTRUCTIONS=? WHERE PET_ID ="+PID;
         Connection connection = DbHelper.getInstance().getConnection();
         PreparedStatement preparedStatement = connection.prepareStatement(update);
         preparedStatement.setDate(1,Date.valueOf(petDoB.getValue()));

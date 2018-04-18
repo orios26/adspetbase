@@ -165,7 +165,7 @@ public class daycareCheckIn {
         preparedStatement.setInt(1,VID);
         preparedStatement.setInt(2, roomSelect.getSelectionModel().getSelectedIndex()+1);
         preparedStatement.setString(3,specialInstr.getText());
-        preparedStatement.setDate(4,Date.valueOf(LocalDate.now()));
+        preparedStatement.setDate(4,Date.valueOf(LocalDate.of(2018,04,26)));
         preparedStatement.execute();
         ResultSet resultSet = preparedStatement.getGeneratedKeys();
         while (resultSet.next()){

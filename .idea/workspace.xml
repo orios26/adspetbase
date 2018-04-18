@@ -2,34 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c84f7339-9eb0-4964-b28a-c7bb59c6c379" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/main/activeClientReport.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/main/customersServicedThisMonth.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/main/editPetController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/main/employeesOnActiveOrders.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/main/inactiveClientReport.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/main/kennelsReport.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/main/microchippedPets.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/Customer.class" afterPath="$PROJECT_DIR$/target/classes/main/Customer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/Employee.class" afterPath="$PROJECT_DIR$/target/classes/main/Employee.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/Kennel.class" afterPath="$PROJECT_DIR$/target/classes/main/Kennel.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/Main.class" afterPath="$PROJECT_DIR$/target/classes/main/Main.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/MyMenuController.class" afterPath="$PROJECT_DIR$/target/classes/main/MyMenuController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/Pet.class" afterPath="$PROJECT_DIR$/target/classes/main/Pet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/PetBehavior.class" afterPath="$PROJECT_DIR$/target/classes/main/PetBehavior.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/createBoardingApptController.class" afterPath="$PROJECT_DIR$/target/classes/main/createBoardingApptController.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/main/daycareCheckOut.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/DbHelper.class" afterPath="$PROJECT_DIR$/target/classes/main/DbHelper.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/main/Customer.java" afterPath="$PROJECT_DIR$/src/main/java/main/Customer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/main/Employee.java" afterPath="$PROJECT_DIR$/src/main/java/main/Employee.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/main/Kennel.java" afterPath="$PROJECT_DIR$/src/main/java/main/Kennel.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/main/DbHelper.java" afterPath="$PROJECT_DIR$/src/main/java/main/DbHelper.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/main/Main.java" afterPath="$PROJECT_DIR$/src/main/java/main/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/main/MyMenuController.java" afterPath="$PROJECT_DIR$/src/main/java/main/MyMenuController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/main/Pet.java" afterPath="$PROJECT_DIR$/src/main/java/main/Pet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/main/PetBehavior.java" afterPath="$PROJECT_DIR$/src/main/java/main/PetBehavior.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/main/createBoardingApptController.java" afterPath="$PROJECT_DIR$/src/main/java/main/createBoardingApptController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/main/fxmlAssets/MyMenus.fxml" afterPath="$PROJECT_DIR$/src/main/java/main/fxmlAssets/MyMenus.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/main/viewPetBehavior.java" afterPath="$PROJECT_DIR$/src/main/java/main/viewPetBehavior.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/main/viewPetMed.java" afterPath="$PROJECT_DIR$/src/main/java/main/viewPetMed.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/fxmlAssets/MyMenus.fxml" afterPath="$PROJECT_DIR$/target/classes/main/fxmlAssets/MyMenus.fxml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/main/daycareCheckIn.java" afterPath="$PROJECT_DIR$/src/main/java/main/daycareCheckIn.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/main/editPetController.java" afterPath="$PROJECT_DIR$/src/main/java/main/editPetController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/main/fx.css" afterPath="$PROJECT_DIR$/src/main/java/main/fx.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/main/fxmlAssets/daycareCheckOut.fxml" afterPath="$PROJECT_DIR$/src/main/java/main/fxmlAssets/daycareCheckOut.fxml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/fxmlAssets/daycareCheckOut.fxml" afterPath="$PROJECT_DIR$/target/classes/main/fxmlAssets/daycareCheckOut.fxml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -76,12 +58,12 @@
     <window id="1">
       <content type="file-editors">
         <state>
-          <leaf>
+          <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
             <file leaf-file-name="addPetController.java" pinned="false" current-in-tab="true">
               <entry file="file://$PROJECT_DIR$/src/main/java/main/addPetController.java">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="476">
-                    <caret line="251" column="23" lean-forward="false" selection-start-line="251" selection-start-column="23" selection-end-line="251" selection-end-column="28" />
+                  <state relative-caret-position="1989">
+                    <caret line="250" column="19" lean-forward="true" selection-start-line="250" selection-start-column="19" selection-end-line="250" selection-end-column="19" />
                     <folding>
                       <marker date="1523899038684" expanded="true" signature="2127:2151" ph="SELECT CLR_D... CLR" />
                       <marker date="1523899038684" expanded="true" signature="2671:2705" ph="SELECT BEHAV... BEHAVIOR" />
@@ -112,8 +94,8 @@
       <file leaf-file-name="MyMenuController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/main/MyMenuController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="283">
-              <caret line="283" column="32" lean-forward="true" selection-start-line="283" selection-start-column="32" selection-end-line="283" selection-end-column="32" />
+            <state relative-caret-position="625">
+              <caret line="526" column="0" lean-forward="false" selection-start-line="526" selection-start-column="0" selection-end-line="526" selection-end-column="0" />
               <folding>
                 <element signature="method#getInformationPane#0;class#MyMenuController#0" expanded="false" />
                 <element signature="method#switchHome#0;class#MyMenuController#0" expanded="false" />
@@ -145,7 +127,6 @@
                 <element signature="method#switchViewPetBehavior#0;class#MyMenuController#0" expanded="false" />
                 <element signature="method#switchviewGrooming#0;class#MyMenuController#0" expanded="false" />
                 <element signature="method#switchcheckinDaycare#0;class#MyMenuController#0" expanded="false" />
-                <element signature="method#switchcheckoutDaycare#0;class#MyMenuController#0" expanded="false" />
                 <element signature="method#switchviewDaycareroom#0;class#MyMenuController#0" expanded="false" />
                 <element signature="method#switchManageKennels#0;class#MyMenuController#0" expanded="false" />
                 <element signature="method#switchCreateServiceOrder#0;class#MyMenuController#0" expanded="false" />
@@ -158,122 +139,156 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="kennelsReport.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/main/kennelsReport.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="88" column="22" lean-forward="false" selection-start-line="88" selection-start-column="22" selection-end-line="91" selection-end-column="90" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <marker date="1524042825184" expanded="true" signature="1426:1795" ph="SELECT K.KEN... KENNEL" />
-                <marker date="1524042825184" expanded="true" signature="2733:2772" ph="SELECT KENNE... KENNEL_STATUS" />
-                <marker date="1524042825184" expanded="true" signature="3751:4159" ph="SELECT K.KEN... KENNEL" />
-                <marker date="1524042825184" expanded="true" signature="3751:4160" ph="SELECT K.KEN... KENNEL" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="editCustomerInformationController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/main/editCustomerInformationController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1551">
-              <caret line="187" column="41" lean-forward="true" selection-start-line="187" selection-start-column="41" selection-end-line="187" selection-end-column="41" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <marker date="1523567835237" expanded="true" signature="1493:1530" ph="SELECT STATE... STATE_PROVINCE" />
-                <marker date="1523567835237" expanded="true" signature="2014:2046" ph="SELECT COUNT... COUNTRY" />
-                <marker date="1523567835237" expanded="true" signature="2554:2615" ph="SELECT CUSTO... CUSTOMER" />
-                <marker date="1523567835237" expanded="true" signature="3287:3325" ph="SELECT CUS_S... CUSTOMER_STATUS" />
-                <marker date="1523567835237" expanded="true" signature="4340:4909" ph="SELECT CUS_F... CUSTOMER" />
-                <marker date="1523567835237" expanded="true" signature="6217:6546" ph="UPDATE CUSTO... " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="activeClientReport.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/main/activeClientReport.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="356">
-              <caret line="57" column="36" lean-forward="false" selection-start-line="57" selection-start-column="36" selection-end-line="57" selection-end-column="36" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <marker date="1524042061786" expanded="true" signature="1412:1824" ph="SELECT CUS_F... CUSTOMER" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="inactiveClientReport.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/main/inactiveClientReport.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="59" column="38" lean-forward="false" selection-start-line="59" selection-start-column="38" selection-end-line="59" selection-end-column="38" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <marker date="1524042131207" expanded="true" signature="1414:1828" ph="SELECT CUS_F... CUSTOMER" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="customersServicedThisMonth.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/main/customersServicedThisMonth.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="441">
-              <caret line="54" column="0" lean-forward="true" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <marker date="1524042188114" expanded="true" signature="1038:1508" ph="SELECT DISTI... CUSTOMER" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="editPetController.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="editPetController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/main/editPetController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2001">
-              <caret line="142" column="0" lean-forward="false" selection-start-line="142" selection-start-column="0" selection-end-line="142" selection-end-column="0" />
-              <folding>
-                <marker date="1524047489724" expanded="true" signature="2109:2133" ph="SELECT CLR_D... CLR" />
-                <marker date="1524047489724" expanded="true" signature="2656:2690" ph="SELECT BEHAV... BEHAVIOR" />
-                <marker date="1524047489724" expanded="true" signature="3195:3227" ph="SELECT PET_I... PET" />
-                <marker date="1524047489724" expanded="true" signature="4213:4717" ph="SELECT PET.P... PET" />
-                <marker date="1524047489724" expanded="true" signature="5784:5927" ph="UPDATE PET S... " />
-                <marker date="1524047489724" expanded="true" signature="7115:7160" ph="SELECT BREED... BREED" />
-                <marker date="1524047489724" expanded="true" signature="7188:7233" ph="SELECT BREED... BREED" />
-                <marker date="1524047489724" expanded="true" signature="8156:8240" ph="UPDATE PET_B... " />
-                <marker date="1524047489724" expanded="true" signature="8733:8783" ph="SELECT CLR_C... CLR" />
-                <marker date="1524047489724" expanded="true" signature="9392:9461" ph="UPDATE PET_C... " />
-                <marker date="1524047489724" expanded="true" signature="10193:10251" ph="SELECT BREED... BREED" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="employeesOnActiveOrders.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/main/employeesOnActiveOrders.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="305">
-              <caret line="52" column="65" lean-forward="false" selection-start-line="52" selection-start-column="65" selection-end-line="52" selection-end-column="65" />
+            <state relative-caret-position="168">
+              <caret line="148" column="70" lean-forward="true" selection-start-line="148" selection-start-column="70" selection-end-line="148" selection-end-column="70" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <marker date="1524042231678" expanded="true" signature="1312:1921" ph="SELECT EMPLO... EMPLOYEE" />
+                <marker date="1524083783920" expanded="true" signature="1945:1969" ph="SELECT CLR_D... CLR" />
+                <marker date="1524083783920" expanded="true" signature="2492:2526" ph="SELECT BEHAV... BEHAVIOR" />
+                <marker date="1524083783920" expanded="true" signature="3031:3063" ph="SELECT PET_I... PET" />
+                <marker date="1524083783920" expanded="true" signature="4117:4621" ph="SELECT PET.P... PET" />
+                <marker date="1524083783920" expanded="true" signature="5777:5926" ph="UPDATE PET S... " />
+                <marker date="1524083783920" expanded="true" signature="7114:7159" ph="SELECT BREED... BREED" />
+                <marker date="1524083783920" expanded="true" signature="7187:7232" ph="SELECT BREED... BREED" />
+                <marker date="1524083783920" expanded="true" signature="8155:8239" ph="UPDATE PET_B... " />
+                <marker date="1524083783920" expanded="true" signature="8732:8782" ph="SELECT CLR_C... CLR" />
+                <marker date="1524083783920" expanded="true" signature="9391:9460" ph="UPDATE PET_C... " />
+                <marker date="1524083783920" expanded="true" signature="10192:10250" ph="SELECT BREED... BREED" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Customer.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/main/Customer.java">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/main/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2060">
-              <caret line="215" column="5" lean-forward="false" selection-start-line="215" selection-start-column="5" selection-end-line="215" selection-end-column="5" />
+            <state relative-caret-position="261">
+              <caret line="46" column="10" lean-forward="false" selection-start-line="46" selection-start-column="10" selection-end-line="46" selection-end-column="10" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="fx.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/main/fx.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="425">
+              <caret line="100" column="36" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="112" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="fx.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/target/classes/main/fx.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="516">
+              <caret line="112" column="0" lean-forward="true" selection-start-line="112" selection-start-column="0" selection-end-line="112" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="viewDaycareRoom.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/main/viewDaycareRoom.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="380">
+              <caret line="48" column="64" lean-forward="true" selection-start-line="48" selection-start-column="64" selection-end-line="48" selection-end-column="64" />
               <folding>
-                <element signature="e#5237#5238#0" expanded="true" />
-                <element signature="e#5281#5282#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <marker date="1523996433203" expanded="true" signature="1453:1621" ph="SELECT DAYCA... DAYCARE_VISI" />
+                <marker date="1523996433203" expanded="true" signature="1453:1695" ph="SELECT DAYCA... DAYCARE_VISIT" />
+                <marker date="1523996433203" expanded="true" signature="1453:1753" ph="SELECT DAYCA... DAYCARE_VISIT" />
+                <marker date="1523996433203" expanded="true" signature="1453:1821" ph="SELECT DAYCA... DAYCARE_VISIT" />
+                <marker date="1523996433203" expanded="true" signature="1453:1903" ph="SELECT DAYCA... DAYCARE_VISIT" />
+                <marker date="1523996433203" expanded="true" signature="1453:2005" ph="SELECT DAYCA... DAYCARE_VISIT" />
+                <marker date="1523996433203" expanded="true" signature="1453:2006" ph="SELECT DAYCA... DAYCARE_VISIT" />
+                <marker date="1523996433203" expanded="true" signature="1453:2102" ph="SELECT DAYCA... DAYCARE_VISIT" />
+                <marker date="1523996433203" expanded="true" signature="1453:2103" ph="SELECT DAYCA... DAYCARE_VISIT" />
+                <marker date="1523996433203" expanded="true" signature="1453:2130" ph="SELECT DAYCA... DAYCARE_VISIT" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="daycareCheckOut.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/main/daycareCheckOut.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-34">
+              <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <marker date="1524081979957" expanded="true" signature="568:627" ph="SELECT DAYCA... DAYCARE_ROOM" />
+                <marker date="1524081979957" expanded="true" signature="1725:2144" ph="SELECT PET.P... DAYCARE_VISIT" />
+                <marker date="1524081979957" expanded="true" signature="2849:3204" ph="SELECT DAYCA... DAYCARE_VISIT" />
+                <marker date="1524081979957" expanded="true" signature="2849:3205" ph="SELECT DAYCA... DAYCARE_VISIT" />
+                <marker date="1524081979957" expanded="true" signature="3652:3727" ph="UPDATE DAYCA... " />
+                <marker date="1524081979957" expanded="true" signature="3652:3728" ph="UPDATE DAYCA... " />
+                <marker date="1524081979957" expanded="true" signature="3652:3729" ph="UPDATE DAYCA... " />
+                <marker date="1524081979957" expanded="true" signature="3652:3732" ph="UPDATE DAYCA... " />
+                <marker date="1524081979957" expanded="true" signature="3652:3751" ph="UPDATE DAYCA... " />
+                <marker date="1524081979957" expanded="true" signature="3652:3752" ph="UPDATE DAYCA... " />
+                <marker date="1524081979957" expanded="true" signature="3652:3754" ph="UPDATE DAYCA... " />
+                <marker date="1524081979957" expanded="true" signature="4591:4743" ph="SELECT ORDER... ORDER_LINE" />
+                <marker date="1524081979957" expanded="true" signature="5196:5265" ph="UPDATE ORDER... " />
+                <marker date="1524081979957" expanded="true" signature="5661:5796" ph="SELECT _ORDE... _ORDER" />
+                <marker date="1524081979957" expanded="true" signature="6235:6288" ph="UPDATE _ORDE... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="daycareCheckIn.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/main/daycareCheckIn.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="387">
+              <caret line="173" column="0" lean-forward="true" selection-start-line="173" selection-start-column="0" selection-end-line="173" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <marker date="1524082233302" expanded="true" signature="781:842" ph="SELECT CUSTO... CUSTOMER" />
+                <marker date="1524082233302" expanded="true" signature="1466:1508" ph="SELECT DAYCA... DAYCARE_ROOM" />
+                <marker date="1524082233302" expanded="true" signature="2418:2745" ph="SELECT PET.P... PET" />
+                <marker date="1524082233302" expanded="true" signature="3631:3728" ph="INSERT INTO _ORDER... " />
+                <marker date="1524082233302" expanded="true" signature="4551:4703" ph="INSERT INTO ORDER_LINE... " />
+                <marker date="1524082233302" expanded="true" signature="5591:5697" ph="INSERT INTO VISIT... " />
+                <marker date="1524082233302" expanded="true" signature="6512:6648" ph="INSERT INTO DAYCARE_VISIT... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BoardingAppt.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/main/BoardingAppt.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="78">
+              <caret line="114" column="5" lean-forward="false" selection-start-line="114" selection-start-column="5" selection-end-line="114" selection-end-column="5" />
+              <folding>
+                <element signature="e#2716#2717#0" expanded="true" />
+                <element signature="e#2756#2757#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="createBoardingApptController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/main/createBoardingApptController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="181">
+              <caret line="219" column="0" lean-forward="false" selection-start-line="219" selection-start-column="0" selection-end-line="223" selection-end-column="28" />
+              <folding>
+                <marker date="1524033740453" expanded="true" signature="1238:1299" ph="SELECT CUSTO... CUSTOMER" />
+                <marker date="1524033740453" expanded="true" signature="1930:2266" ph="SELECT KENNE... KENNEL" />
+                <marker date="1524033740453" expanded="true" signature="2819:2890" ph="SELECT EMPLO... EMPLOYEE" />
+                <marker date="1524033740453" expanded="true" signature="3907:4053" ph="SELECT PET.P... PET" />
+                <marker date="1524033740453" expanded="true" signature="3907:4234" ph="SELECT PET.P... PET" />
+                <marker date="1524033740453" expanded="true" signature="5608:5698" ph="INSERT INTO _ORDER... " />
+                <marker date="1524033740453" expanded="true" signature="6517:6670" ph="INSERT INTO ORDER_LINE... " />
+                <marker date="1524033740453" expanded="true" signature="7488:7666" ph="INSERT INTO BOARDING_APPT... " />
+                <marker date="1524033740453" expanded="true" signature="8676:8818" ph="INSERT INTO KENNEL_RESERVATION... " />
+                <marker date="1524033740453" expanded="true" signature="9362:9417" ph="UPDATE KENNE... " />
               </folding>
             </state>
           </provider>
@@ -299,10 +314,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/main/addVaccinationController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/main/addPetBehaviorController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/main/addMedicationController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/main/newCustomerController.java" />
         <option value="$PROJECT_DIR$/src/main/java/main/newCatVaccinationController.java" />
         <option value="$PROJECT_DIR$/src/main/java/main/newPetMedicationController.java" />
         <option value="$PROJECT_DIR$/src/main/java/main/newDogVaccinationController.java" />
@@ -329,7 +340,6 @@
         <option value="$PROJECT_DIR$/src/main/java/main/homeController.java" />
         <option value="$PROJECT_DIR$/src/main/java/main/viewBoardingAppointements.java" />
         <option value="$PROJECT_DIR$/src/main/java/main/editBehavior.java" />
-        <option value="$PROJECT_DIR$/src/main/java/main/daycareCheckIn.java" />
         <option value="$PROJECT_DIR$/src/main/java/main/viewDaycareRoom.java" />
         <option value="$PROJECT_DIR$/src/main/java/main/viewPetVaccines.java" />
         <option value="$PROJECT_DIR$/src/main/java/main/editServiceOrder.java" />
@@ -342,14 +352,19 @@
         <option value="$PROJECT_DIR$/src/main/java/main/viewPetMed.java" />
         <option value="$PROJECT_DIR$/src/main/java/main/Pet.java" />
         <option value="$PROJECT_DIR$/src/main/java/main/microchippedPets.java" />
-        <option value="$PROJECT_DIR$/src/main/java/main/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/main/activeClientReport.java" />
         <option value="$PROJECT_DIR$/src/main/java/main/inactiveClientReport.java" />
         <option value="$PROJECT_DIR$/src/main/java/main/customersServicedThisMonth.java" />
         <option value="$PROJECT_DIR$/src/main/java/main/employeesOnActiveOrders.java" />
         <option value="$PROJECT_DIR$/src/main/java/main/kennelsReport.java" />
         <option value="$PROJECT_DIR$/src/main/java/main/MyMenuController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/main/DbHelper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/main/daycareCheckOut.java" />
+        <option value="$PROJECT_DIR$/src/main/java/main/daycareCheckIn.java" />
         <option value="$PROJECT_DIR$/src/main/java/main/editPetController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/main/fx.css" />
+        <option value="$PROJECT_DIR$/target/classes/main/fx.css" />
+        <option value="$PROJECT_DIR$/src/main/java/main/Main.java" />
       </list>
     </option>
   </component>
@@ -373,10 +388,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1358" />
+    <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1096" />
+    <option name="width" value="1382" />
+    <option name="height" value="784" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -663,6 +678,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -707,12 +723,18 @@
               <item name="target" type="462c0819:PsiDirectoryNode" />
               <item name="classes" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="adspetbase" type="b2602c69:ProjectViewProjectNode" />
+              <item name="adspetbase" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="classes" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="AndroidView" />
-      <pane id="PackagesPane" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -722,7 +744,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="SearchEverywhereHistoryKey" value="data&#9;ACTION&#9;ActivateDatabaseToolWindow&#10;terminal&#9;ACTION&#9;ActivateTerminalToolWindow&#10;DAT&#9;ACTION&#9;ActivateDatabaseToolWindow&#10;mave&#9;ACTION&#9;ActivateMavenProjectsToolWindow" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="JPA.DatabaseSchemaImportDialog" value="32e9448a-c05e-494a-ab34-b928ccb4c75b" />
@@ -879,7 +901,8 @@
       <workItem from="1523646572399" duration="18802000" />
       <workItem from="1523688070256" duration="76468000" />
       <workItem from="1523950663969" duration="425000" />
-      <workItem from="1523983007227" duration="46329000" />
+      <workItem from="1523983007227" duration="46391000" />
+      <workItem from="1524069678361" duration="12834000" />
     </task>
     <task id="LOCAL-00001" summary="-m blaj">
       <created>1523481936770</created>
@@ -923,14 +946,21 @@
       <option name="project" value="LOCAL" />
       <updated>1524011220113</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="-m newer stuff">
+      <created>1524047915174</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1524047915174</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="312534000" />
+    <option name="totallyTimeSpent" value="325430000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1358" y="-8" width="1936" height="1096" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -942,13 +972,13 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1852123" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31637844" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.068554394" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.056631893" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18177083" sideWeight="0.13201821" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18385416" sideWeight="0.8679818" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18814056" sideWeight="0.8679818" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.073938504" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1009,7 +1039,8 @@
     <MESSAGE value="-m new customer information sequence functional" />
     <MESSAGE value="-m edit screens uploaded. still need to debug edit service order" />
     <MESSAGE value="-m edit service order slightly less buggy" />
-    <option name="LAST_COMMIT_MESSAGE" value="-m edit service order slightly less buggy" />
+    <MESSAGE value="-m newer stuff" />
+    <option name="LAST_COMMIT_MESSAGE" value="-m newer stuff" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1026,124 +1057,37 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/main/newCustomerController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="464">
-          <caret line="121" column="0" lean-forward="false" selection-start-line="121" selection-start-column="0" selection-end-line="121" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1523828712651" expanded="true" signature="1521:1558" ph="SELECT STATE... STATE_PROVINCE" />
-            <marker date="1523828712651" expanded="true" signature="2013:2045" ph="SELECT COUNT... COUNTRY" />
-            <marker date="1523828712651" expanded="true" signature="2774:3108" ph="INSERT INTO CUSTOMER... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/main/newCatVaccinationController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1523838254325" expanded="true" signature="1564:1668" ph="INSERT INTO PET_VACCINE... " />
-            <marker date="1523838254325" expanded="true" signature="2423:2503" ph="INSERT INTO PET_VACCINE_HIST... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/main/newDogVaccinationController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-645">
-          <caret line="46" column="28" lean-forward="false" selection-start-line="46" selection-start-column="28" selection-end-line="46" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1523838757783" expanded="true" signature="1969:2073" ph="INSERT INTO PET_VACCINE... " />
-            <marker date="1523838757783" expanded="true" signature="2828:2908" ph="INSERT INTO PET_VACCINE_HIST... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/main/newPetMedicationController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="310">
-          <caret line="80" column="0" lean-forward="false" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1523838757723" expanded="true" signature="1188:1356" ph="INSERT INTO PET_MED... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/main/Visit.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="24" column="28" lean-forward="true" selection-start-line="24" selection-start-column="28" selection-end-line="24" selection-end-column="28" />
-          <folding>
-            <element signature="e#720#723#0" expanded="false" />
-            <element signature="e#919#925#0" expanded="false" />
-            <element signature="e#2246#2247#0" expanded="false" />
-            <element signature="e#2281#2282#0" expanded="false" />
-            <element signature="e#2613#2614#0" expanded="false" />
-            <element signature="e#2644#2645#0" expanded="false" />
-            <element signature="e#2692#2693#0" expanded="false" />
-            <element signature="e#2732#2733#0" expanded="false" />
-            <element signature="e#2768#2769#0" expanded="false" />
-            <element signature="e#2800#2801#0" expanded="false" />
-            <element signature="e#2850#2851#0" expanded="false" />
-            <element signature="e#2892#2893#0" expanded="false" />
-            <element signature="e#2928#2929#0" expanded="false" />
-            <element signature="e#2960#2961#0" expanded="false" />
-            <element signature="e#3010#3011#0" expanded="false" />
-            <element signature="e#3052#3053#0" expanded="false" />
-            <element signature="method#equals#0;class#Visit#0" expanded="false" />
-            <element signature="method#hashCode#0;class#Visit#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/main/fxmlAssets/viewPetInformation.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/main/fxmlAssets/viewPets.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/main/Order.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="92" column="5" lean-forward="false" selection-start-line="92" selection-start-column="5" selection-end-line="92" selection-end-column="5" />
-          <folding>
-            <element signature="e#1464#1465#0" expanded="false" />
-            <element signature="e#1498#1499#0" expanded="false" />
-            <element signature="e#1552#1553#0" expanded="false" />
-            <element signature="e#1598#1599#0" expanded="false" />
-            <element signature="e#1637#1638#0" expanded="false" />
-            <element signature="e#1672#1673#0" expanded="false" />
-            <element signature="e#1728#1729#0" expanded="false" />
-            <element signature="e#1776#1777#0" expanded="false" />
-            <element signature="e#1814#1815#0" expanded="false" />
-            <element signature="e#1848#1849#0" expanded="false" />
-            <element signature="e#1902#1903#0" expanded="false" />
-            <element signature="e#1948#1949#0" expanded="false" />
-            <element signature="e#1982#1983#0" expanded="false" />
-            <element signature="e#2013#2014#0" expanded="false" />
-            <element signature="e#2061#2062#0" expanded="false" />
-            <element signature="e#2101#2102#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1151,20 +1095,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="156">
           <caret line="41" column="87" lean-forward="true" selection-start-line="41" selection-start-column="87" selection-end-line="41" selection-end-column="87" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1523903722371" expanded="true" signature="1704:1896" ph="SELECT PET.P... PET" />
-            <marker date="1523903722371" expanded="true" signature="1704:1965" ph="SELECT PET.P... PET" />
-            <marker date="1523903722371" expanded="true" signature="1704:2048" ph="SELECT PET.P... PET" />
-            <marker date="1523903722371" expanded="true" signature="1704:2128" ph="SELECT PET.P... PET" />
-            <marker date="1523903722371" expanded="true" signature="1704:2193" ph="SELECT PET.P... PET" />
-            <marker date="1523903722371" expanded="true" signature="1704:2194" ph="SELECT PET.P... PET" />
-            <marker date="1523903722371" expanded="true" signature="1704:2254" ph="SELECT PET.P... PET" />
-            <marker date="1523903722371" expanded="true" signature="1704:2323" ph="SELECT PET.P... PET" />
-            <marker date="1523903722371" expanded="true" signature="1704:2394" ph="SELECT PET.P... PET" />
-            <marker date="1523903722371" expanded="true" signature="1704:2480" ph="SELECT PET.P... PET" />
-            <marker date="1523903722371" expanded="true" signature="1704:2500" ph="SELECT PET.P... PET" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1172,17 +1102,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="918">
           <caret line="96" column="5" lean-forward="false" selection-start-line="96" selection-start-column="5" selection-end-line="96" selection-end-column="5" />
-          <folding>
-            <element signature="e#71#78#0" expanded="false" />
-            <element signature="e#482#485#0" expanded="false" />
-            <element signature="e#731#737#0" expanded="false" />
-            <element signature="e#1015#1021#0" expanded="false" />
-            <element signature="method#setDaycareVisitStartDate#0;class#DaycareVisit#0" expanded="false" />
-            <element signature="e#1328#1334#0" expanded="false" />
-            <element signature="method#setDaycareVisitEndDate#0;class#DaycareVisit#0" expanded="false" />
-            <element signature="method#equals#0;class#DaycareVisit#0" expanded="false" />
-            <element signature="method#hashCode#0;class#DaycareVisit#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1190,16 +1109,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1377">
           <caret line="114" column="0" lean-forward="false" selection-start-line="114" selection-start-column="0" selection-end-line="114" selection-end-column="0" />
-          <folding>
-            <element signature="e#2373#2374#0" expanded="false" />
-            <element signature="e#2403#2404#0" expanded="false" />
-            <element signature="e#2449#2450#0" expanded="false" />
-            <element signature="e#2487#2488#0" expanded="false" />
-            <element signature="e#2523#2524#0" expanded="false" />
-            <element signature="e#2555#2556#0" expanded="false" />
-            <element signature="e#2605#2606#0" expanded="false" />
-            <element signature="e#2647#2648#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1207,16 +1116,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="731">
           <caret line="64" column="5" lean-forward="false" selection-start-line="64" selection-start-column="5" selection-end-line="64" selection-end-column="5" />
-          <folding>
-            <element signature="e#1494#1495#0" expanded="false" />
-            <element signature="e#1524#1525#0" expanded="false" />
-            <element signature="e#1569#1570#0" expanded="false" />
-            <element signature="e#1607#1608#0" expanded="false" />
-            <element signature="e#1645#1646#0" expanded="false" />
-            <element signature="e#1679#1680#0" expanded="false" />
-            <element signature="e#1733#1734#0" expanded="false" />
-            <element signature="e#1779#1780#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1224,7 +1123,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-575">
           <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1326,12 +1224,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="583">
           <caret line="149" column="25" lean-forward="false" selection-start-line="149" selection-start-column="25" selection-end-line="149" selection-end-column="25" />
-          <folding>
-            <marker date="1523985674629" expanded="true" signature="3196:3239" ph="SELECT EMPLO... EMPLOYEE_STATUS" />
-            <marker date="1523985674629" expanded="true" signature="3991:4250" ph="SELECT EMPLO... EMPLOYEE" />
-            <marker date="1523985674629" expanded="true" signature="4954:5145" ph="INSERT INTO EMPLOYEE... " />
-            <marker date="1523985674629" expanded="true" signature="4954:5165" ph="INSERT INTO EMPLOYEE... " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1356,11 +1248,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-97">
           <caret line="63" column="55" lean-forward="false" selection-start-line="63" selection-start-column="55" selection-end-line="63" selection-end-column="55" />
-          <folding>
-            <marker date="1523986344494" expanded="true" signature="1426:1452" ph="SELECT * FRO... DAYCARE_ROOM" />
-            <marker date="1523986344494" expanded="true" signature="2174:2261" ph="SELECT DAYCA... DAYCARE_ROOM" />
-            <marker date="1523986344494" expanded="true" signature="2962:3066" ph="INSERT INTO DAYCARE_ROOM... " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1368,11 +1255,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
           <caret line="107" column="68" lean-forward="false" selection-start-line="107" selection-start-column="68" selection-end-line="107" selection-end-column="68" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1523987518161" expanded="true" signature="3008:3737" ph="SELECT BOARD... BOARDING_APPT" />
-            <marker date="1523987518161" expanded="true" signature="4777:5507" ph="SELECT BOARD... BOARDING_APPT" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1380,10 +1262,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="73">
           <caret line="50" column="116" lean-forward="false" selection-start-line="50" selection-start-column="116" selection-end-line="50" selection-end-column="116" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1523987810525" expanded="true" signature="1732:2403" ph="SELECT BOARD... BOARDING_APPT" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1412,15 +1290,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2227">
           <caret line="179" column="81" lean-forward="false" selection-start-line="179" selection-start-column="81" selection-end-line="179" selection-end-column="81" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1523904021342" expanded="true" signature="1213:1253" ph="SELECT PET.P... PET" />
-            <marker date="1523904021342" expanded="true" signature="1847:1888" ph="SELECT PET_M... PET_MED_STATUS" />
-            <marker date="1523904021342" expanded="true" signature="2896:3037" ph="SELECT PET_M... PET_MED" />
-            <marker date="1523904021342" expanded="true" signature="4184:4498" ph="SELECT MED_N... PET_MED" />
-            <marker date="1523904021342" expanded="true" signature="4184:4523" ph="SELECT MED_N... PET_MED" />
-            <marker date="1523904021342" expanded="true" signature="5453:5609" ph="UPDATE PET_M... " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1428,18 +1297,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/main/BoardingAppt.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1275">
-          <caret line="114" column="5" lean-forward="false" selection-start-line="114" selection-start-column="5" selection-end-line="114" selection-end-column="5" />
-          <folding>
-            <element signature="e#2716#2717#0" expanded="false" />
-            <element signature="e#2756#2757#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1447,13 +1304,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="544">
           <caret line="32" column="60" lean-forward="false" selection-start-line="32" selection-start-column="60" selection-end-line="32" selection-end-column="60" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1523900617366" expanded="true" signature="1399:1546" ph="SELECT _ORDE... _ORDE" />
-            <marker date="1523900617366" expanded="true" signature="1399:1626" ph="SELECT _ORDE... _ORDER" />
-            <marker date="1523900617366" expanded="true" signature="1399:1744" ph="SELECT _ORDE... _ORDER" />
-            <marker date="1523900617366" expanded="true" signature="1399:1745" ph="SELECT _ORDE... _ORDER" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1492,43 +1342,6 @@
             <marker date="1523986046118" expanded="false" signature="13239:13377" ph="INSERT INTO KENNEL_RESERVATION... " />
             <marker date="1523986046118" expanded="false" signature="14614:15139" ph="SELECT ORDER... ORDER_LINE" />
             <marker date="1523986046118" expanded="false" signature="14614:15169" ph="SELECT ORDER... ORDER_LINE" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/main/daycareCheckIn.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="155" column="27" lean-forward="true" selection-start-line="155" selection-start-column="27" selection-end-line="155" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1523995692568" expanded="true" signature="781:842" ph="SELECT CUSTO... CUSTOMER" />
-            <marker date="1523995692568" expanded="true" signature="1466:1508" ph="SELECT DAYCA... DAYCARE_ROOM" />
-            <marker date="1523995692568" expanded="true" signature="2418:2745" ph="SELECT PET.P... PET" />
-            <marker date="1523995692568" expanded="true" signature="3631:3728" ph="INSERT INTO _ORDER... " />
-            <marker date="1523995692568" expanded="true" signature="4551:4703" ph="INSERT INTO ORDER_LINE... " />
-            <marker date="1523995692568" expanded="true" signature="5591:5697" ph="INSERT INTO VISIT... " />
-            <marker date="1523995692568" expanded="true" signature="6512:6648" ph="INSERT INTO DAYCARE_VISIT... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/main/viewDaycareRoom.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1003">
-          <caret line="59" column="18" lean-forward="false" selection-start-line="59" selection-start-column="18" selection-end-line="59" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1523996433203" expanded="true" signature="1453:1621" ph="SELECT DAYCA... DAYCARE_VISI" />
-            <marker date="1523996433203" expanded="true" signature="1453:1695" ph="SELECT DAYCA... DAYCARE_VISIT" />
-            <marker date="1523996433203" expanded="true" signature="1453:1753" ph="SELECT DAYCA... DAYCARE_VISIT" />
-            <marker date="1523996433203" expanded="true" signature="1453:1821" ph="SELECT DAYCA... DAYCARE_VISIT" />
-            <marker date="1523996433203" expanded="true" signature="1453:1903" ph="SELECT DAYCA... DAYCARE_VISIT" />
-            <marker date="1523996433203" expanded="true" signature="1453:2005" ph="SELECT DAYCA... DAYCARE_VISIT" />
-            <marker date="1523996433203" expanded="true" signature="1453:2006" ph="SELECT DAYCA... DAYCARE_VISIT" />
-            <marker date="1523996433203" expanded="true" signature="1453:2102" ph="SELECT DAYCA... DAYCARE_VISIT" />
-            <marker date="1523996433203" expanded="true" signature="1453:2103" ph="SELECT DAYCA... DAYCARE_VISIT" />
-            <marker date="1523996433203" expanded="true" signature="1453:2130" ph="SELECT DAYCA... DAYCARE_VISIT" />
           </folding>
         </state>
       </provider>
@@ -1572,22 +1385,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="562">
           <caret line="87" column="0" lean-forward="false" selection-start-line="87" selection-start-column="0" selection-end-line="87" selection-end-column="0" />
-          <folding>
-            <element signature="e#1586#1587#0" expanded="true" />
-            <element signature="e#1640#1641#0" expanded="true" />
-            <element signature="e#1670#1671#0" expanded="true" />
-            <element signature="e#1699#1700#0" expanded="true" />
-            <element signature="e#1741#1742#0" expanded="true" />
-            <element signature="e#1777#1778#0" expanded="true" />
-            <element signature="e#1813#1814#0" expanded="true" />
-            <element signature="e#1845#1846#0" expanded="true" />
-            <element signature="e#1895#1896#0" expanded="true" />
-            <element signature="e#1937#1938#0" expanded="true" />
-            <element signature="e#1978#1979#0" expanded="true" />
-            <element signature="e#2015#2016#0" expanded="true" />
-            <element signature="e#2075#2076#0" expanded="true" />
-            <element signature="e#2127#2128#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1595,17 +1392,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="207">
           <caret line="76" column="93" lean-forward="true" selection-start-line="76" selection-start-column="15" selection-end-line="76" selection-end-column="93" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1523999899180" expanded="true" signature="1251:1380" ph="SELECT PET.P... PET_VACCIN" />
-            <marker date="1523999899180" expanded="true" signature="1251:1445" ph="SELECT PET.P... PET_VACCINE" />
-            <marker date="1523999899180" expanded="true" signature="1251:1534" ph="SELECT PET.P... PET_VACCINE" />
-            <marker date="1523999899180" expanded="true" signature="1251:1535" ph="SELECT PET.P... PET_VACCINE" />
-            <marker date="1523999899180" expanded="true" signature="2289:2329" ph="SELECT PET.P... PET" />
-            <marker date="1523999899180" expanded="true" signature="3816:4119" ph="SELECT PET.P... PET_VACCINE" />
-            <marker date="1523999899180" expanded="true" signature="3816:4120" ph="SELECT PET.P... PET_VACCINE" />
-            <marker date="1523999899180" expanded="true" signature="3816:4125" ph="SELECT PET.P... PET_VACCINE" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1613,21 +1399,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-          <folding>
-            <element signature="e#3637#3638#0" expanded="true" />
-            <element signature="e#3667#3668#0" expanded="true" />
-            <element signature="e#3713#3714#0" expanded="true" />
-            <element signature="e#3751#3752#0" expanded="true" />
-            <element signature="e#3789#3790#0" expanded="true" />
-            <element signature="e#3823#3824#0" expanded="true" />
-            <element signature="e#3877#3878#0" expanded="true" />
-            <element signature="e#3923#3924#0" expanded="true" />
-            <element signature="e#3958#3959#0" expanded="true" />
-            <element signature="e#3992#3993#0" expanded="true" />
-            <element signature="e#4043#4044#0" expanded="true" />
-            <element signature="e#4089#4090#0" expanded="true" />
-            <marker date="1524016759223" expanded="true" signature="2986:3136" ph="INSERT INTO EMPLOYEE... " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1635,28 +1406,165 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="403">
           <caret line="124" column="19" lean-forward="true" selection-start-line="124" selection-start-column="19" selection-end-line="124" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/main/Kennel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="623">
+          <caret line="65" column="5" lean-forward="false" selection-start-line="65" selection-start-column="5" selection-end-line="65" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/main/viewPetMed.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-788">
+          <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/main/Pet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="62" column="0" lean-forward="false" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/main/microchippedPets.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1003">
+          <caret line="71" column="64" lean-forward="false" selection-start-line="71" selection-start-column="64" selection-end-line="71" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/main/Customer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2227">
+          <caret line="215" column="5" lean-forward="false" selection-start-line="215" selection-start-column="5" selection-end-line="215" selection-end-column="5" />
+          <folding>
+            <element signature="e#5237#5238#0" expanded="false" />
+            <element signature="e#5281#5282#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/main/activeClientReport.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="799">
+          <caret line="57" column="36" lean-forward="false" selection-start-line="57" selection-start-column="36" selection-end-line="57" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1524021271270" expanded="true" signature="1651:1727" ph="SELECT PET_N... " />
-            <marker date="1524021271270" expanded="true" signature="1651:1760" ph="SELECT PET_N... PE" />
-            <marker date="1524021271270" expanded="true" signature="1651:1835" ph="SELECT PET_N... PET" />
-            <marker date="1524021271270" expanded="true" signature="1651:1921" ph="SELECT PET_N... PET" />
-            <marker date="1524021271270" expanded="true" signature="1651:1990" ph="SELECT PET_N... PET" />
-            <marker date="1524021271270" expanded="true" signature="1651:1991" ph="SELECT PET_N... PET" />
-            <marker date="1524021271270" expanded="true" signature="2858:2898" ph="SELECT PET.P... PET" />
-            <marker date="1524021271270" expanded="true" signature="4574:4913" ph="SELECT PET_N... PET" />
-            <marker date="1524021271270" expanded="true" signature="4574:4914" ph="SELECT PET_N... PET" />
-            <marker date="1524021271270" expanded="true" signature="4574:4920" ph="SELECT PET_N... PET" />
-            <marker date="1524021271270" expanded="true" signature="4574:4931" ph="SELECT PET_N... PET" />
-            <marker date="1524021271270" expanded="true" signature="4574:4933" ph="SELECT PET_N... PET" />
+            <marker date="1524042061786" expanded="true" signature="1412:1824" ph="SELECT CUS_F... CUSTOMER" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/main/inactiveClientReport.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="833">
+          <caret line="59" column="38" lean-forward="false" selection-start-line="59" selection-start-column="38" selection-end-line="59" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1524042131207" expanded="true" signature="1414:1828" ph="SELECT CUS_F... CUSTOMER" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/main/customersServicedThisMonth.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="799">
+          <caret line="54" column="0" lean-forward="false" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1524042188114" expanded="true" signature="1038:1508" ph="SELECT DISTI... CUSTOMER" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/main/employeesOnActiveOrders.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="714">
+          <caret line="52" column="65" lean-forward="false" selection-start-line="52" selection-start-column="65" selection-end-line="52" selection-end-column="65" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1524042231678" expanded="true" signature="1312:1921" ph="SELECT EMPLO... EMPLOYEE" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/main/kennelsReport.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1309">
+          <caret line="88" column="22" lean-forward="false" selection-start-line="88" selection-start-column="22" selection-end-line="91" selection-end-column="90" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1524042825184" expanded="true" signature="1426:1795" ph="SELECT K.KEN... KENNEL" />
+            <marker date="1524042825184" expanded="true" signature="2733:2772" ph="SELECT KENNE... KENNEL_STATUS" />
+            <marker date="1524042825184" expanded="true" signature="3751:4159" ph="SELECT K.KEN... KENNEL" />
+            <marker date="1524042825184" expanded="true" signature="3751:4160" ph="SELECT K.KEN... KENNEL" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/main/editCustomerInformationController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2975">
+          <caret line="187" column="41" lean-forward="false" selection-start-line="187" selection-start-column="41" selection-end-line="187" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1523567835237" expanded="true" signature="1493:1530" ph="SELECT STATE... STATE_PROVINCE" />
+            <marker date="1523567835237" expanded="true" signature="2014:2046" ph="SELECT COUNT... COUNTRY" />
+            <marker date="1523567835237" expanded="true" signature="2554:2615" ph="SELECT CUSTO... CUSTOMER" />
+            <marker date="1523567835237" expanded="true" signature="3287:3325" ph="SELECT CUS_S... CUSTOMER_STATUS" />
+            <marker date="1523567835237" expanded="true" signature="4340:4909" ph="SELECT CUS_F... CUSTOMER" />
+            <marker date="1523567835237" expanded="true" signature="6217:6546" ph="UPDATE CUSTO... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/main/DbHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="28" column="25" lean-forward="true" selection-start-line="28" selection-start-column="25" selection-end-line="28" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/main/viewDaycareRoom.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="48" column="64" lean-forward="true" selection-start-line="48" selection-start-column="64" selection-end-line="48" selection-end-column="64" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1523996433203" expanded="true" signature="1453:1621" ph="SELECT DAYCA... DAYCARE_VISI" />
+            <marker date="1523996433203" expanded="true" signature="1453:1695" ph="SELECT DAYCA... DAYCARE_VISIT" />
+            <marker date="1523996433203" expanded="true" signature="1453:1753" ph="SELECT DAYCA... DAYCARE_VISIT" />
+            <marker date="1523996433203" expanded="true" signature="1453:1821" ph="SELECT DAYCA... DAYCARE_VISIT" />
+            <marker date="1523996433203" expanded="true" signature="1453:1903" ph="SELECT DAYCA... DAYCARE_VISIT" />
+            <marker date="1523996433203" expanded="true" signature="1453:2005" ph="SELECT DAYCA... DAYCARE_VISIT" />
+            <marker date="1523996433203" expanded="true" signature="1453:2006" ph="SELECT DAYCA... DAYCARE_VISIT" />
+            <marker date="1523996433203" expanded="true" signature="1453:2102" ph="SELECT DAYCA... DAYCARE_VISIT" />
+            <marker date="1523996433203" expanded="true" signature="1453:2103" ph="SELECT DAYCA... DAYCARE_VISIT" />
+            <marker date="1523996433203" expanded="true" signature="1453:2130" ph="SELECT DAYCA... DAYCARE_VISIT" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/main/BoardingAppt.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="78">
+          <caret line="114" column="5" lean-forward="false" selection-start-line="114" selection-start-column="5" selection-end-line="114" selection-end-column="5" />
+          <folding>
+            <element signature="e#2716#2717#0" expanded="true" />
+            <element signature="e#2756#2757#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/main/createBoardingApptController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="249">
-          <caret line="217" column="28" lean-forward="true" selection-start-line="217" selection-start-column="28" selection-end-line="217" selection-end-column="28" />
+        <state relative-caret-position="181">
+          <caret line="219" column="0" lean-forward="false" selection-start-line="219" selection-start-column="0" selection-end-line="223" selection-end-column="28" />
           <folding>
             <marker date="1524033740453" expanded="true" signature="1238:1299" ph="SELECT CUSTO... CUSTOMER" />
             <marker date="1524033740453" expanded="true" signature="1930:2266" ph="SELECT KENNE... KENNEL" />
@@ -1672,166 +1580,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/main/Kennel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="623">
-          <caret line="65" column="5" lean-forward="false" selection-start-line="65" selection-start-column="5" selection-end-line="65" selection-end-column="5" />
-          <folding>
-            <element signature="e#1193#1194#0" expanded="true" />
-            <element signature="e#1230#1231#0" expanded="true" />
-            <element signature="e#1290#1291#0" expanded="true" />
-            <element signature="e#1342#1343#0" expanded="true" />
-            <element signature="e#1383#1384#0" expanded="true" />
-            <element signature="e#1420#1421#0" expanded="true" />
-            <element signature="e#1480#1481#0" expanded="true" />
-            <element signature="e#1532#1533#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/main/viewPetMed.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-788">
-          <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1524036926223" expanded="true" signature="1405:1706" ph="SELECT PET.P... PET_MED" />
-            <marker date="1524036926223" expanded="true" signature="2479:2519" ph="SELECT PET.P... PET" />
-            <marker date="1524036926223" expanded="true" signature="4050:4370" ph="SELECT PET.P... PET_MED" />
-            <marker date="1524036926223" expanded="true" signature="4050:4371" ph="SELECT PET.P... PET_MED" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/main/Pet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="62" column="0" lean-forward="false" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
-          <folding>
-            <element signature="e#1427#1428#0" expanded="true" />
-            <element signature="e#1457#1458#0" expanded="true" />
-            <element signature="e#1503#1504#0" expanded="true" />
-            <element signature="e#1541#1542#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/main/microchippedPets.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1003">
-          <caret line="71" column="64" lean-forward="false" selection-start-line="71" selection-start-column="64" selection-end-line="71" selection-end-column="64" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1524038534980" expanded="true" signature="1533:1669" ph="SELECT PET_N... PE" />
-            <marker date="1524038534980" expanded="true" signature="1533:1746" ph="SELECT PET_N... PET" />
-            <marker date="1524038534980" expanded="true" signature="1533:1815" ph="SELECT PET_N... PET" />
-            <marker date="1524038534980" expanded="true" signature="1533:1896" ph="SELECT PET_N... PET" />
-            <marker date="1524038534980" expanded="true" signature="1533:1997" ph="SELECT PET_N... PET" />
-            <marker date="1524038534980" expanded="true" signature="1533:2082" ph="SELECT PET_N... PET" />
-            <marker date="1524038534980" expanded="true" signature="1533:2139" ph="SELECT PET_N... PET" />
-            <marker date="1524038534980" expanded="true" signature="1533:2184" ph="SELECT PET_N... PET" />
-            <marker date="1524038534980" expanded="true" signature="1533:2185" ph="SELECT PET_N... PET" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/main/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="46" column="10" lean-forward="false" selection-start-line="46" selection-start-column="10" selection-end-line="46" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/main/Customer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2060">
-          <caret line="215" column="5" lean-forward="false" selection-start-line="215" selection-start-column="5" selection-end-line="215" selection-end-column="5" />
-          <folding>
-            <element signature="e#5237#5238#0" expanded="true" />
-            <element signature="e#5281#5282#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/main/activeClientReport.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="356">
-          <caret line="57" column="36" lean-forward="false" selection-start-line="57" selection-start-column="36" selection-end-line="57" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1524042061786" expanded="true" signature="1412:1824" ph="SELECT CUS_F... CUSTOMER" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/main/inactiveClientReport.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="59" column="38" lean-forward="false" selection-start-line="59" selection-start-column="38" selection-end-line="59" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1524042131207" expanded="true" signature="1414:1828" ph="SELECT CUS_F... CUSTOMER" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/main/customersServicedThisMonth.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
-          <caret line="54" column="0" lean-forward="true" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1524042188114" expanded="true" signature="1038:1508" ph="SELECT DISTI... CUSTOMER" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/main/employeesOnActiveOrders.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="305">
-          <caret line="52" column="65" lean-forward="false" selection-start-line="52" selection-start-column="65" selection-end-line="52" selection-end-column="65" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1524042231678" expanded="true" signature="1312:1921" ph="SELECT EMPLO... EMPLOYEE" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/main/kennelsReport.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="88" column="22" lean-forward="false" selection-start-line="88" selection-start-column="22" selection-end-line="91" selection-end-column="90" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1524042825184" expanded="true" signature="1426:1795" ph="SELECT K.KEN... KENNEL" />
-            <marker date="1524042825184" expanded="true" signature="2733:2772" ph="SELECT KENNE... KENNEL_STATUS" />
-            <marker date="1524042825184" expanded="true" signature="3751:4159" ph="SELECT K.KEN... KENNEL" />
-            <marker date="1524042825184" expanded="true" signature="3751:4160" ph="SELECT K.KEN... KENNEL" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/main/editCustomerInformationController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1551">
-          <caret line="187" column="41" lean-forward="true" selection-start-line="187" selection-start-column="41" selection-end-line="187" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1523567835237" expanded="true" signature="1493:1530" ph="SELECT STATE... STATE_PROVINCE" />
-            <marker date="1523567835237" expanded="true" signature="2014:2046" ph="SELECT COUNT... COUNTRY" />
-            <marker date="1523567835237" expanded="true" signature="2554:2615" ph="SELECT CUSTO... CUSTOMER" />
-            <marker date="1523567835237" expanded="true" signature="3287:3325" ph="SELECT CUS_S... CUSTOMER_STATUS" />
-            <marker date="1523567835237" expanded="true" signature="4340:4909" ph="SELECT CUS_F... CUSTOMER" />
-            <marker date="1523567835237" expanded="true" signature="6217:6546" ph="UPDATE CUSTO... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/main/MyMenuController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
-          <caret line="283" column="32" lean-forward="true" selection-start-line="283" selection-start-column="32" selection-end-line="283" selection-end-column="32" />
+        <state relative-caret-position="625">
+          <caret line="526" column="0" lean-forward="false" selection-start-line="526" selection-start-column="0" selection-end-line="526" selection-end-column="0" />
           <folding>
             <element signature="method#getInformationPane#0;class#MyMenuController#0" expanded="false" />
             <element signature="method#switchHome#0;class#MyMenuController#0" expanded="false" />
@@ -1863,7 +1615,6 @@
             <element signature="method#switchViewPetBehavior#0;class#MyMenuController#0" expanded="false" />
             <element signature="method#switchviewGrooming#0;class#MyMenuController#0" expanded="false" />
             <element signature="method#switchcheckinDaycare#0;class#MyMenuController#0" expanded="false" />
-            <element signature="method#switchcheckoutDaycare#0;class#MyMenuController#0" expanded="false" />
             <element signature="method#switchviewDaycareroom#0;class#MyMenuController#0" expanded="false" />
             <element signature="method#switchManageKennels#0;class#MyMenuController#0" expanded="false" />
             <element signature="method#switchCreateServiceOrder#0;class#MyMenuController#0" expanded="false" />
@@ -1875,10 +1626,89 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/main/daycareCheckOut.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-34">
+          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1524081979957" expanded="true" signature="568:627" ph="SELECT DAYCA... DAYCARE_ROOM" />
+            <marker date="1524081979957" expanded="true" signature="1725:2144" ph="SELECT PET.P... DAYCARE_VISIT" />
+            <marker date="1524081979957" expanded="true" signature="2849:3204" ph="SELECT DAYCA... DAYCARE_VISIT" />
+            <marker date="1524081979957" expanded="true" signature="2849:3205" ph="SELECT DAYCA... DAYCARE_VISIT" />
+            <marker date="1524081979957" expanded="true" signature="3652:3727" ph="UPDATE DAYCA... " />
+            <marker date="1524081979957" expanded="true" signature="3652:3728" ph="UPDATE DAYCA... " />
+            <marker date="1524081979957" expanded="true" signature="3652:3729" ph="UPDATE DAYCA... " />
+            <marker date="1524081979957" expanded="true" signature="3652:3732" ph="UPDATE DAYCA... " />
+            <marker date="1524081979957" expanded="true" signature="3652:3751" ph="UPDATE DAYCA... " />
+            <marker date="1524081979957" expanded="true" signature="3652:3752" ph="UPDATE DAYCA... " />
+            <marker date="1524081979957" expanded="true" signature="3652:3754" ph="UPDATE DAYCA... " />
+            <marker date="1524081979957" expanded="true" signature="4591:4743" ph="SELECT ORDER... ORDER_LINE" />
+            <marker date="1524081979957" expanded="true" signature="5196:5265" ph="UPDATE ORDER... " />
+            <marker date="1524081979957" expanded="true" signature="5661:5796" ph="SELECT _ORDE... _ORDER" />
+            <marker date="1524081979957" expanded="true" signature="6235:6288" ph="UPDATE _ORDE... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/main/daycareCheckIn.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="387">
+          <caret line="173" column="0" lean-forward="true" selection-start-line="173" selection-start-column="0" selection-end-line="173" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1524082233302" expanded="true" signature="781:842" ph="SELECT CUSTO... CUSTOMER" />
+            <marker date="1524082233302" expanded="true" signature="1466:1508" ph="SELECT DAYCA... DAYCARE_ROOM" />
+            <marker date="1524082233302" expanded="true" signature="2418:2745" ph="SELECT PET.P... PET" />
+            <marker date="1524082233302" expanded="true" signature="3631:3728" ph="INSERT INTO _ORDER... " />
+            <marker date="1524082233302" expanded="true" signature="4551:4703" ph="INSERT INTO ORDER_LINE... " />
+            <marker date="1524082233302" expanded="true" signature="5591:5697" ph="INSERT INTO VISIT... " />
+            <marker date="1524082233302" expanded="true" signature="6512:6648" ph="INSERT INTO DAYCARE_VISIT... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/main/editPetController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="148" column="70" lean-forward="true" selection-start-line="148" selection-start-column="70" selection-end-line="148" selection-end-column="70" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1524083783920" expanded="true" signature="1945:1969" ph="SELECT CLR_D... CLR" />
+            <marker date="1524083783920" expanded="true" signature="2492:2526" ph="SELECT BEHAV... BEHAVIOR" />
+            <marker date="1524083783920" expanded="true" signature="3031:3063" ph="SELECT PET_I... PET" />
+            <marker date="1524083783920" expanded="true" signature="4117:4621" ph="SELECT PET.P... PET" />
+            <marker date="1524083783920" expanded="true" signature="5777:5926" ph="UPDATE PET S... " />
+            <marker date="1524083783920" expanded="true" signature="7114:7159" ph="SELECT BREED... BREED" />
+            <marker date="1524083783920" expanded="true" signature="7187:7232" ph="SELECT BREED... BREED" />
+            <marker date="1524083783920" expanded="true" signature="8155:8239" ph="UPDATE PET_B... " />
+            <marker date="1524083783920" expanded="true" signature="8732:8782" ph="SELECT CLR_C... CLR" />
+            <marker date="1524083783920" expanded="true" signature="9391:9460" ph="UPDATE PET_C... " />
+            <marker date="1524083783920" expanded="true" signature="10192:10250" ph="SELECT BREED... BREED" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/main/fx.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="100" column="36" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="112" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/classes/main/fx.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="516">
+          <caret line="112" column="0" lean-forward="true" selection-start-line="112" selection-start-column="0" selection-end-line="112" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/main/addPetController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="251" column="23" lean-forward="false" selection-start-line="251" selection-start-column="23" selection-end-line="251" selection-end-column="28" />
+        <state relative-caret-position="1989">
+          <caret line="250" column="19" lean-forward="true" selection-start-line="250" selection-start-column="19" selection-end-line="250" selection-end-column="19" />
           <folding>
             <marker date="1523899038684" expanded="true" signature="2127:2151" ph="SELECT CLR_D... CLR" />
             <marker date="1523899038684" expanded="true" signature="2671:2705" ph="SELECT BEHAV... BEHAVIOR" />
@@ -1898,23 +1728,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/main/editPetController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/main/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2001">
-          <caret line="142" column="0" lean-forward="false" selection-start-line="142" selection-start-column="0" selection-end-line="142" selection-end-column="0" />
-          <folding>
-            <marker date="1524047489724" expanded="true" signature="2109:2133" ph="SELECT CLR_D... CLR" />
-            <marker date="1524047489724" expanded="true" signature="2656:2690" ph="SELECT BEHAV... BEHAVIOR" />
-            <marker date="1524047489724" expanded="true" signature="3195:3227" ph="SELECT PET_I... PET" />
-            <marker date="1524047489724" expanded="true" signature="4213:4717" ph="SELECT PET.P... PET" />
-            <marker date="1524047489724" expanded="true" signature="5784:5927" ph="UPDATE PET S... " />
-            <marker date="1524047489724" expanded="true" signature="7115:7160" ph="SELECT BREED... BREED" />
-            <marker date="1524047489724" expanded="true" signature="7188:7233" ph="SELECT BREED... BREED" />
-            <marker date="1524047489724" expanded="true" signature="8156:8240" ph="UPDATE PET_B... " />
-            <marker date="1524047489724" expanded="true" signature="8733:8783" ph="SELECT CLR_C... CLR" />
-            <marker date="1524047489724" expanded="true" signature="9392:9461" ph="UPDATE PET_C... " />
-            <marker date="1524047489724" expanded="true" signature="10193:10251" ph="SELECT BREED... BREED" />
-          </folding>
+        <state relative-caret-position="261">
+          <caret line="46" column="10" lean-forward="false" selection-start-line="46" selection-start-column="10" selection-end-line="46" selection-end-column="10" />
+          <folding />
         </state>
       </provider>
     </entry>

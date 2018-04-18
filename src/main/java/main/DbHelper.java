@@ -28,8 +28,10 @@ public class DbHelper {
         ds = new SQLServerDataSource();
         ds.setUser("sa");
         ds.setPassword("Woofwoof123!");
+        //ds.setURL(jdbc:sqlserver://127.0.0.1:1433);
 //        ds.setServerName("localhost");
 //        ds.setPortNumber(1433);
+        //ds.setURL("jdbc:sqlserver://127.0.0.1:1433");
         ds.setDatabaseName("PetBase");
         Connection conn = ds.getConnection();
     }

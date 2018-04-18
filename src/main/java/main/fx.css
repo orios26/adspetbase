@@ -21,6 +21,9 @@
     -fx-pref-height: 50px;
     -fx-border-insets: 2,2,2,2;
 }
+.picture{
+    -fx-alignment: bottom-center;
+}
 
 .table-view{
     -fx-opacity: 0.7;
@@ -94,7 +97,9 @@
 .menu-button:focused{
     -fx-background-color: 	#658768;
 }
-.menu-item{}
+.menu-item{
+    -fx-background-color: 	#658768;
+}
 .menu-item:focused{
     -fx-background-color: 	#658768;
 }
