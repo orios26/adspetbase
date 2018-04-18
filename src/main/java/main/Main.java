@@ -6,6 +6,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.MenuBar;
 import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
@@ -32,16 +33,18 @@ public class Main  extends Application{
     public void start(Stage primaryStage) throws Exception{
         MenuBar navBar = FXMLLoader.load(getClass().getResource("fxmlAssets/MyMenus.fxml"));
         AnchorPane content = FXMLLoader.load(getClass().getResource("fxmlAssets/PaneOne.fxml"));
+        ImageView bottom = FXMLLoader.load(getClass().getResource("fxmlAssets/bottom.fxml"));
 
         //constructing our scene using the static root
         root.setTop(navBar);
         root.setCenter(content);
+        root.setBottom(bottom);
         primaryStage.setTitle("PetBase");
         Scene scene = new Scene(root);
         scene.getStylesheets().add(getClass().getResource("fx.css").toExternalForm());
         primaryStage.setScene(scene);
 
-        //primaryStage.getIcons().add(new Image("C:/Users/Oti/IdeaProjects/target/classes/main/imageAssets/dog-paw.png"));
+        //primaryStage.getIcons().add(new Image("imageAssets/dog-paw.png"));
         primaryStage.show();
     }
 

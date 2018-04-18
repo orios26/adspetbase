@@ -15,6 +15,9 @@ public class Employee {
     private Date employeeStartDate;
     private Date employeeEndDate;
     private String employeePhone;
+    private int orderLineId;
+    private String service;
+    private String serviceType;
 
     public Employee(){}
 
@@ -111,6 +114,31 @@ public class Employee {
             statement.setString(6,getEmployeePhone());
         }
     }
+
+    public String getService() {
+        return service;
+    }
+
+    public void setService(String service) {
+        this.service = service;
+    }
+
+    public String getServiceType() {
+        return serviceType;
+    }
+
+    public void setServiceType(String serviceType) {
+        this.serviceType = serviceType;
+    }
+
+    public int getOrderLineId() {
+        return orderLineId;
+    }
+
+    public void setOrderLineId(int orderLineId) {
+        this.orderLineId = orderLineId;
+    }
+
 
     @Override
     public boolean equals(Object o) {

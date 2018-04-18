@@ -11,6 +11,8 @@ public class Kennel {
     private String kennelName;
     private String kennelStatus;
     private String kennelSize;
+    private String kennelSizeDesc;
+    private String kennelRsvpDesc;
 
     @Id
     @Column(name = "KENNEL_ID", nullable = false)
@@ -46,6 +48,21 @@ public class Kennel {
 
     public void setKennelSize(String kennelSize) {
         this.kennelSize = kennelSize;
+    }
+    public String getKennelSizeDesc() {
+        return kennelSizeDesc;
+    }
+
+    public void setKennelSizeDesc(String kennelSizeDesc) {
+        this.kennelSizeDesc = kennelSizeDesc;
+    }
+
+    public String getKennelRsvpDesc() {
+        return kennelRsvpDesc;
+    }
+
+    public void setKennelRsvpDesc(String kennelRsvpDesc) {
+        this.kennelRsvpDesc = kennelRsvpDesc;
     }
 
     @Override

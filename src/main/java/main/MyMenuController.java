@@ -136,6 +136,77 @@ public class MyMenuController {
     }
 
     @FXML
+    void switchActiveClientList(ActionEvent event){
+        try {
+            AnchorPane pane = FXMLLoader.load(getClass().getResource("fxmlAssets/activeClientReport.fxml"));
+            BorderPane borderPane = Main.getRoot();
+            borderPane.setCenter(pane);
+        }
+        catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    @FXML
+    void switchInactiveClientList(ActionEvent event){
+        try {
+            AnchorPane pane = FXMLLoader.load(getClass().getResource("fxmlAssets/inactiveClientReport.fxml"));
+            BorderPane borderPane = Main.getRoot();
+            borderPane.setCenter(pane);
+        }
+        catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    @FXML
+    void switchServicedThisMonth(ActionEvent event){
+        try {
+            AnchorPane pane = FXMLLoader.load(getClass().getResource("fxmlAssets/customersServicedThisMonth.fxml"));
+            BorderPane borderPane = Main.getRoot();
+            borderPane.setCenter(pane);
+        }
+        catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    @FXML
+    void switchActiveEmployeeJobs(ActionEvent event){
+        try {
+            AnchorPane pane = FXMLLoader.load(getClass().getResource("fxmlAssets/employeesOnActiveOrders.fxml"));
+            BorderPane borderPane = Main.getRoot();
+            borderPane.setCenter(pane);
+        }
+        catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+    @FXML
+    void switchKennelReports(ActionEvent event){
+        try {
+            AnchorPane pane = FXMLLoader.load(getClass().getResource("fxmlAssets/kennelReport.fxml"));
+            BorderPane borderPane = Main.getRoot();
+            borderPane.setCenter(pane);
+        }
+        catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    @FXML
+    void switchMicrochippedPets(ActionEvent event){
+        try {
+            AnchorPane pane = FXMLLoader.load(getClass().getResource("fxmlAssets/microchippedPets.fxml"));
+            BorderPane borderPane = Main.getRoot();
+            borderPane.setCenter(pane);
+        }
+        catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    @FXML
     void switcheditCustomer(ActionEvent event){
         try{
             AnchorPane pane = FXMLLoader.load(getClass().getResource("fxmlAssets/editCustomerInformation.fxml"));
@@ -204,7 +275,7 @@ public class MyMenuController {
     @FXML
     void switcheditPet(ActionEvent event){
         try{
-            AnchorPane editPet = FXMLLoader.load(getClass().getResource("editPetScreen.fxml"));
+            AnchorPane editPet = FXMLLoader.load(getClass().getResource("fxmlAssets/editPetScreen.fxml"));
 
             BorderPane border = Main.getRoot();
             border.setCenter(editPet);

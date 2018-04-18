@@ -18,28 +18,34 @@ public class viewPetBehavior {
     @FXML
     TableColumn<PetBehavior,String>petName;
     @FXML
+    TableColumn<PetBehavior, Date>petDob;
+    @FXML
+    TableColumn<PetBehavior, String>petGender;
+    @FXML
     TableColumn<PetBehavior,String>behaviorName;
     @FXML
-    TableColumn<PetBehavior,Date>behaviorStartDate;
+    TableColumn<PetBehavior, String>petDescription;
     @FXML
-    TableColumn<PetBehavior,Date>behaviorEndDate;
+    TableColumn<PetBehavior,Date>behaviorStartDate;
 
     @FXML //fx:id ="petSelect"
     private ComboBox<String>petSelect;
 
-    @FXML //fx:id ="refresh"
-    private Button refresh;
+
 
     public void initialize()throws SQLException{
         petName.setCellValueFactory(new PropertyValueFactory<PetBehavior, String>("petName"));
+        petDob.setCellValueFactory(new PropertyValueFactory<PetBehavior, Date>("petDob"));
+        petGender.setCellValueFactory(new PropertyValueFactory<PetBehavior, String>("petGender"));
         behaviorName.setCellValueFactory(new PropertyValueFactory<PetBehavior, String>("petBehaviorName"));
+        petDescription.setCellValueFactory(new PropertyValueFactory<PetBehavior, String>("petDescription"));
         behaviorStartDate.setCellValueFactory(new PropertyValueFactory<PetBehavior, Date>("petBehaviorStartDate"));
-        behaviorEndDate.setCellValueFactory(new PropertyValueFactory<PetBehavior, Date>("petBehaviorEndDate"));
 
         Connection connection = DbHelper.getInstance().getConnection();
-        String sql = "SELECT PET.PET_NAME, BEHAVIOR.BEHAVIOR_NAME, PET_BEHAVIOR.PET_BEHAVIOR_STARTDATE, PET_BEHAVIOR.PET_BEHAVIOR_ENDDATE FROM PET " +
+        String sql = "SELECT PET_NAME, PET_DOB, PET_DOB, PET_GENDER, BEHAVIOR_NAME, PET_DESCRIPTION, PET_BEHAVIOR_STARTDATE FROM PET " +
                 "JOIN PET_BEHAVIOR ON PET.PET_ID = PET_BEHAVIOR.PET_ID " +
-                "JOIN BEHAVIOR ON PET_BEHAVIOR.BEHAVIOR_ID = BEHAVIOR.BEHAVIOR_ID";
+                "JOIN BEHAVIOR ON PET_BEHAVIOR.BEHAVIOR_ID = BEHAVIOR.BEHAVIOR_ID " +
+                "JOIN PET_BREED ON PET.PET_ID = PET_BREED.PET_ID";
         PreparedStatement preparedStatement = connection.prepareStatement(sql);
         ResultSet rs = preparedStatement.executeQuery();
         ObservableList<PetBehavior> petbehave = FXCollections.observableArrayList();
@@ -47,9 +53,11 @@ public class viewPetBehavior {
         while(rs.next()){
             PetBehavior behave = new PetBehavior();
             behave.setPetName(rs.getString("PET_NAME"));
+            behave.setPetDob(rs.getDate("PET_DOB"));
+            behave.setPetGender(rs.getString("PET_GENDER"));
             behave.setPetBehaviorName(rs.getString("BEHAVIOR_NAME"));
+            behave.setPetDescription(rs.getString("PET_DESCRIPTION"));
             behave.setPetBehaviorStartdate(rs.getDate("PET_BEHAVIOR_STARTDATE"));
-            behave.setPetBehaviorEnddate(rs.getDate("PET_BEHAVIOR_ENDDATE"));
             petbehave.add(behave);
         }
         tblPetBehavior.setItems(petbehave);
@@ -80,9 +88,11 @@ public class viewPetBehavior {
 
     public void filterPetBehavior()throws SQLException{
         petName.setCellValueFactory(new PropertyValueFactory<PetBehavior, String>("petName"));
+        petDob.setCellValueFactory(new PropertyValueFactory<PetBehavior, Date>("petDob"));
+        petGender.setCellValueFactory(new PropertyValueFactory<PetBehavior, String>("petGender"));
         behaviorName.setCellValueFactory(new PropertyValueFactory<PetBehavior, String>("petBehaviorName"));
+        petDescription.setCellValueFactory(new PropertyValueFactory<PetBehavior, String>("petDescription"));
         behaviorStartDate.setCellValueFactory(new PropertyValueFactory<PetBehavior, Date>("petBehaviorStartDate"));
-        behaviorEndDate.setCellValueFactory(new PropertyValueFactory<PetBehavior, Date>("petBehaviorEndDate"));
 
         Connection connection = DbHelper.getInstance().getConnection();
         String pID = petSelect.getValue();
@@ -90,9 +100,10 @@ public class viewPetBehavior {
         p = pID.split("_");
         int PID = Integer.parseInt(p[0]);
 
-        String sql = "SELECT PET.PET_NAME, BEHAVIOR.BEHAVIOR_NAME, PET_BEHAVIOR.PET_BEHAVIOR_STARTDATE, PET_BEHAVIOR.PET_BEHAVIOR_ENDDATE FROM PET " +
-        "JOIN PET_BEHAVIOR ON PET.PET_ID = PET_BEHAVIOR.PET_ID " +
-                "JOIN BEHAVIOR ON PET_BEHAVIOR.BEHAVIOR_ID = BEHAVIOR.BEHAVIOR_ID WHERE PET.PET_ID = "+PID;
+        String sql = "SELECT PET_NAME, PET_DOB, PET_DOB, PET_GENDER, BEHAVIOR_NAME, PET_DESCRIPTION, PET_BEHAVIOR_STARTDATE FROM PET " +
+                "JOIN PET_BEHAVIOR ON PET.PET_ID = PET_BEHAVIOR.PET_ID " +
+                "JOIN BEHAVIOR ON PET_BEHAVIOR.BEHAVIOR_ID = BEHAVIOR.BEHAVIOR_ID " +
+                "JOIN PET_BREED ON PET.PET_ID = PET_BREED.PET_ID WHERE PET.PET_ID ="+PID;
         PreparedStatement preparedStatement = connection.prepareStatement(sql);
         ResultSet rs = preparedStatement.executeQuery();
         ObservableList<PetBehavior> petbehave = FXCollections.observableArrayList();
@@ -100,9 +111,12 @@ public class viewPetBehavior {
         while(rs.next()){
             PetBehavior behave = new PetBehavior();
             behave.setPetName(rs.getString("PET_NAME"));
+            behave.setPetDob(rs.getDate("PET_DOB"));
+            behave.setPetGender(rs.getString("PET_GENDER"));
             behave.setPetBehaviorName(rs.getString("BEHAVIOR_NAME"));
+            behave.setPetDescription(rs.getString("PET_DESCRIPTION"));
             behave.setPetBehaviorStartdate(rs.getDate("PET_BEHAVIOR_STARTDATE"));
-            behave.setPetBehaviorEnddate(rs.getDate("PET_BEHAVIOR_ENDDATE"));
+
             petbehave.add(behave);
         }
         tblPetBehavior.setItems(petbehave);

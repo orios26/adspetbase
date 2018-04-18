@@ -209,6 +209,14 @@ public class createBoardingApptController {
         preparedStatement3.close();
         connection3.close();
 
+        Connection connection4 = DbHelper.getInstance().getConnection();
+        String kennelOccupied = "UPDATE KENNEL SET KENNEL_STATUS_ID =? WHERE KENNEL_ID ="+KID;
+        PreparedStatement preparedStatement4 = connection4.prepareStatement(kennelOccupied);
+        preparedStatement4.setInt(1,5);
+        preparedStatement4.execute();
+        preparedStatement4.close();
+        connection4.close();
+
         Alert alert = new Alert(Alert.AlertType.INFORMATION);
         alert.setTitle("PetBase Update");
         alert.setHeaderText("BOARDING APPT ADDED");

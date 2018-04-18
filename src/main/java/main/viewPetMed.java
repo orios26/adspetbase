@@ -29,9 +29,6 @@ public class viewPetMed {
     @FXML //fx:id ="petSelect"
     private ComboBox<String>petSelect;
 
-    @FXML //fx:id ="refresh"
-    private Button refresh;
-
     public void initialize()throws SQLException{
         petName.setCellValueFactory(new PropertyValueFactory<PetMed, String>("petName"));
         medName.setCellValueFactory(new PropertyValueFactory<PetMed, String>("medName"));
@@ -46,7 +43,6 @@ public class viewPetMed {
         PreparedStatement preparedStatement = connection.prepareStatement(sql);
         ResultSet rs = preparedStatement.executeQuery();
         ObservableList<PetMed> petMeds = FXCollections.observableArrayList();
-
         while(rs.next()){
             final PetMed petMed = new PetMed();
             petMed.setPetName(rs.getString("PET_NAME"));

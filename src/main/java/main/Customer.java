@@ -27,6 +27,7 @@ public class Customer {
     private String cusStatus;
     private String cusStatusId;
     private Integer doggyDaycareDay;
+    private Date orderStart;
 
     @Id
     @Column(name = "CUSTOMER_ID", nullable = false)
@@ -205,6 +206,13 @@ public class Customer {
 
     public void setCusStatus(String cusStatus) {
         this.cusStatus = cusStatus;
+    }
+    public Date getOrderStart() {
+        return orderStart;
+    }
+
+    public void setOrderStart(Date orderStart) {
+        this.orderStart = orderStart;
     }
 
 

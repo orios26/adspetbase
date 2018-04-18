@@ -12,9 +12,12 @@
             <MenuItem fx:id="newClientInformation" mnemonicParsing="false" onAction="#newCustomerInformationStart" text="New Customer Information" />
             <Menu mnemonicParsing="false" styleClass=".sub-menu" text="Reports">
               <items>
-                <MenuItem mnemonicParsing="false" text="Vaccine Renewals" />
-                  <MenuItem mnemonicParsing="false" text="Doggy Daycare Days" />
-                  <MenuItem mnemonicParsing="false" text="Shelter Pets" />
+                <MenuItem mnemonicParsing="false" onAction="#switchActiveClientList" text="Active Client List" />
+                  <MenuItem mnemonicParsing="false" onAction="#switchInactiveClientList" text="Inactive Client List" />
+                  <MenuItem mnemonicParsing="false" onAction="#switchServicedThisMonth" text="Serviced this Month" />
+                  <MenuItem mnemonicParsing="false" onAction="#switchActiveEmployeeJobs" text="Active Employee Jobs" />
+                  <MenuItem mnemonicParsing="false" onAction="#switchKennelReports" text="Kennel Report" />
+                  <MenuItem mnemonicParsing="false" onAction="#switchMicrochippedPets" text="Microchipped Pets" />
               </items>
             </Menu>
          </items></Menu>
@@ -29,7 +32,7 @@
             <items>
                 <MenuItem id="addPet" fx:id="addPet" mnemonicParsing="false" onAction="#switchaddPet" text="Add Pet" />
                 <MenuItem id="viewPets" mnemonicParsing="false" onAction="#switchviewPet" text="View Pets " />
-            <MenuItem id="viewPets" fx:id="viewPet1" mnemonicParsing="false" onAction="#switchviewPet" text="Edit Pet" />
+            <MenuItem id="viewPets" fx:id="viewPet1" mnemonicParsing="false" onAction="#switcheditPet" text="Edit Pet" />
             <Menu mnemonicParsing="false" text="Medication">
               <items>
                 <MenuItem mnemonicParsing="false" onAction="#switchAddMedication" text="Add Medication" />
@@ -46,7 +49,6 @@
             <Menu mnemonicParsing="false" text="Behavior">
               <items>
                 <MenuItem mnemonicParsing="false" onAction="#switchAddBehavior" text="Add Behavior" />
-                  <MenuItem mnemonicParsing="false" text="Edit Behavior" />
                   <MenuItem mnemonicParsing="false" onAction="#switchViewPetBehavior" text="View Behaviors" />
               </items>
             </Menu>
@@ -68,7 +70,7 @@
         </Menu>
         <Menu fx:id="Daycare" mnemonicParsing="false" text="Daycare">
             <items>
-                <MenuItem id="daycareCheckIn" fx:id="checkInDaycare" mnemonicParsing="false" onAction="#switchcheckinDaycare" text="Check In" />
+                <MenuItem id="daycareCheckIn" mnemonicParsing="false" onAction="#switchcheckinDaycare" text="Check In" />
                 <MenuItem id="daycareCheckOut" fx:id="checkOutDaycare" mnemonicParsing="false" onAction="#switchcheckoutDaycare" text="Check Out" />
                 <MenuItem id="daycareViewRooms" fx:id="viewDaycareRoom" mnemonicParsing="false" onAction="#switchviewDaycareroom" text="View Rooms" />
             </items>

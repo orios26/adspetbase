@@ -13,6 +13,9 @@ public class PetBehavior {
     private Date petBehaviorEnddate;
     private String petName;
     private String petBehaviorName;
+    private Date petDob;
+    private String petGender;
+    private String petDescription;
 
     @Id
     @Column(name = "PET_BEHAVIOR_ID", nullable = false)
@@ -59,6 +62,30 @@ public class PetBehavior {
     public void setPetBehaviorName(String petBehaviorName) {
         this.petBehaviorName = petBehaviorName;
     }
+    public Date getPetDob() {
+        return petDob;
+    }
+
+    public void setPetDob(Date petDob) {
+        this.petDob = petDob;
+    }
+
+    public String getPetGender() {
+        return petGender;
+    }
+
+    public void setPetGender(String petGender) {
+        this.petGender = petGender;
+    }
+
+    public String getPetDescription() {
+        return petDescription;
+    }
+
+    public void setPetDescription(String petDescription) {
+        this.petDescription = petDescription;
+    }
+
 
     @Override
     public boolean equals(Object o) {

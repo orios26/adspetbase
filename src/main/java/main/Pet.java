@@ -26,6 +26,8 @@ public class Pet {
     private String petStatus;
     private String ownerFirst;
     private String ownerLast;
+    private String petType;
+    private String petWeight;
 
     public String getPetBreed() {
         return petBreed;
@@ -59,7 +61,13 @@ public class Pet {
         this.petWeight = petWeight;
     }
 
-    private String petWeight;
+    public String getPetType() {
+        return petType;
+    }
+
+    public void setPetType(String petType) {
+        this.petType = petType;
+    }
 
     @Id
     @Column(name = "PET_ID", nullable = false)
