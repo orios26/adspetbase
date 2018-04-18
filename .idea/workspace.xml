@@ -2,46 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c84f7339-9eb0-4964-b28a-c7bb59c6c379" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/main/imageAssets/dog-head.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/main/imageAssets/dog-paw.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/main/imageAssets/girl.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/main/imageAssets/man.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/main/imageAssets/petbasebackgroundwithlogo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/main/imageAssets/petbaseblankbackgrounds.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/main/imageAssets/petbaseicon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/main/imageAssets/petbasevaccinationscreen.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/main/imageAssets/petcustomerscreen.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/main/imageAssets/petmedicationscreen.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/main/imageAssets/pets-hair-salon-tools-kit.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/main/imageAssets/pills.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/main/imageAssets/syringe.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/main/daycareCheckIn.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/main/editBehavior.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/main/viewBoardingAppointements.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/main/viewPetBehavior.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/ManageDaycareRoomController.class" afterPath="$PROJECT_DIR$/target/classes/main/ManageDaycareRoomController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/ManageEmployeeController.class" afterPath="$PROJECT_DIR$/target/classes/main/ManageEmployeeController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/ManageKennelController.class" afterPath="$PROJECT_DIR$/target/classes/main/ManageKennelController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/MyMenuController.class" afterPath="$PROJECT_DIR$/target/classes/main/MyMenuController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/PetBehavior.class" afterPath="$PROJECT_DIR$/target/classes/main/PetBehavior.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/createBoardingApptController.class" afterPath="$PROJECT_DIR$/target/classes/main/createBoardingApptController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/Main.class" afterPath="$PROJECT_DIR$/target/classes/main/Main.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/main/Main.java" afterPath="$PROJECT_DIR$/src/main/java/main/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/main/ManageDaycareRoomController.java" afterPath="$PROJECT_DIR$/src/main/java/main/ManageDaycareRoomController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/main/ManageEmployeeController.java" afterPath="$PROJECT_DIR$/src/main/java/main/ManageEmployeeController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/main/ManageKennelController.java" afterPath="$PROJECT_DIR$/src/main/java/main/ManageKennelController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/main/MyMenuController.java" afterPath="$PROJECT_DIR$/src/main/java/main/MyMenuController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/main/PetBehavior.java" afterPath="$PROJECT_DIR$/src/main/java/main/PetBehavior.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/main/createBoardingApptController.java" afterPath="$PROJECT_DIR$/src/main/java/main/createBoardingApptController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/main/createServiceOrderController.java" afterPath="$PROJECT_DIR$/src/main/java/main/createServiceOrderController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/main/editServiceOrder.java" afterPath="$PROJECT_DIR$/src/main/java/main/editServiceOrder.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/main/fxmlAssets/MyMenus.fxml" afterPath="$PROJECT_DIR$/src/main/java/main/fxmlAssets/MyMenus.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/main/fxmlAssets/daycareCheckIn.fxml" afterPath="$PROJECT_DIR$/src/main/java/main/fxmlAssets/daycareCheckIn.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/main/homeController.java" afterPath="$PROJECT_DIR$/src/main/java/main/homeController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/main/viewDaycareRoom.java" afterPath="$PROJECT_DIR$/src/main/java/main/viewDaycareRoom.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/main/viewPetVaccines.java" afterPath="$PROJECT_DIR$/src/main/java/main/viewPetVaccines.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/fxmlAssets/MyMenus.fxml" afterPath="$PROJECT_DIR$/target/classes/main/fxmlAssets/MyMenus.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/fxmlAssets/daycareCheckIn.fxml" afterPath="$PROJECT_DIR$/target/classes/main/fxmlAssets/daycareCheckIn.fxml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -212,8 +174,8 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/main/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="477">
-              <caret line="53" column="1" lean-forward="true" selection-start-line="53" selection-start-column="1" selection-end-line="53" selection-end-column="1" />
+            <state relative-caret-position="494">
+              <caret line="54" column="0" lean-forward="true" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -926,7 +888,7 @@
       <workItem from="1523646572399" duration="18802000" />
       <workItem from="1523688070256" duration="76468000" />
       <workItem from="1523950663969" duration="425000" />
-      <workItem from="1523983007227" duration="20664000" />
+      <workItem from="1523983007227" duration="20749000" />
     </task>
     <task id="LOCAL-00001" summary="-m blaj">
       <created>1523481936770</created>
@@ -956,11 +918,18 @@
       <option name="project" value="LOCAL" />
       <updated>1523950733082</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="-m edit service order slightly less buggy">
+      <created>1524011180672</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1524011180672</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="286869000" />
+    <option name="totallyTimeSpent" value="286954000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
@@ -1041,7 +1010,8 @@
     <MESSAGE value="-m newest version. includes order creating" />
     <MESSAGE value="-m new customer information sequence functional" />
     <MESSAGE value="-m edit screens uploaded. still need to debug edit service order" />
-    <option name="LAST_COMMIT_MESSAGE" value="-m edit screens uploaded. still need to debug edit service order" />
+    <MESSAGE value="-m edit service order slightly less buggy" />
+    <option name="LAST_COMMIT_MESSAGE" value="-m edit service order slightly less buggy" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1945,8 +1915,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/main/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="477">
-          <caret line="53" column="1" lean-forward="true" selection-start-line="53" selection-start-column="1" selection-end-line="53" selection-end-column="1" />
+        <state relative-caret-position="494">
+          <caret line="54" column="0" lean-forward="true" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
           <folding />
         </state>
       </provider>
